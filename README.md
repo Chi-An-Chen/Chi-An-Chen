@@ -15,7 +15,7 @@
      profile:  python scripts/render_profile_svg.py --output avi-ascii.svg --snapshot data/profile-data.json
      stats:    python scripts/render_stats_svg.py (same daily workflow) -->
 
-<h3><code>Chi-An-Chen@github ~ $ whoami</code></h3>
+<h3><code>Chi-An-Chen@github ~ $ work_record</code></h3>
 
 <p align="center">
 <img src="./avi-ascii.svg" width="48%" align="middle" alt="Chi-An Chen — project experience and repository language proportions" />
