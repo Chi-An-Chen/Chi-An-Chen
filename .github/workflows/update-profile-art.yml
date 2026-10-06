@@ -1,0 +1,67 @@
+name: Update profile art
+
+# Refreshes the contribution graph, stats and experience/language card daily.
+# Runs daily, plus whenever you push to main, plus on-demand.
+
+"on":
+  schedule:
+    - cron: "17 6 * * *"   # ~06:17 UTC every day
+  workflow_dispatch: {}
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: profile-art
+  cancel-in-progress: false
+
+env:
+  GH_PROFILE_USER: Chi-An-Chen
+
+jobs:
+  heatmap:
+    if: github.repository == 'Chi-An-Chen/Chi-An-Chen' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r scripts/requirements.txt
+
+      - name: Scrape real contribution data (no auth needed)
+        run: python scripts/fetch_contributions.py
+
+      - name: Render animated contribution graph SVG
+        run: python scripts/generate_streak_svg.py "$GH_PROFILE_USER" contrib-heatmap.svg
+
+      - name: Render streak / numbers card
+        run: python scripts/render_stats_svg.py
+
+      - name: Render developer experience and language card
+        env:
+          GH_TOKEN: ${{ secrets.LANGUAGES_TOKEN }}
+        run: python scripts/render_profile_svg.py --username "$GH_PROFILE_USER" --output avi-ascii.svg --snapshot data/profile-data.json
+
+      - name: Verify account, data and published files
+        run: python scripts/check_profile.py
+
+      - name: Commit updated art
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- data/contributions.json data/profile-data.json contrib-heatmap.svg stats.svg avi-ascii.svg
+          if git diff --cached --quiet; then
+            echo "No profile data changed."
+            exit 0
+          fi
+          git commit -m "chore: refresh profile art [skip ci]"
+          git push origin HEAD:main

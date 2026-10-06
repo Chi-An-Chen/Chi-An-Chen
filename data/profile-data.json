@@ -1,0 +1,177 @@
+{
+  "username": "Chi-An-Chen",
+  "display_name": "Chi-An Chen",
+  "generated_at": "2026-10-06T02:56:55+00:00",
+  "repository_count": 50,
+  "public_count": 14,
+  "private_count": 36,
+  "fork_count": 0,
+  "archived_count": 0,
+  "repositories_with_code": 47,
+  "includes_private": true,
+  "total_bytes": 217201909,
+  "languages": [
+    {
+      "name": "Python",
+      "bytes": 101101929,
+      "repositories": 45
+    },
+    {
+      "name": "HTML",
+      "bytes": 56800145,
+      "repositories": 8
+    },
+    {
+      "name": "Jupyter Notebook",
+      "bytes": 39038854,
+      "repositories": 11
+    },
+    {
+      "name": "JavaScript",
+      "bytes": 13817313,
+      "repositories": 4
+    },
+    {
+      "name": "TeX",
+      "bytes": 3439197,
+      "repositories": 2
+    },
+    {
+      "name": "C++",
+      "bytes": 665262,
+      "repositories": 5
+    },
+    {
+      "name": "Rich Text Format",
+      "bytes": 441608,
+      "repositories": 1
+    },
+    {
+      "name": "BibTeX Style",
+      "bytes": 297636,
+      "repositories": 1
+    },
+    {
+      "name": "Cuda",
+      "bytes": 281577,
+      "repositories": 2
+    },
+    {
+      "name": "C",
+      "bytes": 256741,
+      "repositories": 4
+    },
+    {
+      "name": "Go",
+      "bytes": 163658,
+      "repositories": 1
+    },
+    {
+      "name": "Shell",
+      "bytes": 149036,
+      "repositories": 20
+    },
+    {
+      "name": "Swift",
+      "bytes": 121031,
+      "repositories": 2
+    },
+    {
+      "name": "Java",
+      "bytes": 114080,
+      "repositories": 1
+    },
+    {
+      "name": "Kotlin",
+      "bytes": 110528,
+      "repositories": 1
+    },
+    {
+      "name": "Processing",
+      "bytes": 78491,
+      "repositories": 1
+    },
+    {
+      "name": "Astro",
+      "bytes": 60930,
+      "repositories": 1
+    },
+    {
+      "name": "CMake",
+      "bytes": 57084,
+      "repositories": 2
+    },
+    {
+      "name": "Rust",
+      "bytes": 50557,
+      "repositories": 1
+    },
+    {
+      "name": "CSS",
+      "bytes": 46131,
+      "repositories": 4
+    },
+    {
+      "name": "TypeScript",
+      "bytes": 43489,
+      "repositories": 1
+    },
+    {
+      "name": "Objective-C++",
+      "bytes": 15250,
+      "repositories": 1
+    },
+    {
+      "name": "Batchfile",
+      "bytes": 14233,
+      "repositories": 2
+    },
+    {
+      "name": "Objective-C",
+      "bytes": 7930,
+      "repositories": 2
+    },
+    {
+      "name": "Solidity",
+      "bytes": 7649,
+      "repositories": 1
+    },
+    {
+      "name": "MATLAB",
+      "bytes": 5917,
+      "repositories": 1
+    },
+    {
+      "name": "Jinja",
+      "bytes": 4256,
+      "repositories": 1
+    },
+    {
+      "name": "PowerShell",
+      "bytes": 3009,
+      "repositories": 1
+    },
+    {
+      "name": "Lex",
+      "bytes": 2900,
+      "repositories": 1
+    },
+    {
+      "name": "Yacc",
+      "bytes": 2829,
+      "repositories": 1
+    },
+    {
+      "name": "Procfile",
+      "bytes": 2408,
+      "repositories": 1
+    },
+    {
+      "name": "Ruby",
+      "bytes": 251,
+      "repositories": 1
+    }
+  ],
+  "scope": "All owned public and private repositories, including forks and archived repositories",
+  "metric": "GitHub language bytes on each repository's default branch; not personal commit authorship"
+}

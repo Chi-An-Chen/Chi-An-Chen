@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="880" viewBox="0 0 840 880" role="img" aria-labelledby="title description" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif">
+<style>
+.mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+.enter{animation:appear .55s ease-out both}
+.stagger{animation-delay:.14s}.later{animation-delay:.28s}
+.scan{animation:reveal 1.1s cubic-bezier(.2,.7,.2,1) both;animation-delay:.35s;transform-origin:36px 688px}
+@keyframes appear{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+@keyframes reveal{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+@media(prefers-reduced-motion:reduce){.enter,.scan{animation:none!important;opacity:1;transform:none}}
+</style>
+<defs>
+<linearGradient id="surface" x1="0" y1="0" x2=".7" y2="1"><stop stop-color="#111b25"/><stop offset="1" stop-color="#0d1117"/></linearGradient>
+<radialGradient id="glow"><stop stop-color="#5fe3bb" stop-opacity=".07"/><stop offset="1" stop-color="#5fe3bb" stop-opacity="0"/></radialGradient>
+<clipPath id="bar"><rect x="36" y="676" width="768" height="20" rx="10"/></clipPath>
+<symbol id="vision" viewBox="0 0 32 32"><path d="M2 16s5-9 14-9 14 9 14 9-5 9-14 9S2 16 2 16Z"/><circle cx="16" cy="16" r="4"/></symbol>
+<symbol id="spark" viewBox="0 0 32 32"><path d="m16 3 3.5 9.5L29 16l-9.5 3.5L16 29l-3.5-9.5L3 16l9.5-3.5Z"/></symbol>
+<symbol id="search" viewBox="0 0 32 32"><rect x="4" y="3" width="16" height="23" rx="3"/><path d="M8 9h8M8 14h7M8 19h5"/><circle cx="22" cy="21" r="5"/><path d="m25.5 24.5 4 4"/></symbol>
+<symbol id="chip" viewBox="0 0 32 32"><rect x="8" y="8" width="16" height="16" rx="3"/><path d="M12 3v5M20 3v5M12 24v5M20 24v5M3 12h5M3 20h5M24 12h5M24 20h5"/><rect x="12" y="12" width="8" height="8" rx="1"/></symbol>
+</defs>
+<title id="title">Chi-An Chen — development profile</title>
+<desc id="description">50 owned repositories, 14 public, 36 private. Language percentages use GitHub code bytes across owned public and private repositories. Python 46.55%, HTML 26.15%, Jupyter Notebook 17.97%, JavaScript 6.36%, TeX 1.58%, Other 1.38%</desc>
+<rect x=".5" y=".5" width="839" height="879" rx="16" fill="url(#surface)" stroke="#303b47"/>
+<ellipse cx="720" cy="125" rx="300" ry="230" fill="url(#glow)"/>
+<path d="M1 44h838" stroke="#2b3542"/>
+<circle cx="24" cy="22" r="5" fill="#ff5f57"/><circle cx="42" cy="22" r="5" fill="#febc2e"/><circle cx="60" cy="22" r="5" fill="#28c840"/>
+<path d="M36 344h768M36 606h768M36 834h768" stroke="#283341"/>
+<text x="420" y="27" font-size="15" fill="#94a3b6" font-weight="400" text-anchor="middle" class="mono">~/github  /  experience.py</text>
+<g class="enter">
+<text x="36" y="88" font-size="17" fill="#5fe3bb" font-weight="600" text-anchor="start" letter-spacing="1.8">DEVELOPER / PROJECT EXPERIENCE</text>
+<text x="36" y="149" font-size="56" fill="#e6edf3" font-weight="750" text-anchor="start" >Chi-An Chen</text>
+<text x="38" y="185" font-size="23" fill="#a1adbd" font-weight="400" text-anchor="start" class="mono">@Chi-An-Chen</text>
+<text x="36" y="223" font-size="23" fill="#c1ccd9" font-weight="400" text-anchor="start" >Computer vision · Generative AI · Edge systems</text>
+</g><g class="enter stagger">
+<rect x="36" y="246" width="236" height="77" rx="10" fill="#17212c"/>
+<text x="54" y="286" font-size="40" fill="#e6edf3" font-weight="650" text-anchor="start" >50</text>
+<text x="54" y="317" font-size="15" fill="#97a6b8" font-weight="600" text-anchor="start" letter-spacing="1">REPOSITORIES</text>
+<rect x="302" y="246" width="236" height="77" rx="10" fill="#17212c"/>
+<text x="320" y="286" font-size="40" fill="#e6edf3" font-weight="650" text-anchor="start" >14</text>
+<text x="320" y="317" font-size="15" fill="#97a6b8" font-weight="600" text-anchor="start" letter-spacing="1">PUBLIC</text>
+<rect x="568" y="246" width="236" height="77" rx="10" fill="#17212c"/>
+<text x="586" y="286" font-size="40" fill="#e6edf3" font-weight="650" text-anchor="start" >36</text>
+<text x="586" y="317" font-size="15" fill="#97a6b8" font-weight="600" text-anchor="start" letter-spacing="1">PRIVATE</text>
+<text x="36" y="373" font-size="18" fill="#a2b0c2" font-weight="600" text-anchor="start" letter-spacing="1.5">PROJECT EXPERIENCE</text>
+<rect x="36" y="390" width="376" height="96" rx="10" fill="#121c27" stroke="#263444"/>
+<use href="#vision" x="52" y="406" width="25" height="25" fill="none" stroke="#5fe3bb" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="88" y="424" font-size="24" fill="#e6edf3" font-weight="600" text-anchor="start" >Computer Vision</text>
+<text x="52" y="450" font-size="20" fill="#b8c5d5" font-weight="400" text-anchor="start" >Face ID / FacePAD</text>
+<text x="52" y="475" font-size="20" fill="#b8c5d5" font-weight="400" text-anchor="start" >Segmentation / detection</text>
+<rect x="428" y="390" width="376" height="96" rx="10" fill="#121c27" stroke="#263444"/>
+<use href="#spark" x="444" y="406" width="25" height="25" fill="none" stroke="#5fe3bb" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="480" y="424" font-size="24" fill="#e6edf3" font-weight="600" text-anchor="start" >Generative AI</text>
+<text x="444" y="450" font-size="20" fill="#b8c5d5" font-weight="400" text-anchor="start" >VLMs / virtual try-on</text>
+<text x="444" y="475" font-size="20" fill="#b8c5d5" font-weight="400" text-anchor="start" >Model fine-tuning</text>
+<rect x="36" y="498" width="376" height="96" rx="10" fill="#121c27" stroke="#263444"/>
+<use href="#search" x="52" y="514" width="25" height="25" fill="none" stroke="#5fe3bb" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="88" y="532" font-size="24" fill="#e6edf3" font-weight="600" text-anchor="start" >RAG &amp; Retrieval</text>
+<text x="52" y="558" font-size="20" fill="#b8c5d5" font-weight="400" text-anchor="start" >Document-grounded Q&amp;A</text>
+<text x="52" y="583" font-size="20" fill="#b8c5d5" font-weight="400" text-anchor="start" >LangChain / LangGraph</text>
+<rect x="428" y="498" width="376" height="96" rx="10" fill="#121c27" stroke="#263444"/>
+<use href="#chip" x="444" y="514" width="25" height="25" fill="none" stroke="#5fe3bb" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="480" y="532" font-size="24" fill="#e6edf3" font-weight="600" text-anchor="start" >Edge &amp; Backend</text>
+<text x="444" y="558" font-size="20" fill="#b8c5d5" font-weight="400" text-anchor="start" >Go / Python services</text>
+<text x="444" y="583" font-size="20" fill="#b8c5d5" font-weight="400" text-anchor="start" >ONNX / TensorRT / Jetson</text>
+</g><g class="enter later">
+<text x="36" y="634" font-size="29" fill="#e6edf3" font-weight="650" text-anchor="start" >Languages</text>
+<text x="804" y="634" font-size="20" fill="#a2b0c2" font-weight="400" text-anchor="end" >32 languages</text>
+<text x="36" y="663" font-size="20" fill="#a2b0c2" font-weight="400" text-anchor="start" >Code share · public + private</text>
+<rect x="36" y="676" width="768" height="20" rx="10" fill="#283341"/>
+<g clip-path="url(#bar)"><g class="scan">
+<rect x="36.0000" y="676" width="357.4843" height="20" fill="#58a6ff"/>
+<rect x="393.4843" y="676" width="200.8385" height="20" fill="#f77655"/>
+<rect x="594.3229" y="676" width="138.0367" height="20" fill="#f6ad55"/>
+<rect x="732.3596" y="676" width="48.8564" height="20" fill="#f1e05a"/>
+<rect x="781.2160" y="676" width="12.1606" height="20" fill="#7ccf8a"/>
+<rect x="793.3765" y="676" width="10.6235" height="20" fill="#7c8798"/>
+</g></g>
+<circle cx="43" cy="724" r="7" fill="#58a6ff"/>
+<text x="60" y="731" font-size="23" fill="#e6edf3" font-weight="550" text-anchor="start" >Python</text>
+<text x="402" y="731" font-size="23" fill="#a2b0c2" font-weight="400" text-anchor="end" >46.55%</text>
+<circle cx="435" cy="724" r="7" fill="#f77655"/>
+<text x="452" y="731" font-size="23" fill="#e6edf3" font-weight="550" text-anchor="start" >HTML</text>
+<text x="794" y="731" font-size="23" fill="#a2b0c2" font-weight="400" text-anchor="end" >26.15%</text>
+<circle cx="43" cy="763" r="7" fill="#f6ad55"/>
+<text x="60" y="770" font-size="23" fill="#e6edf3" font-weight="550" text-anchor="start" >Jupyter Notebook</text>
+<text x="402" y="770" font-size="23" fill="#a2b0c2" font-weight="400" text-anchor="end" >17.97%</text>
+<circle cx="435" cy="763" r="7" fill="#f1e05a"/>
+<text x="452" y="770" font-size="23" fill="#e6edf3" font-weight="550" text-anchor="start" >JavaScript</text>
+<text x="794" y="770" font-size="23" fill="#a2b0c2" font-weight="400" text-anchor="end" >6.36%</text>
+<circle cx="43" cy="802" r="7" fill="#7ccf8a"/>
+<text x="60" y="809" font-size="23" fill="#e6edf3" font-weight="550" text-anchor="start" >TeX</text>
+<text x="402" y="809" font-size="23" fill="#a2b0c2" font-weight="400" text-anchor="end" >1.58%</text>
+<circle cx="435" cy="802" r="7" fill="#7c8798"/>
+<text x="452" y="809" font-size="23" fill="#e6edf3" font-weight="550" text-anchor="start" >Other (27)</text>
+<text x="794" y="809" font-size="23" fill="#a2b0c2" font-weight="400" text-anchor="end" >1.38%</text>
+</g>
+<text x="36" y="859" font-size="17" fill="#a2b0c2" font-weight="400" text-anchor="start" >GitHub code bytes · 47/50 repos with code</text>
+<text x="804" y="859" font-size="17" fill="#a2b0c2" font-weight="400" text-anchor="end" >2026-10-06 10:56 UTC+8</text>
+</svg>
