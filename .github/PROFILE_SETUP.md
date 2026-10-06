@@ -4,7 +4,7 @@
 
 ## 自動更新
 
-將此目錄上傳至個人頁面 repository `Chi-An-Chen/Chi-An-Chen` 的 `main` 分支後，`.github/workflows/update-profile-art.yml` 會在每日 06:17 UTC（台灣 14:17）排程更新；也支援手動執行與 push 觸發。GitHub 的排程可能延遲，SVG 並非即時查詢。
+將此目錄上傳至個人頁面 repository `Chi-An-Chen/Chi-An-Chen` 的 `main` 分支後，`.github/workflows/update-profile-art.yml` 會在每日 16:00 UTC（台灣翌日 00:00）排程更新；也支援手動執行與 push 觸發。GitHub 的排程可能延遲，SVG 並非即時查詢。
 
 語言圖卡使用可選的 Actions repository secret `LANGUAGES_TOKEN`：
 
@@ -34,7 +34,7 @@
 - `.gitignore` 排除常見本機 secret 與快取檔。這不是完整的 secret scanner；上傳前仍需確認 staged files，避免將 key 寫進允許上傳的檔案。
 - 不能保證任何 workflow 永遠不洩漏。能修改此 repo workflow 的人也可能利用 secret，因此只給可信任的人 write access；若 token 曾出現在公開內容，立即 revoke 並建立新 token。
 
-排程每天約台灣 14:17 執行，可能延遲；public repo 若 60 天沒有活動，GitHub 可能停用 schedule。此流程正常會定期提交時間戳，若停止更新仍需檢查 Actions 狀態。README 圖片可能有快取，先以 workflow 執行結果與 `generated_at` 判斷資料是否更新。
+排程每天約台灣 00:00 執行；整點是 GitHub Actions 的高負載時段，可能延遲或漏跑，並不保證準點。Public repo 若 60 天沒有活動，GitHub 可能停用 schedule。此流程正常會定期提交時間戳，若停止更新仍需檢查 Actions 狀態。README 圖片可能有快取，先以 workflow 執行結果與 `generated_at` 判斷資料是否更新。
 
 常見錯誤：HTTP 401 通常是 key 無效或到期；HTTP 403 需檢查權限與 API rate limit；private 數量不足時檢查是否選了 All repositories；提交被拒絕時檢查 `contents: write` 或分支保護。Key 到期時 workflow 會失敗並保留上一版圖卡，只有 secret 未設定或空值時才改成 public-only。
 
