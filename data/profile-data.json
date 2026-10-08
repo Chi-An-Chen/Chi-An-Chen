@@ -1,7 +1,7 @@
 {
   "username": "Chi-An-Chen",
   "display_name": "Chi-An Chen",
-  "generated_at": "2026-10-08T01:42:56+00:00",
+  "generated_at": "2026-10-08T08:07:25+00:00",
   "repository_count": 51,
   "public_count": 15,
   "private_count": 36,
@@ -9,17 +9,17 @@
   "archived_count": 0,
   "repositories_with_code": 48,
   "includes_private": true,
-  "total_bytes": 217472076,
+  "total_bytes": 218078722,
   "languages": [
     {
       "name": "Python",
-      "bytes": 101362599,
+      "bytes": 101606371,
       "repositories": 46
     },
     {
       "name": "HTML",
-      "bytes": 56809642,
-      "repositories": 9
+      "bytes": 57161883,
+      "repositories": 10
     },
     {
       "name": "Jupyter Notebook",
@@ -68,7 +68,7 @@
     },
     {
       "name": "Shell",
-      "bytes": 149036,
+      "bytes": 152541,
       "repositories": 20
     },
     {
@@ -127,6 +127,11 @@
       "repositories": 2
     },
     {
+      "name": "MATLAB",
+      "bytes": 13045,
+      "repositories": 1
+    },
+    {
       "name": "Objective-C",
       "bytes": 7930,
       "repositories": 2
@@ -134,11 +139,6 @@
     {
       "name": "Solidity",
       "bytes": 7649,
-      "repositories": 1
-    },
-    {
-      "name": "MATLAB",
-      "bytes": 5917,
       "repositories": 1
     },
     {
