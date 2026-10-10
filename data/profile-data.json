@@ -1,7 +1,7 @@
 {
   "username": "Chi-An-Chen",
   "display_name": "Chi-An Chen",
-  "generated_at": "2026-10-09T17:28:42+00:00",
+  "generated_at": "2026-10-10T16:16:17+00:00",
   "repository_count": 51,
   "public_count": 15,
   "private_count": 36,
@@ -9,11 +9,11 @@
   "archived_count": 0,
   "repositories_with_code": 48,
   "includes_private": true,
-  "total_bytes": 218150224,
+  "total_bytes": 218488234,
   "languages": [
     {
       "name": "Python",
-      "bytes": 101677633,
+      "bytes": 101743291,
       "repositories": 46
     },
     {
@@ -33,7 +33,7 @@
     },
     {
       "name": "TeX",
-      "bytes": 3439197,
+      "bytes": 3710335,
       "repositories": 2
     },
     {
@@ -68,7 +68,7 @@
     },
     {
       "name": "Shell",
-      "bytes": 152781,
+      "bytes": 153683,
       "repositories": 20
     },
     {
@@ -148,8 +148,8 @@
     },
     {
       "name": "PowerShell",
-      "bytes": 3009,
-      "repositories": 1
+      "bytes": 3321,
+      "repositories": 2
     },
     {
       "name": "Lex",
