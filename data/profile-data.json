@@ -1,20 +1,20 @@
 {
   "username": "Chi-An-Chen",
   "display_name": "Chi-An Chen",
-  "generated_at": "2026-10-11T16:40:48+00:00",
-  "repository_count": 51,
+  "generated_at": "2026-10-12T15:13:39+00:00",
+  "repository_count": 52,
   "public_count": 15,
-  "private_count": 36,
+  "private_count": 37,
   "fork_count": 0,
   "archived_count": 0,
-  "repositories_with_code": 48,
+  "repositories_with_code": 49,
   "includes_private": true,
-  "total_bytes": 218488234,
+  "total_bytes": 218657576,
   "languages": [
     {
       "name": "Python",
-      "bytes": 101743291,
-      "repositories": 46
+      "bytes": 101890132,
+      "repositories": 47
     },
     {
       "name": "HTML",
@@ -23,8 +23,8 @@
     },
     {
       "name": "Jupyter Notebook",
-      "bytes": 39038854,
-      "repositories": 11
+      "bytes": 39061355,
+      "repositories": 12
     },
     {
       "name": "JavaScript",
