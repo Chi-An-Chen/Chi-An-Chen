@@ -1,7 +1,7 @@
 {
   "username": "Chi-An-Chen",
   "display_name": "Chi-An Chen",
-  "generated_at": "2026-10-13T07:20:08+00:00",
+  "generated_at": "2026-10-13T18:23:02+00:00",
   "repository_count": 52,
   "public_count": 15,
   "private_count": 37,
@@ -9,11 +9,11 @@
   "archived_count": 0,
   "repositories_with_code": 49,
   "includes_private": true,
-  "total_bytes": 218710594,
+  "total_bytes": 219415678,
   "languages": [
     {
       "name": "Python",
-      "bytes": 101943150,
+      "bytes": 102098486,
       "repositories": 47
     },
     {
@@ -23,8 +23,8 @@
     },
     {
       "name": "Jupyter Notebook",
-      "bytes": 39061355,
-      "repositories": 12
+      "bytes": 39071042,
+      "repositories": 13
     },
     {
       "name": "JavaScript",
@@ -33,7 +33,7 @@
     },
     {
       "name": "TeX",
-      "bytes": 3710335,
+      "bytes": 4247968,
       "repositories": 2
     },
     {
@@ -68,7 +68,7 @@
     },
     {
       "name": "Shell",
-      "bytes": 153683,
+      "bytes": 155487,
       "repositories": 20
     },
     {
@@ -148,7 +148,7 @@
     },
     {
       "name": "PowerShell",
-      "bytes": 3321,
+      "bytes": 3945,
       "repositories": 2
     },
     {
