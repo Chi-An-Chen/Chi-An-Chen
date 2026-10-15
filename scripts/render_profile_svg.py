@@ -119,6 +119,9 @@ def render(data):
     total = sum(item["bytes"] for item in languages)
     if total != data["total_bytes"] or any(item["bytes"] <= 0 for item in languages):
         raise ValueError("Language totals are invalid.")
+    # Thesis TeX stays in the source aggregate, but not in the language chart.
+    languages = [item for item in languages if item["name"] != "TeX"]
+    total = sum(item["bytes"] for item in languages)
     shown = languages[:5]
     if len(languages) > 5:
         shown.append({"name": "Other", "bytes": sum(item["bytes"] for item in languages[5:])})
@@ -221,6 +224,18 @@ def check():
     root = ET.fromstring(svg)
     assert root.attrib["viewBox"] == "0 0 840 880" and "70.00%" in svg
     assert "Example &amp; Co" in svg and "<script" not in svg and "full_name" not in svg
+    thesis = aggregate(user, repos, [{"Python": 70, "Go": 30}, {"TeX": 900}])
+    original = json.dumps(thesis, sort_keys=True)
+    thesis_svg = render(thesis)
+    assert "TeX" not in thesis_svg and "70.00%" in thesis_svg and "30.00%" in thesis_svg
+    assert "2 languages" in thesis_svg and "2/2 repos with code" in thesis_svg
+    assert json.dumps(thesis, sort_keys=True) == original
+    assert thesis["total_bytes"] == 1000 and thesis["repository_count"] == 2
+    tex_only = aggregate(user, repos, [{"TeX": 100}, {}])
+    assert "No language data" in render(tex_only) and "0 languages" in render(tex_only)
+    grouped = aggregate(user, repos, [{f"Language {i}": 10 for i in range(6)}, {"TeX": 900}])
+    grouped_svg = render(grouped)
+    assert "Other (1)" in grouped_svg and "16.67%" in grouped_svg and "TeX" not in grouped_svg
     many = aggregate(user, repos, [{f"Language {i}": i for i in range(1, 8)}, {}])
     assert "Other (2)" in render(many)
     empty = aggregate(user, repos, [{}, {}])
@@ -250,7 +265,7 @@ def check():
         pass
     else:
         raise AssertionError("Incomplete coverage must fail.")
-    print("Check passed: public/private aggregation, no-key fallback, SVG escaping, Other grouping, and empty repositories.")
+    print("Check passed: public/private aggregation, TeX display exclusion, no-key fallback, SVG escaping, Other grouping, and empty repositories.")
 
 
 def main():

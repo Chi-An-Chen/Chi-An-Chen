@@ -59,6 +59,7 @@ GH_TOKEN="$(gh auth token)" python3 scripts/render_profile_svg.py --snapshot dat
 
 ## 資料意義
 
+- 語言圖卡不顯示 `TeX`，也不將其併入 `Other`；語言數量與百分比以排除 TeX 後的語言重新計算。論文 repo 仍保留於 repository 數量及其他統計，`data/profile-data.json` 的原始聚合數字也保留 TeX。
 - `avi-ascii.svg`：此帳號擁有的 repositories，包括 forks 與 archived；語言比例按各 repo 預設分支的 GitHub language bytes 加總，不代表你親自撰寫的程式碼或熟練度。`data/profile-data.json` 只保存聚合數字，不含 private repository 名稱。開發經驗文字集中在 `scripts/render_profile_svg.py` 的 `EXPERIENCES`，可自行編輯；自動更新的是 repository／語言數據。
 - `contrib-heatmap.svg` 和 `stats.svg`：共用 `data/contributions.json`，從你的公開 GitHub contribution calendar 重新擷取。private contribution 數量是否包含在內，依個人頁面的「Private contributions」可見性設定；此處不使用語言統計的 key。
 - 資料帳號與預期帳號不一致時，renderer 直接失敗；不再退回原作者的舊 snapshot。原本的照片與 ASCII 工具留作歷史素材，更新流程不會呼叫它們。
