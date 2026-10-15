@@ -18,7 +18,7 @@
 <symbol id="chip" viewBox="0 0 32 32"><rect x="8" y="8" width="16" height="16" rx="3"/><path d="M12 3v5M20 3v5M12 24v5M20 24v5M3 12h5M3 20h5M24 12h5M24 20h5"/><rect x="12" y="12" width="8" height="8" rx="1"/></symbol>
 </defs>
 <title id="title">Chi-An Chen — development profile</title>
-<desc id="description">53 owned repositories, 15 public, 38 private. Language percentages use GitHub code bytes across owned public and private repositories. Python 46.58%, HTML 26.03%, Jupyter Notebook 17.79%, JavaScript 6.29%, TeX 1.93%, Other 1.37%</desc>
+<desc id="description">53 owned repositories, 15 public, 38 private. Language percentages use GitHub code bytes across owned public and private repositories. Python 46.59%, HTML 26.02%, Jupyter Notebook 17.79%, JavaScript 6.29%, TeX 1.93%, Other 1.37%</desc>
 <rect x=".5" y=".5" width="839" height="879" rx="16" fill="url(#surface)" stroke="#303b47"/>
 <ellipse cx="720" cy="125" rx="300" ry="230" fill="url(#glow)"/>
 <path d="M1 44h838" stroke="#2b3542"/>
@@ -67,19 +67,19 @@
 <text x="36" y="663" font-size="20" fill="#a2b0c2" font-weight="400" text-anchor="start" >Code share · public + private</text>
 <rect x="36" y="676" width="768" height="20" rx="10" fill="#283341"/>
 <g clip-path="url(#bar)"><g class="scan">
-<rect x="36.0000" y="676" width="357.7725" height="20" fill="#58a6ff"/>
-<rect x="393.7725" y="676" width="199.8721" height="20" fill="#f77655"/>
-<rect x="593.6446" y="676" width="136.6322" height="20" fill="#f6ad55"/>
-<rect x="730.2768" y="676" width="48.3136" height="20" fill="#f1e05a"/>
-<rect x="778.5904" y="676" width="14.8534" height="20" fill="#7ccf8a"/>
-<rect x="793.4438" y="676" width="10.5562" height="20" fill="#7c8798"/>
+<rect x="36.0000" y="676" width="357.7810" height="20" fill="#58a6ff"/>
+<rect x="393.7810" y="676" width="199.8679" height="20" fill="#f77655"/>
+<rect x="593.6490" y="676" width="136.6294" height="20" fill="#f6ad55"/>
+<rect x="730.2783" y="676" width="48.3126" height="20" fill="#f1e05a"/>
+<rect x="778.5909" y="676" width="14.8531" height="20" fill="#7ccf8a"/>
+<rect x="793.4440" y="676" width="10.5560" height="20" fill="#7c8798"/>
 </g></g>
 <circle cx="43" cy="724" r="7" fill="#58a6ff"/>
 <text x="60" y="731" font-size="23" fill="#e6edf3" font-weight="550" text-anchor="start" >Python</text>
-<text x="402" y="731" font-size="23" fill="#a2b0c2" font-weight="400" text-anchor="end" >46.58%</text>
+<text x="402" y="731" font-size="23" fill="#a2b0c2" font-weight="400" text-anchor="end" >46.59%</text>
 <circle cx="435" cy="724" r="7" fill="#f77655"/>
 <text x="452" y="731" font-size="23" fill="#e6edf3" font-weight="550" text-anchor="start" >HTML</text>
-<text x="794" y="731" font-size="23" fill="#a2b0c2" font-weight="400" text-anchor="end" >26.03%</text>
+<text x="794" y="731" font-size="23" fill="#a2b0c2" font-weight="400" text-anchor="end" >26.02%</text>
 <circle cx="43" cy="763" r="7" fill="#f6ad55"/>
 <text x="60" y="770" font-size="23" fill="#e6edf3" font-weight="550" text-anchor="start" >Jupyter Notebook</text>
 <text x="402" y="770" font-size="23" fill="#a2b0c2" font-weight="400" text-anchor="end" >17.79%</text>
@@ -94,5 +94,5 @@
 <text x="794" y="809" font-size="23" fill="#a2b0c2" font-weight="400" text-anchor="end" >1.37%</text>
 </g>
 <text x="36" y="859" font-size="17" fill="#a2b0c2" font-weight="400" text-anchor="start" >GitHub code bytes · 50/53 repos with code</text>
-<text x="804" y="859" font-size="17" fill="#a2b0c2" font-weight="400" text-anchor="end" >2026-10-14 23:51 UTC+8</text>
+<text x="804" y="859" font-size="17" fill="#a2b0c2" font-weight="400" text-anchor="end" >2026-10-15 09:04 UTC+8</text>
 </svg>
