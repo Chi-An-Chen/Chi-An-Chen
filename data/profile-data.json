@@ -1,7 +1,7 @@
 {
   "username": "Chi-An-Chen",
   "display_name": "Chi-An Chen",
-  "generated_at": "2026-10-15T15:38:55+00:00",
+  "generated_at": "2026-10-16T15:24:21+00:00",
   "repository_count": 53,
   "public_count": 16,
   "private_count": 37,
@@ -9,11 +9,11 @@
   "archived_count": 0,
   "repositories_with_code": 50,
   "includes_private": true,
-  "total_bytes": 219660657,
+  "total_bytes": 220449735,
   "languages": [
     {
       "name": "Python",
-      "bytes": 102338739,
+      "bytes": 102905580,
       "repositories": 48
     },
     {
@@ -33,7 +33,7 @@
     },
     {
       "name": "TeX",
-      "bytes": 4247968,
+      "bytes": 4464350,
       "repositories": 2
     },
     {
@@ -58,8 +58,8 @@
     },
     {
       "name": "C",
-      "bytes": 256741,
-      "repositories": 4
+      "bytes": 257267,
+      "repositories": 5
     },
     {
       "name": "Go",
@@ -73,8 +73,8 @@
     },
     {
       "name": "Swift",
-      "bytes": 121031,
-      "repositories": 2
+      "bytes": 126360,
+      "repositories": 3
     },
     {
       "name": "Java",
