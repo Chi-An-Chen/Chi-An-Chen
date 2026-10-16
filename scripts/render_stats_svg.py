@@ -83,9 +83,13 @@ def fmt(v, like):
     return f"{v:,.1f}" if isinstance(like, float) else f"{int(round(v)):,}"
 
 
+# Keep refresh time in non-rendered metadata so unchanged data still updates the file.
+last_checked = datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=8))).isoformat(timespec="microseconds")
+
 parts = [
     f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" '
     f'role="img" aria-labelledby="title description" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">',
+    f'<metadata id="last-checked">最近檢查時間：{last_checked}</metadata>',
     f'<title id="title">{html.escape(username)} — GitHub contribution stats</title>',
     f'<desc id="description">{data["total_contributions"]:,} contributions from {data["range"]["start"]} to {data["range"]["end"]}, from this account\'s public GitHub contribution calendar.</desc>',
     '<style>'

@@ -63,7 +63,11 @@ for i, c in enumerate(contribs):
         f'fill="{COLORS[lvl]}" style="animation-delay:{delay}s"/>'
     )
 
+# Keep refresh time in non-rendered metadata so unchanged data still updates the file.
+last_checked = datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=8))).isoformat(timespec="microseconds")
+
 svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img" aria-labelledby="title description" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif">
+<metadata id="last-checked">最近檢查時間：{last_checked}</metadata>
 <title id="title">{html.escape(USER)} — GitHub contributions</title>
 <desc id="description">{total:,} contributions from {contribs[0]["date"]} to {contribs[-1]["date"]}, from this account's public GitHub contribution calendar.</desc>
 <style>
