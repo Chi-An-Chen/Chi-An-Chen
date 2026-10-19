@@ -18,7 +18,7 @@
 <symbol id="chip" viewBox="0 0 32 32"><rect x="8" y="8" width="16" height="16" rx="3"/><path d="M12 3v5M20 3v5M12 24v5M20 24v5M3 12h5M3 20h5M24 12h5M24 20h5"/><rect x="12" y="12" width="8" height="8" rx="1"/></symbol>
 </defs>
 <title id="title">Chi-An Chen — development profile</title>
-<desc id="description">53 owned repositories, 16 public, 37 private. Language percentages use GitHub code bytes across owned public and private repositories. Python 47.64%, HTML 26.47%, Jupyter Notebook 18.09%, JavaScript 6.40%, C++ 0.31%, Other 1.09%</desc>
+<desc id="description">54 owned repositories, 16 public, 38 private. Language percentages use GitHub code bytes across owned public and private repositories. Python 47.64%, HTML 26.47%, Jupyter Notebook 18.09%, JavaScript 6.40%, C++ 0.31%, Other 1.09%</desc>
 <rect x=".5" y=".5" width="839" height="879" rx="16" fill="url(#surface)" stroke="#303b47"/>
 <ellipse cx="720" cy="125" rx="300" ry="230" fill="url(#glow)"/>
 <path d="M1 44h838" stroke="#2b3542"/>
@@ -32,13 +32,13 @@
 <text x="36" y="223" font-size="23" fill="#c1ccd9" font-weight="400" text-anchor="start" >Computer vision · Generative AI · Edge systems</text>
 </g><g class="enter stagger">
 <rect x="36" y="246" width="236" height="77" rx="10" fill="#17212c"/>
-<text x="54" y="286" font-size="40" fill="#e6edf3" font-weight="650" text-anchor="start" >53</text>
+<text x="54" y="286" font-size="40" fill="#e6edf3" font-weight="650" text-anchor="start" >54</text>
 <text x="54" y="317" font-size="15" fill="#97a6b8" font-weight="600" text-anchor="start" letter-spacing="1">REPOSITORIES</text>
 <rect x="302" y="246" width="236" height="77" rx="10" fill="#17212c"/>
 <text x="320" y="286" font-size="40" fill="#e6edf3" font-weight="650" text-anchor="start" >16</text>
 <text x="320" y="317" font-size="15" fill="#97a6b8" font-weight="600" text-anchor="start" letter-spacing="1">PUBLIC</text>
 <rect x="568" y="246" width="236" height="77" rx="10" fill="#17212c"/>
-<text x="586" y="286" font-size="40" fill="#e6edf3" font-weight="650" text-anchor="start" >37</text>
+<text x="586" y="286" font-size="40" fill="#e6edf3" font-weight="650" text-anchor="start" >38</text>
 <text x="586" y="317" font-size="15" fill="#97a6b8" font-weight="600" text-anchor="start" letter-spacing="1">PRIVATE</text>
 <text x="36" y="373" font-size="18" fill="#a2b0c2" font-weight="600" text-anchor="start" letter-spacing="1.5">PROJECT EXPERIENCE</text>
 <rect x="36" y="390" width="376" height="96" rx="10" fill="#121c27" stroke="#263444"/>
@@ -93,6 +93,6 @@
 <text x="452" y="809" font-size="23" fill="#e6edf3" font-weight="550" text-anchor="start" >Other (26)</text>
 <text x="794" y="809" font-size="23" fill="#a2b0c2" font-weight="400" text-anchor="end" >1.09%</text>
 </g>
-<text x="36" y="859" font-size="17" fill="#a2b0c2" font-weight="400" text-anchor="start" >GitHub code bytes · 50/53 repos with code</text>
-<text x="804" y="859" font-size="17" fill="#a2b0c2" font-weight="400" text-anchor="end" >2026-10-18 22:40 UTC+8</text>
+<text x="36" y="859" font-size="17" fill="#a2b0c2" font-weight="400" text-anchor="start" >GitHub code bytes · 50/54 repos with code</text>
+<text x="804" y="859" font-size="17" fill="#a2b0c2" font-weight="400" text-anchor="end" >2026-10-19 08:43 UTC+8</text>
 </svg>
