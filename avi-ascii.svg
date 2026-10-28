@@ -18,7 +18,7 @@
 <symbol id="chip" viewBox="0 0 32 32"><rect x="8" y="8" width="16" height="16" rx="3"/><path d="M12 3v5M20 3v5M12 24v5M20 24v5M3 12h5M3 20h5M24 12h5M24 20h5"/><rect x="12" y="12" width="8" height="8" rx="1"/></symbol>
 </defs>
 <title id="title">Chi-An Chen — development profile</title>
-<desc id="description">56 owned repositories, 16 public, 40 private. Language percentages use GitHub code bytes across owned public and private repositories. Python 47.91%, HTML 26.41%, Jupyter Notebook 17.95%, JavaScript 6.35%, C++ 0.31%, Other 1.08%</desc>
+<desc id="description">56 owned repositories, 16 public, 40 private. Language percentages use GitHub code bytes across owned public and private repositories. Python 47.91%, HTML 26.40%, Jupyter Notebook 17.95%, JavaScript 6.34%, C++ 0.31%, Other 1.08%</desc>
 <rect x=".5" y=".5" width="839" height="879" rx="16" fill="url(#surface)" stroke="#303b47"/>
 <ellipse cx="720" cy="125" rx="300" ry="230" fill="url(#glow)"/>
 <path d="M1 44h838" stroke="#2b3542"/>
@@ -67,25 +67,25 @@
 <text x="36" y="663" font-size="20" fill="#a2b0c2" font-weight="400" text-anchor="start" >Code share · public + private</text>
 <rect x="36" y="676" width="768" height="20" rx="10" fill="#283341"/>
 <g clip-path="url(#bar)"><g class="scan">
-<rect x="36.0000" y="676" width="367.9179" height="20" fill="#58a6ff"/>
-<rect x="403.9179" y="676" width="202.8075" height="20" fill="#f77655"/>
-<rect x="606.7254" y="676" width="137.8736" height="20" fill="#f6ad55"/>
-<rect x="744.5990" y="676" width="48.7371" height="20" fill="#f1e05a"/>
-<rect x="793.3361" y="676" width="2.3451" height="20" fill="#56c8d8"/>
-<rect x="795.6812" y="676" width="8.3188" height="20" fill="#7c8798"/>
+<rect x="36.0000" y="676" width="367.9799" height="20" fill="#58a6ff"/>
+<rect x="403.9799" y="676" width="202.7761" height="20" fill="#f77655"/>
+<rect x="606.7560" y="676" width="137.8522" height="20" fill="#f6ad55"/>
+<rect x="744.6082" y="676" width="48.7295" height="20" fill="#f1e05a"/>
+<rect x="793.3377" y="676" width="2.3448" height="20" fill="#56c8d8"/>
+<rect x="795.6825" y="676" width="8.3175" height="20" fill="#7c8798"/>
 </g></g>
 <circle cx="43" cy="724" r="7" fill="#58a6ff"/>
 <text x="60" y="731" font-size="23" fill="#e6edf3" font-weight="550" text-anchor="start" >Python</text>
 <text x="402" y="731" font-size="23" fill="#a2b0c2" font-weight="400" text-anchor="end" >47.91%</text>
 <circle cx="435" cy="724" r="7" fill="#f77655"/>
 <text x="452" y="731" font-size="23" fill="#e6edf3" font-weight="550" text-anchor="start" >HTML</text>
-<text x="794" y="731" font-size="23" fill="#a2b0c2" font-weight="400" text-anchor="end" >26.41%</text>
+<text x="794" y="731" font-size="23" fill="#a2b0c2" font-weight="400" text-anchor="end" >26.40%</text>
 <circle cx="43" cy="763" r="7" fill="#f6ad55"/>
 <text x="60" y="770" font-size="23" fill="#e6edf3" font-weight="550" text-anchor="start" >Jupyter Notebook</text>
 <text x="402" y="770" font-size="23" fill="#a2b0c2" font-weight="400" text-anchor="end" >17.95%</text>
 <circle cx="435" cy="763" r="7" fill="#f1e05a"/>
 <text x="452" y="770" font-size="23" fill="#e6edf3" font-weight="550" text-anchor="start" >JavaScript</text>
-<text x="794" y="770" font-size="23" fill="#a2b0c2" font-weight="400" text-anchor="end" >6.35%</text>
+<text x="794" y="770" font-size="23" fill="#a2b0c2" font-weight="400" text-anchor="end" >6.34%</text>
 <circle cx="43" cy="802" r="7" fill="#56c8d8"/>
 <text x="60" y="809" font-size="23" fill="#e6edf3" font-weight="550" text-anchor="start" >C++</text>
 <text x="402" y="809" font-size="23" fill="#a2b0c2" font-weight="400" text-anchor="end" >0.31%</text>
@@ -94,5 +94,5 @@
 <text x="794" y="809" font-size="23" fill="#a2b0c2" font-weight="400" text-anchor="end" >1.08%</text>
 </g>
 <text x="36" y="859" font-size="17" fill="#a2b0c2" font-weight="400" text-anchor="start" >GitHub code bytes · 52/56 repos with code</text>
-<text x="804" y="859" font-size="17" fill="#a2b0c2" font-weight="400" text-anchor="end" >2026-10-28 05:50 UTC+8</text>
+<text x="804" y="859" font-size="17" fill="#a2b0c2" font-weight="400" text-anchor="end" >2026-10-28 15:33 UTC+8</text>
 </svg>
