@@ -91,10 +91,10 @@ use[stroke="#5fe3bb"]{stroke:var(--accent)}
 <text x="36" y="663" font-size="20" fill="#a2b0c2" font-weight="400" text-anchor="start" >Code share · public + private</text>
 <rect x="36" y="676" width="768" height="20" rx="10" fill="#283341"/>
 <g clip-path="url(#bar)"><g class="scan">
-<rect x="36.0000" y="676" width="368.0088" height="20" fill="#58a6ff"/>
-<rect x="404.0088" y="676" width="202.7614" height="20" fill="#f77655"/>
-<rect x="606.7702" y="676" width="137.8423" height="20" fill="#f6ad55"/>
-<rect x="744.6125" y="676" width="48.7260" height="20" fill="#f1e05a"/>
+<rect x="36.0000" y="676" width="368.0106" height="20" fill="#58a6ff"/>
+<rect x="404.0106" y="676" width="202.7605" height="20" fill="#f77655"/>
+<rect x="606.7711" y="676" width="137.8417" height="20" fill="#f6ad55"/>
+<rect x="744.6128" y="676" width="48.7258" height="20" fill="#f1e05a"/>
 <rect x="793.3385" y="676" width="2.3446" height="20" fill="#56c8d8"/>
 <rect x="795.6831" y="676" width="8.3169" height="20" fill="#7c8798"/>
 </g></g>
@@ -118,5 +118,5 @@ use[stroke="#5fe3bb"]{stroke:var(--accent)}
 <text x="794" y="809" font-size="23" fill="#a2b0c2" font-weight="400" text-anchor="end" >1.08%</text>
 </g>
 <text x="36" y="859" font-size="17" fill="#a2b0c2" font-weight="400" text-anchor="start" >GitHub code bytes · 52/56 repos with code</text>
-<text x="804" y="859" font-size="17" fill="#a2b0c2" font-weight="400" text-anchor="end" >2026-10-28 15:48 UTC+8</text>
+<text x="804" y="859" font-size="17" fill="#a2b0c2" font-weight="400" text-anchor="end" >2026-10-28 17:01 UTC+8</text>
 </svg>
