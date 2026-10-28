@@ -57,6 +57,10 @@ python3 scripts/check_profile.py
 GH_TOKEN="$(gh auth token)" python3 scripts/render_profile_svg.py --snapshot data/profile-data.json
 ```
 
+## 貢獻圖呈現
+
+`contrib-heatmap.svg` 使用向日葵星盤：每日一點，以黃金角排列，時間由中心往外；顏色沿用 GitHub 的 0–4 貢獻級距。可見文字僅保留 `Contributions`、`Past at center · Recent at edge` 和 `Less / More`。SVG 支援深淺色模式，保留總量與日期於無障礙描述，不加入動畫。每日更新仍使用 `scripts/generate_streak_svg.py`；`render_heatmap_svg.py` 是未被 workflow 呼叫的舊工具。
+
 ## 資料意義
 
 - 語言圖卡不顯示 `TeX`，也不將其併入 `Other`；語言數量與百分比以排除 TeX 後的語言重新計算。論文 repo 仍保留於 repository 數量及其他統計，`data/profile-data.json` 的原始聚合數字也保留 TeX。

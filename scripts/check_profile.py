@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Offline checks: correct account, shared contribution values and key fallback."""
-import datetime
+import math
 import json
 import os
 import re
@@ -59,13 +59,21 @@ for svg in (graph, stats):
     assert f'{contrib["total_contributions"]:,}' in " ".join(svg.itertext())
 assert (ROOT / "avi-ascii.svg").read_text() == profile.render(aggregate)
 assert card.attrib["viewBox"] == stats.attrib["viewBox"] == "0 0 840 880"
-cells = [r for r in graph.findall("s:rect", NS) if r.get("class", "").startswith("c ")]
+cells = graph.findall("s:circle[@class='day']", NS)
 assert len(cells) == len(contrib["days"])
 palette = ["#161b22", "#0e4429", "#006d32", "#26a641", "#39d353"]
+radii = []
 for cell, day in zip(cells, contrib["days"]):
-    row = (datetime.date.fromisoformat(day["date"]).weekday() + 1) % 7
-    assert float(cell.attrib["y"]) == 24 + row * 16
+    x, y, r = (float(cell.attrib[key]) for key in ("cx", "cy", "r"))
+    assert r <= x <= 480-r and r <= y <= 410-r
+    radii.append(math.hypot(x-240, y-184))
     assert cell.attrib["fill"] == palette[day["level"]]
+    assert cell.find("s:title", NS).text == f'{day["date"]}: {day["count"]} contributions'
+assert all(a < b for a, b in zip(radii, radii[1:])), "Time must grow outward."
+assert radii[-1] < 128
+assert [t.text for t in graph.findall("s:text", NS)] == [
+    "Contributions", "Past at center · Recent at edge", "Less", "More"]
+assert [c.attrib["fill"] for c in graph.findall("s:circle", NS) if c.get("class") != "day"] == palette
 
 with tempfile.TemporaryDirectory() as temporary:
     tmp = Path(temporary)
@@ -81,7 +89,7 @@ with tempfile.TemporaryDirectory() as temporary:
     assert result.returncode != 0 and "different account" in result.stderr
     assert output.read_text() == "existing card"
 
-    # A calendar starting on Monday must still put Monday in row one.
+    # Short calendars still preserve each day and chronological radial order.
     (tmp / "scripts").mkdir()
     (tmp / "data").mkdir()
     shutil.copy2(ROOT / "scripts/generate_streak_svg.py", tmp / "scripts")
@@ -93,8 +101,18 @@ with tempfile.TemporaryDirectory() as temporary:
     result = subprocess.run([sys.executable, str(tmp / "scripts/generate_streak_svg.py"), USER, str(output)],
                             capture_output=True, text=True)
     assert result.returncode == 0, result.stderr
-    first = ET.parse(output).getroot().findall("s:rect", NS)[1]
-    assert first.attrib["x"] == "34" and first.attrib["y"] == "40"
+    short = ET.parse(output).getroot().findall("s:circle[@class='day']", NS)
+    assert len(short) == 2
+    assert math.hypot(float(short[0].get("cx"))-240, float(short[0].get("cy"))-184) < math.hypot(float(short[1].get("cx"))-240, float(short[1].get("cy"))-184)
+    for invalid_days in ([], list(reversed(days)), [dict(days[0], level=-1)], [dict(days[0], level=5)]):
+        (tmp / "data/contributions.json").write_text(json.dumps({
+            "username": USER, "days": invalid_days, "total_contributions": 1,
+        }))
+        output.write_text("existing card")
+        result = subprocess.run([sys.executable, str(tmp / "scripts/generate_streak_svg.py"), USER, str(output)],
+                                capture_output=True, text=True)
+        assert result.returncode != 0
+        assert output.read_text() == "existing card"
 
     # Auth errors must fail before touching the existing image or snapshot.
     output.write_text("existing card")
@@ -112,4 +130,4 @@ with tempfile.TemporaryDirectory() as temporary:
     assert json.loads(snapshot.read_text())["username"] == "another-account"
 
 print(f"Integration check passed: {USER}, {contrib['total_contributions']:,} contributions, "
-      f"{aggregate['repository_count']} repositories; SVGs, weekday alignment and stale-data guards agree.")
+      f"{aggregate['repository_count']} repositories; SVGs, sunflower chronology and stale-data guards agree.")
