@@ -58,6 +58,13 @@ for svg in (graph, stats):
     assert USER.lower() in " ".join(svg.itertext()).lower()
     assert f'{contrib["total_contributions"]:,}' in " ".join(svg.itertext())
 assert (ROOT / "avi-ascii.svg").read_text() == profile.render(aggregate)
+for svg in (graph, stats, card):
+    assert svg.find("s:defs/s:linearGradient[@id='glass-surface']", NS) is not None
+    assert not svg.findall(".//s:script", NS)
+    assert not svg.findall(".//s:foreignObject", NS)
+    ids = {element.get("id") for element in svg.iter() if element.get("id")}
+    assert all(ref in ids for ref in re.findall(r"url\(#([^)]*)\)", ET.tostring(svg, encoding="unicode")))
+assert 'width="97%"' in readme and readme.count('width="48%"') == 2
 assert card.attrib["viewBox"] == stats.attrib["viewBox"] == "0 0 840 880"
 cells = graph.findall("s:circle[@class='day']", NS)
 assert len(cells) == len(contrib["days"])
@@ -65,15 +72,15 @@ palette = ["#161b22", "#0e4429", "#006d32", "#26a641", "#39d353"]
 radii = []
 for cell, day in zip(cells, contrib["days"]):
     x, y, r = (float(cell.attrib[key]) for key in ("cx", "cy", "r"))
-    assert r <= x <= 480-r and r <= y <= 410-r
-    radii.append(math.hypot(x-240, y-184))
+    assert r <= x <= 1680-r and r <= y <= 950-r
+    radii.append(math.hypot(x-840, y-446))
     assert cell.attrib["fill"] == palette[day["level"]]
     assert cell.find("s:title", NS).text == f'{day["date"]}: {day["count"]} contributions'
 assert all(a < b for a, b in zip(radii, radii[1:])), "Time must grow outward."
-assert radii[-1] < 128
+assert radii[-1] < 360
 assert [t.text for t in graph.findall("s:text", NS)] == [
     "Contributions", "Past at center · Recent at edge", "Less", "More"]
-assert [c.attrib["fill"] for c in graph.findall("s:circle", NS) if c.get("class") != "day"] == palette
+assert [c.attrib["fill"] for c in graph.findall("s:g[@id='legend']/s:circle", NS)] == palette
 
 with tempfile.TemporaryDirectory() as temporary:
     tmp = Path(temporary)
@@ -93,6 +100,7 @@ with tempfile.TemporaryDirectory() as temporary:
     (tmp / "scripts").mkdir()
     (tmp / "data").mkdir()
     shutil.copy2(ROOT / "scripts/generate_streak_svg.py", tmp / "scripts")
+    shutil.copy2(ROOT / "scripts/glass_svg.py", tmp / "scripts")
     days = [{"date": "2026-10-05", "count": 1, "level": 1},
             {"date": "2026-10-06", "count": 0, "level": 0}]
     (tmp / "data/contributions.json").write_text(json.dumps({
@@ -103,7 +111,7 @@ with tempfile.TemporaryDirectory() as temporary:
     assert result.returncode == 0, result.stderr
     short = ET.parse(output).getroot().findall("s:circle[@class='day']", NS)
     assert len(short) == 2
-    assert math.hypot(float(short[0].get("cx"))-240, float(short[0].get("cy"))-184) < math.hypot(float(short[1].get("cx"))-240, float(short[1].get("cy"))-184)
+    assert math.hypot(float(short[0].get("cx"))-840, float(short[0].get("cy"))-446) < math.hypot(float(short[1].get("cx"))-840, float(short[1].get("cy"))-446)
     for invalid_days in ([], list(reversed(days)), [dict(days[0], level=-1)], [dict(days[0], level=5)]):
         (tmp / "data/contributions.json").write_text(json.dumps({
             "username": USER, "days": invalid_days, "total_contributions": 1,

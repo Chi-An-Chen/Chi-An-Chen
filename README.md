@@ -5,7 +5,7 @@
 
 <h3><code>Chi-An-Chen @ github ~ $./contributions.sh</code></h3>
 
-<img src="https://raw.githubusercontent.com/Chi-An-Chen/Chi-An-Chen/main/contrib-heatmap.svg?v=sunflower" width="480" alt="Chi-An Chen's sunflower GitHub contribution graph — auto-refreshed daily" />
+<img src="https://raw.githubusercontent.com/Chi-An-Chen/Chi-An-Chen/main/contrib-heatmap.svg?v=glass-v1" width="97%" alt="Chi-An Chen's sunflower GitHub contribution graph — auto-refreshed daily" />
 
 <br>
 <br>
@@ -18,8 +18,8 @@
 <h3><code>Chi-An-Chen @ github ~ $work_record</code></h3>
 
 <p align="center">
-<img src="./avi-ascii.svg" width="48%" align="middle" alt="Chi-An Chen — project experience and repository language proportions" />
-<img src="./stats.svg" width="48%" align="middle" alt="Chi-An Chen's GitHub streak and contribution stats — auto-refreshed daily" />
+<img src="https://raw.githubusercontent.com/Chi-An-Chen/Chi-An-Chen/main/avi-ascii.svg?v=glass-v1" width="48%" align="middle" alt="Chi-An Chen — project experience and repository language proportions" />
+<img src="https://raw.githubusercontent.com/Chi-An-Chen/Chi-An-Chen/main/stats.svg?v=glass-v1" width="48%" align="middle" alt="Chi-An Chen's GitHub streak and contribution stats — auto-refreshed daily" />
 </p>
 
 </div>

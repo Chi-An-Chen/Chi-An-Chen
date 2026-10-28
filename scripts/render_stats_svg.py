@@ -19,23 +19,20 @@ import html
 import json
 import os
 import sys
+from glass_svg import surface
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 SRC = sys.argv[1] if len(sys.argv) > 1 else os.path.join(HERE, "..", "data", "contributions.json")
 OUT = sys.argv[2] if len(sys.argv) > 2 else os.path.join(HERE, "..", "stats.svg")
 
-BG = "#0d1117"
-BG2 = "#111722"
-TILE = "#161b22"
-FRAME = "#30363d"
-MUTED = "#7d8590"
+MUTED = "#a2b0c2"
 INK = "#e6edf3"
 GREEN = "#39d353"
 BAR = "#26a641"
 
 W, H = 840, 880                      # == avi-ascii.svg canvas
 PAD = 20
-TITLEBAR_H = 30
+TITLEBAR_H = 44
 COLS, ROWS = 2, 3
 GAP = 16
 TILE_W = (W - PAD * 2 - GAP * (COLS - 1)) / COLS
@@ -88,7 +85,7 @@ last_checked = datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=
 
 parts = [
     f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" '
-    f'role="img" aria-labelledby="title description" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">',
+    f'role="img" aria-labelledby="title description" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif">',
     f'<metadata id="last-checked">最近檢查時間：{last_checked}</metadata>',
     f'<title id="title">{html.escape(username)} — GitHub contribution stats</title>',
     f'<desc id="description">{data["total_contributions"]:,} contributions from {data["range"]["start"]} to {data["range"]["end"]}, from this account\'s public GitHub contribution calendar.</desc>',
@@ -99,16 +96,9 @@ parts = [
     '@keyframes grow{to{transform:scaleY(1)}}'
     '@media (prefers-reduced-motion: reduce){.t,.b{opacity:1!important;transform:none!important;animation:none!important}}'
     '</style>',
-    f'<defs><linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">'
-    f'<stop offset="0" stop-color="{BG2}"/><stop offset="1" stop-color="{BG}"/></linearGradient></defs>',
-    f'<rect width="{W}" height="{H}" rx="12" fill="url(#bg)"/>',
-    f'<rect x="0.5" y="0.5" width="{W-1}" height="{H-1}" rx="12" fill="none" stroke="{FRAME}"/>',
-    f'<line x1="0" y1="{TITLEBAR_H}" x2="{W}" y2="{TITLEBAR_H}" stroke="{FRAME}"/>',
+    surface(W, H),
+    f'<text x="{W/2}" y="28" fill="{MUTED}" font-size="24" text-anchor="middle">Activity</text>',
 ]
-for i, dot in enumerate(["#ff5f56", "#ffbd2e", "#27c93f"]):
-    parts.append(f'<circle cx="{PAD + i*16}" cy="{TITLEBAR_H/2}" r="5" fill="{dot}"/>')
-parts.append(f'<text x="{W/2}" y="{TITLEBAR_H/2 + 4}" fill="{MUTED}" font-size="12" '
-             f'text-anchor="middle">{html.escape(username)}@github: ~$ ./stats.sh</text>')
 
 # ---- stat tiles ----------------------------------------------------------
 for i, (label, value, suffix, caption, accent) in enumerate(tiles):
@@ -119,9 +109,9 @@ for i, (label, value, suffix, caption, accent) in enumerate(tiles):
     count_start = start + SLIDE_DUR * 0.6
 
     parts.append(f'<g class="t" style="animation-delay:{start:.2f}s">')
-    parts.append(f'<rect x="{x:.1f}" y="{y}" width="{TILE_W:.1f}" height="{TILE_H}" rx="10" '
-                 f'fill="{TILE}" stroke="{FRAME}"/>')
-    parts.append(f'<text x="{x+24:.1f}" y="{y+40}" fill="{MUTED}" font-size="22">$ {label}</text>')
+    parts.append(f'<rect x="{x:.1f}" y="{y}" width="{TILE_W:.1f}" height="{TILE_H}" rx="22" '
+                 'class="glass-tile"/>')
+    parts.append(f'<text x="{x+24:.1f}" y="{y+40}" fill="{MUTED}" font-size="22">{label}</text>')
 
     # count-up frames: ease-out so it decelerates into the real number
     num_y = y + 100
@@ -146,9 +136,9 @@ monthly = data["monthly"]
 chart_x, chart_w = PAD, W - PAD * 2
 chart_h = H - PAD - CHART_TOP
 parts.append(f'<g class="t" style="animation-delay:{BAR_START - 0.3:.2f}s">')
-parts.append(f'<rect x="{chart_x}" y="{CHART_TOP}" width="{chart_w}" height="{chart_h}" rx="10" '
-             f'fill="{TILE}" stroke="{FRAME}"/>')
-parts.append(f'<text x="{chart_x+24}" y="{CHART_TOP+40}" fill="{MUTED}" font-size="22">$ contributions / month</text>')
+parts.append(f'<rect x="{chart_x}" y="{CHART_TOP}" width="{chart_w}" height="{chart_h}" rx="22" '
+             'class="glass-tile"/>')
+parts.append(f'<text x="{chart_x+24}" y="{CHART_TOP+40}" fill="{MUTED}" font-size="22">Contributions / month</text>')
 parts.append('</g>')
 
 plot_top = CHART_TOP + 64

@@ -9,8 +9,6 @@
 @media(prefers-reduced-motion:reduce){.enter,.scan{animation:none!important;opacity:1;transform:none}}
 </style>
 <defs>
-<linearGradient id="surface" x1="0" y1="0" x2=".7" y2="1"><stop stop-color="#111b25"/><stop offset="1" stop-color="#0d1117"/></linearGradient>
-<radialGradient id="glow"><stop stop-color="#5fe3bb" stop-opacity=".07"/><stop offset="1" stop-color="#5fe3bb" stop-opacity="0"/></radialGradient>
 <clipPath id="bar"><rect x="36" y="676" width="768" height="20" rx="10"/></clipPath>
 <symbol id="vision" viewBox="0 0 32 32"><path d="M2 16s5-9 14-9 14 9 14 9-5 9-14 9S2 16 2 16Z"/><circle cx="16" cy="16" r="4"/></symbol>
 <symbol id="spark" viewBox="0 0 32 32"><path d="m16 3 3.5 9.5L29 16l-9.5 3.5L16 29l-3.5-9.5L3 16l9.5-3.5Z"/></symbol>
@@ -19,44 +17,70 @@
 </defs>
 <title id="title">Chi-An Chen — development profile</title>
 <desc id="description">56 owned repositories, 16 public, 40 private. Language percentages use GitHub code bytes across owned public and private repositories. Python 47.91%, HTML 26.40%, Jupyter Notebook 17.95%, JavaScript 6.34%, C++ 0.31%, Other 1.08%</desc>
-<rect x=".5" y=".5" width="839" height="879" rx="16" fill="url(#surface)" stroke="#303b47"/>
-<ellipse cx="720" cy="125" rx="300" ry="230" fill="url(#glow)"/>
-<path d="M1 44h838" stroke="#2b3542"/>
-<circle cx="24" cy="22" r="5" fill="#ff5f57"/><circle cx="42" cy="22" r="5" fill="#febc2e"/><circle cx="60" cy="22" r="5" fill="#28c840"/>
-<path d="M36 344h768M36 606h768M36 834h768" stroke="#283341"/>
-<text x="420" y="27" font-size="15" fill="#94a3b6" font-weight="400" text-anchor="middle" class="mono">~/github  /  experience.py</text>
+<style>
+svg{--ink:#243343;--muted:#526576;--base:#e9eff3;--tint:#fff;--edge:#fff;--accent:#147561;--rule:#9eafba}
+@media(prefers-color-scheme:dark){svg{--ink:#eaf3f5;--muted:#a2b6c0;--base:#101b24;--tint:#d5edf4;--edge:#d9f5ff;--accent:#7cdbbe;--rule:#6c929d}}
+.glass-ink,text[fill="#e6edf3"]{fill:var(--ink)}
+.glass-label,text[fill="#7d8590"],text[fill="#94a3b6"],text[fill="#a1adbd"],text[fill="#c1ccd9"],text[fill="#97a6b8"],text[fill="#a2b0c2"],text[fill="#b8c5d5"]{fill:var(--muted)}
+text[fill="#5fe3bb"],text[fill="#39d353"]{fill:var(--accent)}
+use[stroke="#5fe3bb"]{stroke:var(--accent)}
+.glass-rule{stroke:var(--rule);stroke-opacity:.22}
+.glass-tile{fill:url(#glass-tile);stroke:url(#glass-edge);stroke-width:1}
+</style>
+<defs>
+<linearGradient id="glass-surface" x1="0" y1="0" x2="1" y2="1"><stop stop-color="var(--tint)" stop-opacity=".14"/><stop offset=".45" stop-color="var(--tint)" stop-opacity=".025"/><stop offset="1" stop-color="var(--tint)" stop-opacity=".09"/></linearGradient>
+<linearGradient id="glass-edge" x1="0" y1="0" x2=".8" y2="1"><stop stop-color="var(--edge)" stop-opacity=".65"/><stop offset=".35" stop-color="var(--edge)" stop-opacity=".10"/><stop offset=".8" stop-color="var(--edge)" stop-opacity=".08"/><stop offset="1" stop-color="var(--edge)" stop-opacity=".35"/></linearGradient>
+<linearGradient id="glass-tile" x1="0" y1="0" x2=".4" y2="1"><stop stop-color="var(--tint)" stop-opacity=".16"/><stop offset="1" stop-color="var(--tint)" stop-opacity=".035"/></linearGradient>
+<radialGradient id="glass-teal"><stop stop-color="#62bea8" stop-opacity=".20"/><stop offset="1" stop-color="#62bea8" stop-opacity="0"/></radialGradient>
+<radialGradient id="glass-blue"><stop stop-color="#94acd8" stop-opacity=".17"/><stop offset="1" stop-color="#94acd8" stop-opacity="0"/></radialGradient>
+<clipPath id="glass-clip"><rect x="1" y="1" width="838" height="878" rx="32"/></clipPath>
+</defs>
+<g clip-path="url(#glass-clip)">
+<rect width="840" height="880" fill="var(--base)"/>
+<ellipse cx="714.0" cy="158.4" rx="546.0" ry="484.00000000000006" fill="url(#glass-teal)"/>
+<ellipse cx="33.6" cy="748.0" rx="546.0" ry="528.0" fill="url(#glass-blue)"/>
+<rect width="840" height="880" fill="url(#glass-surface)"/>
+<path d="M0 44H840" class="glass-rule"/>
+</g>
+<rect x="1" y="1" width="838" height="878" rx="32" fill="none" stroke="url(#glass-edge)" stroke-width="2"/>
+<path d="M32 3H808" fill="none" stroke="var(--edge)" stroke-opacity=".20"/>
+<circle cx="24" cy="22" r="5" fill="#ff5f57"/>
+<circle cx="42" cy="22" r="5" fill="#febc2e"/>
+<circle cx="60" cy="22" r="5" fill="#28c840"/>
+<path d="M36 344h768M36 606h768M36 834h768" class="glass-rule"/>
+<text x="420" y="28" font-size="24" fill="#94a3b6" font-weight="400" text-anchor="middle" >Experience</text>
 <g class="enter">
 <text x="36" y="88" font-size="17" fill="#5fe3bb" font-weight="600" text-anchor="start" letter-spacing="1.8">DEVELOPER / PROJECT EXPERIENCE</text>
 <text x="36" y="149" font-size="56" fill="#e6edf3" font-weight="750" text-anchor="start" >Chi-An Chen</text>
 <text x="38" y="185" font-size="23" fill="#a1adbd" font-weight="400" text-anchor="start" class="mono">@Chi-An-Chen</text>
 <text x="36" y="223" font-size="23" fill="#c1ccd9" font-weight="400" text-anchor="start" >Computer vision · Generative AI · Edge systems</text>
 </g><g class="enter stagger">
-<rect x="36" y="246" width="236" height="77" rx="10" fill="#17212c"/>
+<rect x="36" y="246" width="236" height="77" rx="22" class="glass-tile"/>
 <text x="54" y="286" font-size="40" fill="#e6edf3" font-weight="650" text-anchor="start" >56</text>
 <text x="54" y="317" font-size="15" fill="#97a6b8" font-weight="600" text-anchor="start" letter-spacing="1">REPOSITORIES</text>
-<rect x="302" y="246" width="236" height="77" rx="10" fill="#17212c"/>
+<rect x="302" y="246" width="236" height="77" rx="22" class="glass-tile"/>
 <text x="320" y="286" font-size="40" fill="#e6edf3" font-weight="650" text-anchor="start" >16</text>
 <text x="320" y="317" font-size="15" fill="#97a6b8" font-weight="600" text-anchor="start" letter-spacing="1">PUBLIC</text>
-<rect x="568" y="246" width="236" height="77" rx="10" fill="#17212c"/>
+<rect x="568" y="246" width="236" height="77" rx="22" class="glass-tile"/>
 <text x="586" y="286" font-size="40" fill="#e6edf3" font-weight="650" text-anchor="start" >40</text>
 <text x="586" y="317" font-size="15" fill="#97a6b8" font-weight="600" text-anchor="start" letter-spacing="1">PRIVATE</text>
 <text x="36" y="373" font-size="18" fill="#a2b0c2" font-weight="600" text-anchor="start" letter-spacing="1.5">PROJECT EXPERIENCE</text>
-<rect x="36" y="390" width="376" height="96" rx="10" fill="#121c27" stroke="#263444"/>
+<rect x="36" y="390" width="376" height="96" rx="22" class="glass-tile"/>
 <use href="#vision" x="52" y="406" width="25" height="25" fill="none" stroke="#5fe3bb" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
 <text x="88" y="424" font-size="24" fill="#e6edf3" font-weight="600" text-anchor="start" >Computer Vision</text>
 <text x="52" y="450" font-size="20" fill="#b8c5d5" font-weight="400" text-anchor="start" >Face ID / FacePAD</text>
 <text x="52" y="475" font-size="20" fill="#b8c5d5" font-weight="400" text-anchor="start" >Segmentation / detection</text>
-<rect x="428" y="390" width="376" height="96" rx="10" fill="#121c27" stroke="#263444"/>
+<rect x="428" y="390" width="376" height="96" rx="22" class="glass-tile"/>
 <use href="#spark" x="444" y="406" width="25" height="25" fill="none" stroke="#5fe3bb" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
 <text x="480" y="424" font-size="24" fill="#e6edf3" font-weight="600" text-anchor="start" >Generative AI</text>
 <text x="444" y="450" font-size="20" fill="#b8c5d5" font-weight="400" text-anchor="start" >VLMs / virtual try-on</text>
 <text x="444" y="475" font-size="20" fill="#b8c5d5" font-weight="400" text-anchor="start" >Model fine-tuning</text>
-<rect x="36" y="498" width="376" height="96" rx="10" fill="#121c27" stroke="#263444"/>
+<rect x="36" y="498" width="376" height="96" rx="22" class="glass-tile"/>
 <use href="#search" x="52" y="514" width="25" height="25" fill="none" stroke="#5fe3bb" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
 <text x="88" y="532" font-size="24" fill="#e6edf3" font-weight="600" text-anchor="start" >RAG &amp; Retrieval</text>
 <text x="52" y="558" font-size="20" fill="#b8c5d5" font-weight="400" text-anchor="start" >Document-grounded Q&amp;A</text>
 <text x="52" y="583" font-size="20" fill="#b8c5d5" font-weight="400" text-anchor="start" >LangChain / LangGraph</text>
-<rect x="428" y="498" width="376" height="96" rx="10" fill="#121c27" stroke="#263444"/>
+<rect x="428" y="498" width="376" height="96" rx="22" class="glass-tile"/>
 <use href="#chip" x="444" y="514" width="25" height="25" fill="none" stroke="#5fe3bb" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
 <text x="480" y="532" font-size="24" fill="#e6edf3" font-weight="600" text-anchor="start" >Edge &amp; Backend</text>
 <text x="444" y="558" font-size="20" fill="#b8c5d5" font-weight="400" text-anchor="start" >Go / Python services</text>

@@ -110,6 +110,9 @@ def collect(username):
     return aggregate(user, repos, language_maps, include_private)
 
 
+from glass_svg import surface
+
+
 def render(data):
     include_private = data.get("includes_private", data["private_count"] is not None)
     expected_count = data["public_count"] + (data["private_count"] if include_private else 0)
@@ -144,8 +147,6 @@ def render(data):
 @media(prefers-reduced-motion:reduce){.enter,.scan{animation:none!important;opacity:1;transform:none}}
 </style>
 <defs>
-<linearGradient id="surface" x1="0" y1="0" x2=".7" y2="1"><stop stop-color="#111b25"/><stop offset="1" stop-color="#0d1117"/></linearGradient>
-<radialGradient id="glow"><stop stop-color="#5fe3bb" stop-opacity=".07"/><stop offset="1" stop-color="#5fe3bb" stop-opacity="0"/></radialGradient>
 <clipPath id="bar"><rect x="36" y="676" width="768" height="20" rx="10"/></clipPath>
 <symbol id="vision" viewBox="0 0 32 32"><path d="M2 16s5-9 14-9 14 9 14 9-5 9-14 9S2 16 2 16Z"/><circle cx="16" cy="16" r="4"/></symbol>
 <symbol id="spark" viewBox="0 0 32 32"><path d="m16 3 3.5 9.5L29 16l-9.5 3.5L16 29l-3.5-9.5L3 16l9.5-3.5Z"/></symbol>
@@ -158,12 +159,9 @@ def render(data):
     description += "Language percentages use GitHub code bytes across " + ("owned public and private repositories. " if include_private else "owned public repositories only. ")
     description += ", ".join(f'{item["name"]} {item["bytes"] / total * 100:.2f}%' for item in shown) if total else "No language data."
     parts.append(f'<desc id="description">{html.escape(description)}</desc>')
-    parts.append('''<rect x=".5" y=".5" width="839" height="879" rx="16" fill="url(#surface)" stroke="#303b47"/>
-<ellipse cx="720" cy="125" rx="300" ry="230" fill="url(#glow)"/>
-<path d="M1 44h838" stroke="#2b3542"/>
-<circle cx="24" cy="22" r="5" fill="#ff5f57"/><circle cx="42" cy="22" r="5" fill="#febc2e"/><circle cx="60" cy="22" r="5" fill="#28c840"/>
-<path d="M36 344h768M36 606h768M36 834h768" stroke="#283341"/>''')
-    text(420, 27, "~/github  /  experience.py", 15, "#94a3b6", anchor="middle", extra='class="mono"')
+    parts.append(surface(840, 880))
+    parts.append('<path d="M36 344h768M36 606h768M36 834h768" class="glass-rule"/>')
+    text(420, 28, "Experience", 24, "#94a3b6", anchor="middle")
     parts.append('<g class="enter">')
     text(36, 88, "DEVELOPER / PROJECT EXPERIENCE", 17, "#5fe3bb", 600, extra='letter-spacing="1.8"')
     text(36, 149, data["display_name"], 56, weight=750)
@@ -173,13 +171,13 @@ def render(data):
     private_label = "PRIVATE" if include_private else "PRIVATE (NOT INCLUDED)"
     private_value = data["private_count"] if include_private else "—"
     for x, value, label in [(36, data["repository_count"], "REPOSITORIES"), (302, data["public_count"], "PUBLIC"), (568, private_value, private_label)]:
-        parts.append(f'<rect x="{x}" y="246" width="236" height="77" rx="10" fill="#17212c"/>')
+        parts.append(f'<rect x="{x}" y="246" width="236" height="77" rx="22" class="glass-tile"/>')
         text(x + 18, 286, value, 40, weight=650)
         text(x + 18, 317, label, 15 if include_private or x != 568 else 12, "#97a6b8", 600, extra='letter-spacing="1"')
     text(36, 373, "PROJECT EXPERIENCE", 18, "#a2b0c2", 600, extra='letter-spacing="1.5"')
     for index, (title, line1, line2, icon) in enumerate(EXPERIENCES):
         x, y = 36 + index % 2 * 392, 390 + index // 2 * 108
-        parts.append(f'<rect x="{x}" y="{y}" width="376" height="96" rx="10" fill="#121c27" stroke="#263444"/>')
+        parts.append(f'<rect x="{x}" y="{y}" width="376" height="96" rx="22" class="glass-tile"/>')
         parts.append(f'<use href="#{icon}" x="{x + 16}" y="{y + 16}" width="25" height="25" fill="none" stroke="#5fe3bb" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>')
         text(x + 52, y + 34, title, 24, weight=600)
         text(x + 16, y + 60, line1, 20, "#b8c5d5")
