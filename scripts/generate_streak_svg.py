@@ -28,6 +28,7 @@ total = data["total"]["lastYear"]
 W, H, CX, CY, RADIUS = 1680, 950, 840, 446, 360
 COLORS = ["#161b22", "#0e4429", "#006d32", "#26a641", "#39d353"]
 n = len(contribs)
+REVEAL, FADE = 2.1, 0.4
 points = []
 previous_date = None
 for i, day in enumerate(contribs):
@@ -40,7 +41,7 @@ for i, day in enumerate(contribs):
     radius = RADIUS * math.sqrt((i + 0.5) / n)
     x, y = CX + radius * math.cos(angle), CY + radius * math.sin(angle)
     points.append(
-        f'<circle class="day" cx="{x:.3f}" cy="{y:.3f}" r="10.08" fill="{COLORS[level]}">'
+        f'<circle class="day" cx="{x:.3f}" cy="{y:.3f}" r="10.08" fill="{COLORS[level]}" style="animation-delay:{i / max(n - 1, 1) * REVEAL:.4f}s">'
         f'<title>{date.isoformat()}: {day["count"]} contributions</title></circle>'
     )
 legend = ''.join(f'<circle cx="{788+i*26}" cy="898" r="8" fill="{color}"/>'
@@ -51,6 +52,11 @@ svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewB
 <title id="title">{html.escape(USER)} — GitHub contributions</title>
 <desc id="description">{total:,} contributions from {contribs[0]["date"]} to {contribs[-1]["date"]}, from this account's public GitHub contribution calendar. One point per day, oldest at center and newest at edge. Brighter green indicates a higher contribution level.</desc>
 {surface(W, H)}
+<style>
+.day {{ animation:sunflower-reveal {FADE}s ease-out both; transform-box:fill-box; transform-origin:center; }}
+@keyframes sunflower-reveal {{ from {{ opacity:.08; transform:scale(.6); }} to {{ opacity:1; transform:scale(1); }} }}
+@media(prefers-reduced-motion:reduce) {{ .day {{ animation:none; opacity:1; transform:none; }} }}
+</style>
 <text class="glass-label" x="840" y="28" text-anchor="middle" font-size="26">Contributions</text>
 {''.join(points)}
 <text class="glass-label" font-size="24" x="840" y="854" text-anchor="middle">Past at center · Recent at edge</text>

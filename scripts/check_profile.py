@@ -78,6 +78,13 @@ for cell, day in zip(cells, contrib["days"]):
     assert cell.find("s:title", NS).text == f'{day["date"]}: {day["count"]} contributions'
 assert all(a < b for a, b in zip(radii, radii[1:])), "Time must grow outward."
 assert radii[-1] < 360
+# Reveal follows chronological order, finishes once, and supports reduced motion.
+delays = [float(c.get("style").split(":")[1].removesuffix("s")) for c in cells]
+assert delays[0] == 0 and delays[-1] == 2.1
+assert all(a < b for a, b in zip(delays, delays[1:]))
+animation_css = " ".join(s.text or "" for s in graph.findall("s:style", NS))
+assert "sunflower-reveal 0.4s ease-out both" in animation_css and "infinite" not in animation_css
+assert "prefers-reduced-motion:reduce" in animation_css and "animation:none; opacity:1; transform:none" in animation_css
 assert [t.text for t in graph.findall("s:text", NS)] == [
     "Contributions", "Past at center · Recent at edge", "Less", "More"]
 assert [c.attrib["fill"] for c in graph.findall("s:g[@id='legend']/s:circle", NS)] == palette

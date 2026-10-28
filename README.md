@@ -5,7 +5,7 @@
 
 <h3><code>Chi-An-Chen @ github ~ $./contributions.sh</code></h3>
 
-<img src="https://raw.githubusercontent.com/Chi-An-Chen/Chi-An-Chen/main/contrib-heatmap.svg?v=glass-v1" width="97%" alt="Chi-An Chen's sunflower GitHub contribution graph — auto-refreshed daily" />
+<img src="https://raw.githubusercontent.com/Chi-An-Chen/Chi-An-Chen/main/contrib-heatmap.svg?v=glass-reveal-v1" width="97%" alt="Chi-An Chen's sunflower GitHub contribution graph — auto-refreshed daily" />
 
 <br>
 <br>
