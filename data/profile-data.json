@@ -1,7 +1,7 @@
 {
   "username": "Chi-An-Chen",
   "display_name": "Chi-An Chen",
-  "generated_at": "2026-10-28T22:12:25+00:00",
+  "generated_at": "2026-10-29T08:58:36+00:00",
   "repository_count": 56,
   "public_count": 16,
   "private_count": 40,
@@ -9,11 +9,11 @@
   "archived_count": 0,
   "repositories_with_code": 52,
   "includes_private": true,
-  "total_bytes": 222377950,
+  "total_bytes": 222480313,
   "languages": [
     {
       "name": "Python",
-      "bytes": 104419931,
+      "bytes": 104544795,
       "repositories": 50
     },
     {
@@ -23,7 +23,7 @@
     },
     {
       "name": "Jupyter Notebook",
-      "bytes": 39111424,
+      "bytes": 39088923,
       "repositories": 14
     },
     {
