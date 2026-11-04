@@ -1,7 +1,7 @@
 {
   "username": "Chi-An-Chen",
   "display_name": "Chi-An Chen",
-  "generated_at": "2026-11-03T22:55:32+00:00",
+  "generated_at": "2026-11-04T06:36:25+00:00",
   "repository_count": 56,
   "public_count": 16,
   "private_count": 40,
@@ -9,16 +9,16 @@
   "archived_count": 0,
   "repositories_with_code": 52,
   "includes_private": true,
-  "total_bytes": 225883921,
+  "total_bytes": 226793052,
   "languages": [
     {
       "name": "Python",
-      "bytes": 106005075,
+      "bytes": 106536042,
       "repositories": 50
     },
     {
       "name": "HTML",
-      "bytes": 57547249,
+      "bytes": 57665720,
       "repositories": 11
     },
     {
@@ -28,7 +28,7 @@
     },
     {
       "name": "JavaScript",
-      "bytes": 15360267,
+      "bytes": 15475500,
       "repositories": 6
     },
     {
@@ -42,14 +42,14 @@
       "repositories": 5
     },
     {
+      "name": "CSS",
+      "bytes": 583807,
+      "repositories": 6
+    },
+    {
       "name": "Rich Text Format",
       "bytes": 441608,
       "repositories": 1
-    },
-    {
-      "name": "CSS",
-      "bytes": 439347,
-      "repositories": 6
     },
     {
       "name": "BibTeX Style",
