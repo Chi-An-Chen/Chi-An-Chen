@@ -1,7 +1,7 @@
 {
   "username": "Chi-An-Chen",
   "display_name": "Chi-An Chen",
-  "generated_at": "2026-11-06T06:41:58+00:00",
+  "generated_at": "2026-11-06T22:44:34+00:00",
   "repository_count": 57,
   "public_count": 16,
   "private_count": 41,
@@ -9,16 +9,16 @@
   "archived_count": 0,
   "repositories_with_code": 53,
   "includes_private": true,
-  "total_bytes": 255146562,
+  "total_bytes": 255175101,
   "languages": [
     {
       "name": "Python",
-      "bytes": 108634351,
+      "bytes": 108648758,
       "repositories": 51
     },
     {
       "name": "HTML",
-      "bytes": 83224251,
+      "bytes": 83238383,
       "repositories": 12
     },
     {
