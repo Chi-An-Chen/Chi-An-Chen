@@ -58,6 +58,7 @@ svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewB
 @media(prefers-reduced-motion:reduce) {{ .day {{ animation:none; opacity:1; transform:none; }} }}
 </style>
 <text class="glass-label" x="840" y="28" text-anchor="middle" font-size="26">Contributions</text>
+<circle cx="{CX}" cy="{CY}" r="{RADIUS + 26}" class="glass-tile"/>
 {''.join(points)}
 <text class="glass-label" font-size="24" x="840" y="854" text-anchor="middle">Past at center · Recent at edge</text>
 <text class="glass-label" font-size="24" x="762" y="906" text-anchor="end">Less</text>
