@@ -1,25 +1,25 @@
 {
   "username": "Chi-An-Chen",
   "display_name": "Chi-An Chen",
-  "generated_at": "2026-11-05T23:16:50+00:00",
-  "repository_count": 56,
+  "generated_at": "2026-11-06T06:41:58+00:00",
+  "repository_count": 57,
   "public_count": 16,
-  "private_count": 40,
+  "private_count": 41,
   "fork_count": 0,
   "archived_count": 0,
-  "repositories_with_code": 52,
+  "repositories_with_code": 53,
   "includes_private": true,
-  "total_bytes": 253950655,
+  "total_bytes": 255146562,
   "languages": [
     {
       "name": "Python",
-      "bytes": 107759401,
-      "repositories": 50
+      "bytes": 108634351,
+      "repositories": 51
     },
     {
       "name": "HTML",
-      "bytes": 83036647,
-      "repositories": 11
+      "bytes": 83224251,
+      "repositories": 12
     },
     {
       "name": "Jupyter Notebook",
@@ -28,8 +28,8 @@
     },
     {
       "name": "JavaScript",
-      "bytes": 15803983,
-      "repositories": 6
+      "bytes": 15926148,
+      "repositories": 7
     },
     {
       "name": "TeX",
@@ -38,8 +38,8 @@
     },
     {
       "name": "CSS",
-      "bytes": 818641,
-      "repositories": 6
+      "bytes": 829368,
+      "repositories": 7
     },
     {
       "name": "C++",
@@ -73,8 +73,8 @@
     },
     {
       "name": "Shell",
-      "bytes": 155487,
-      "repositories": 20
+      "bytes": 155948,
+      "repositories": 21
     },
     {
       "name": "Swift",
