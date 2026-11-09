@@ -98,11 +98,11 @@ text[fill="#f6ad55"],.b[fill="#39d353"]{fill:#52370a}}
 <text x="36" y="663" font-size="20" fill="#a2b0c2" font-weight="400" text-anchor="start" >Code share · public + private</text>
 <rect x="36" y="676" width="768" height="20" rx="10" fill="#283341"/>
 <g clip-path="url(#bar)"><g class="scan">
-<rect x="36.0000" y="676" width="334.5605" height="20" fill="#80a2bf"/>
-<rect x="370.5605" y="676" width="253.6860" height="20" fill="#c0987c"/>
-<rect x="624.2466" y="676" width="118.9394" height="20" fill="#acbda5"/>
-<rect x="743.1860" y="676" width="49.0280" height="20" fill="#c5b981"/>
-<rect x="792.2140" y="676" width="2.7210" height="20" fill="#a499b4"/>
+<rect x="36.0000" y="676" width="334.5623" height="20" fill="#80a2bf"/>
+<rect x="370.5623" y="676" width="253.6850" height="20" fill="#c0987c"/>
+<rect x="624.2473" y="676" width="118.9389" height="20" fill="#acbda5"/>
+<rect x="743.1862" y="676" width="49.0278" height="20" fill="#c5b981"/>
+<rect x="792.2141" y="676" width="2.7210" height="20" fill="#a499b4"/>
 <rect x="794.9350" y="676" width="9.0650" height="20" fill="#7c8798"/>
 </g></g>
 <circle cx="43" cy="724" r="7" fill="#80a2bf"/>
@@ -125,5 +125,5 @@ text[fill="#f6ad55"],.b[fill="#39d353"]{fill:#52370a}}
 <text x="794" y="809" font-size="23" fill="#a2b0c2" font-weight="400" text-anchor="end" >1.18%</text>
 </g>
 <text x="36" y="859" font-size="17" fill="#a2b0c2" font-weight="400" text-anchor="start" >GitHub code bytes · 54/58 repos with code</text>
-<text x="804" y="859" font-size="17" fill="#a2b0c2" font-weight="400" text-anchor="end" >2026-11-09 16:19 UTC+8</text>
+<text x="804" y="859" font-size="17" fill="#a2b0c2" font-weight="400" text-anchor="end" >2026-11-09 16:23 UTC+8</text>
 </svg>
