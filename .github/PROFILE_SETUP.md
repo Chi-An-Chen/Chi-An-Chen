@@ -30,7 +30,7 @@
 - 只在本人的 `main` 執行；沒有 `pull_request`／`pull_request_target` 觸發。
 - 只用 GitHub 官方 checkout、setup-python Actions，固定完整 commit SHA；提交使用 Git，不用第三方自動提交 Action。
 - `LANGUAGES_TOKEN` 只在語言統計步驟作為環境變數傳入；腳本只將它放在送往 GitHub API 的 Authorization header，不輸出或保存它。
-- 提交前執行驗證：確認帳號、統計、SVG 與聚合 JSON 欄位，並檢查常見 GitHub token 格式；若發現疑似 key，僅回報檔名，不將 key 印進公開 log。只加入五個明確指定的資料／SVG 檔案。
+- 提交前執行驗證：確認帳號、統計、SVG 與聚合 JSON 欄位，並檢查常見 GitHub token 格式；若發現疑似 key，僅回報檔名，不將 key 印進公開 log。只加入六個明確指定的資料／SVG 檔案。
 - `.gitignore` 排除常見本機 secret 與快取檔。這不是完整的 secret scanner；上傳前仍需確認 staged files，避免將 key 寫進允許上傳的檔案。
 - 不能保證任何 workflow 永遠不洩漏。能修改此 repo workflow 的人也可能利用 secret，因此只給可信任的人 write access；若 token 曾出現在公開內容，立即 revoke 並建立新 token。
 
@@ -59,7 +59,7 @@ GH_TOKEN="$(gh auth token)" python3 scripts/render_profile_svg.py --snapshot dat
 
 ## 貢獻圖呈現
 
-每日工作流程使用 `scripts/generate_streak_svg.py` 產生無字天際線圖。每欄一週，週日到週六由上而下；每月第一天所在的週在底部有細刻度。零貢獻只畫短橫線，活動日依實際筆數的平方根調整太陽高度，並以 OKLCH 在銅杏和淡金之間依筆數插色，並以暖金標示期間內所有並列最高日。日期、數量與期間總量保存在 SVG 的 title / desc。進場日出只播放一次；減少動態效果時直接顯示資料。`render_heatmap_svg.py` 是未被工作流程呼叫的舊工具。
+每日工作流程使用 `scripts/generate_streak_svg.py` 產生無字天際線圖。桌面顯示全年一排，螢幕寬度 600px 以下使用上下兩排週曆。每欄一週，週日到週六由上而下；每月第一天所在的週在底部有細刻度。零貢獻只畫短橫線，活動日依實際筆數的平方根調整太陽高度，並以 OKLCH 在銅杏和淡金之間依筆數插色，並以暖金標示期間內所有並列最高日。日期、數量與期間總量保存在 SVG 的 title / desc。進場日出只播放一次；減少動態效果時直接顯示資料。`render_heatmap_svg.py` 是未被工作流程呼叫的舊工具。
 
 三張圖的深淺色配色在 `scripts/glass_svg.py` 以 OKLCH 定義，輸出為相容的 sRGB 色碼。天際線使用暮藍與日光配色，淺色模式改用霧藍底與琥珀色。太陽使用平面色，資料卡只有外框保留一道低對比方向光；內層面板改用霧面色階。設計參考 [garden-skills](https://github.com/ConardLi/garden-skills/tree/main/skills/web-design-engineer)。
 

@@ -41,7 +41,7 @@ jobs:
         run: python scripts/fetch_contributions.py
 
       - name: Render skyline contribution calendar SVG
-        run: python scripts/generate_streak_svg.py "$GH_PROFILE_USER" contrib-heatmap.svg
+        run: python scripts/generate_streak_svg.py "$GH_PROFILE_USER" contrib-heatmap.svg contrib-heatmap-mobile.svg
 
       - name: Render streak / numbers card
         run: python scripts/render_stats_svg.py
@@ -58,7 +58,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -- data/contributions.json data/profile-data.json contrib-heatmap.svg stats.svg avi-ascii.svg
+          git add -- data/contributions.json data/profile-data.json contrib-heatmap.svg contrib-heatmap-mobile.svg stats.svg avi-ascii.svg
           if git diff --cached --quiet; then
             echo "No profile data changed."
             exit 0

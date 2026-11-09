@@ -22,7 +22,7 @@ TOKEN_PATTERN = re.compile(r"\b(?:github_pat_[A-Za-z0-9_]{20,}|gh[pousr]_[A-Za-z
 # Report the filename only; never print a suspected credential into public Action logs.
 assert TOKEN_PATTERN.search("github_pat_" + "x" * 40)
 assert TOKEN_PATTERN.search("ghp_" + "x" * 36)
-publish_files = [ROOT / name for name in ("README.md", ".gitignore", "avi-ascii.svg", "stats.svg", "contrib-heatmap.svg")]
+publish_files = [ROOT / name for name in ("README.md", ".gitignore", "avi-ascii.svg", "stats.svg", "contrib-heatmap.svg", "contrib-heatmap-mobile.svg")]
 publish_files += list((ROOT / "data").glob("*.json")) + list((ROOT / "scripts").glob("*.py"))
 publish_files += [p for p in (ROOT / ".github").rglob("*") if p.is_file()]
 for path in publish_files:
@@ -52,13 +52,14 @@ readme = (ROOT / "README.md").read_text()
 assert "./contributions.sh" in readme and "./links.sh" not in readme
 
 graph = ET.parse(ROOT / "contrib-heatmap.svg").getroot()
+mobile = ET.parse(ROOT / "contrib-heatmap-mobile.svg").getroot()
 stats = ET.parse(ROOT / "stats.svg").getroot()
 card = ET.parse(ROOT / "avi-ascii.svg").getroot()
-for svg in (graph, stats):
+for svg in (graph, mobile, stats):
     assert USER.lower() in " ".join(svg.itertext()).lower()
     assert f'{contrib["total_contributions"]:,}' in " ".join(svg.itertext())
 assert (ROOT / "avi-ascii.svg").read_text() == profile.render(aggregate)
-for svg in (graph, stats, card):
+for svg in (graph, mobile, stats, card):
     assert "prefers-color-scheme:light" in " ".join(s.text or "" for s in svg.findall("s:style", NS))
     assert not svg.findall(".//s:script", NS)
     assert not svg.findall(".//s:foreignObject", NS)
@@ -66,17 +67,20 @@ for svg in (graph, stats, card):
     assert all(ref in ids for ref in re.findall(r"url\(#([^)]*)\)", ET.tostring(svg, encoding="unicode")))
 assert 'width="97%"' in readme and readme.count('width="48%"') == 2
 assert card.attrib["viewBox"] == stats.attrib["viewBox"] == "0 0 840 880"
-def verify_calendar(graph, days):
+def verify_calendar(graph, days, compact=False):
     cells = [g for g in graph.findall("s:g", NS) if "day" in g.get("class", "").split()]
     assert len(cells) == len(days)
     first = date.fromisoformat(days[0]["date"])
     sunday = first - timedelta(days=(first.weekday() + 1) % 7)
     peak = max(day["count"] for day in days)
+    weeks = (date.fromisoformat(days[-1]["date"]) - sunday).days // 7 + 1
+    band_width = (weeks + 1) // 2 if compact else weeks
     heights = {}
     width, height = map(int, graph.get("viewBox").split()[2:])
     for cell, day in zip(cells, days):
         week, weekday = divmod((date.fromisoformat(day["date"]) - sunday).days, 7)
-        x, y = 15 + 18*week, 15 + 18*weekday
+        band, column = divmod(week, band_width)
+        x, y = 15 + 18*column, 17 + 26*weekday + 198*band
         assert 7 <= x <= width-7 and 7 <= y <= height-7
         assert cell.get("transform") == f"translate({x} {y})"
         assert cell.find("s:title", NS).text == f'{day["date"]}: {day["count"]} contributions'
@@ -91,6 +95,7 @@ def verify_calendar(graph, days):
 
 
 verify_calendar(graph, contrib["days"])
+verify_calendar(mobile, contrib["days"], compact=True)
 animation_css = " ".join(s.text or "" for s in graph.findall("s:style", NS))
 assert "prefers-reduced-motion:no-preference" in animation_css
 assert "@keyframes sunrise" in animation_css and "infinite" not in animation_css
