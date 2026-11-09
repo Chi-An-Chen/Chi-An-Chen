@@ -17,70 +17,27 @@
 </defs>
 <title id="title">Chi-An Chen — development profile</title>
 <desc id="description">57 owned repositories, 16 public, 41 private. Language percentages use GitHub code bytes across owned public and private repositories. Python 43.34%, HTML 33.20%, Jupyter Notebook 15.59%, JavaScript 6.35%, CSS 0.33%, Other 1.19%</desc>
-<style>
-svg{--ink:#183b44;--muted:#48656d;--base:#d8e7e9;--tint:#fff;--edge:#fff;--accent:#087e65;--rule:#658e98;--shadow:#28525d;--aqua:#71d6c4;--blue:#7eafce;--warm:#f4e9cf;--empty:#a9bdc0;--low:#499987;--surface-top:.54;--tile-top:.62;--tile-mid:.24;--tile-end:.42}
-@media(prefers-color-scheme:dark){svg{--ink:#edf9fa;--muted:#cfdee3;--base:#102c35;--tint:#bce1e7;--edge:#e3fdff;--accent:#80ebc7;--rule:#9ac8d0;--shadow:#00171f;--aqua:#246d67;--blue:#355c7f;--warm:#53716f;--empty:#34535b;--low:#3a8f76;--surface-top:.20;--tile-top:.23;--tile-mid:.10;--tile-end:.20}}
-.glass-ink,text[fill="#e6edf3"]{fill:var(--ink)}
-.glass-label,text[fill="#7d8590"],text[fill="#94a3b6"],text[fill="#a1adbd"],text[fill="#c1ccd9"],text[fill="#97a6b8"],text[fill="#a2b0c2"],text[fill="#b8c5d5"],tspan[fill="#a2b0c2"]{fill:var(--muted)}
-text[fill="#5fe3bb"],text[fill="#39d353"],text[fill="#f6ad55"]{fill:var(--accent)}
-use[stroke="#5fe3bb"]{stroke:var(--accent)}
-.glass-rule{stroke:var(--rule);stroke-opacity:.2}
-.glass-tile{fill:url(#glass-tile);stroke:url(#glass-edge);stroke-width:1.5;filter:url(#glass-depth)}
-.day,#legend circle{stroke:var(--edge);stroke-opacity:.42;stroke-width:.8}
-.day[fill="#161b22"],#legend circle[fill="#161b22"]{fill:url(#glass-day-0)}
-.day[fill="#0e4429"],#legend circle[fill="#0e4429"]{fill:url(#glass-day-1)}
-.day[fill="#006d32"],#legend circle[fill="#006d32"]{fill:url(#glass-day-2)}
-.day[fill="#26a641"],#legend circle[fill="#26a641"]{fill:url(#glass-day-3)}
-.day[fill="#39d353"],#legend circle[fill="#39d353"]{fill:url(#glass-day-4)}
-.b{fill:url(#glass-bar);stroke:var(--edge);stroke-opacity:.35;stroke-width:1}
-.b[fill="#39d353"]{fill:url(#glass-bar-peak)}
+<style>.plate{fill:#10191c}
+.glass-tile{fill:#1a2325}
+.glass-rule,.plate-edge{stroke:#405151}
+text[fill="#e6edf3"]{fill:#e6ede8}
+text[fill="#7d8590"],text[fill="#94a3b6"],text[fill="#a1adbd"],text[fill="#c1ccd9"],text[fill="#97a6b8"],text[fill="#a2b0c2"],text[fill="#b8c5d5"],tspan[fill="#a2b0c2"]{fill:#a9b8b3}
+text[fill="#5fe3bb"],text[fill="#39d353"],.b{fill:#a0d5c0}
+use[stroke="#5fe3bb"]{stroke:#a0d5c0}
+text[fill="#f6ad55"],.b[fill="#39d353"]{fill:#e8c180}
+@media(prefers-color-scheme:light){.plate{fill:#eff6f2}
+.glass-tile{fill:#e4ede9}
+.glass-rule,.plate-edge{stroke:#a7b9b4}
+text[fill="#e6edf3"]{fill:#132527}
+text[fill="#7d8590"],text[fill="#94a3b6"],text[fill="#a1adbd"],text[fill="#c1ccd9"],text[fill="#97a6b8"],text[fill="#a2b0c2"],text[fill="#b8c5d5"],tspan[fill="#a2b0c2"]{fill:#3e5554}
+text[fill="#5fe3bb"],text[fill="#39d353"],.b{fill:#2c6b56}
+use[stroke="#5fe3bb"]{stroke:#2c6b56}
+text[fill="#f6ad55"],.b[fill="#39d353"]{fill:#805721}}
+.glass-rule{stroke-opacity:.55}.plate-edge{stroke-opacity:.65}
 </style>
-<defs>
-<linearGradient id="glass-surface" x1="0" y1="0" x2=".7" y2="1"><stop stop-color="var(--tint)" stop-opacity="var(--surface-top)"/><stop offset=".28" stop-color="var(--tint)" stop-opacity=".12"/><stop offset=".65" stop-color="var(--tint)" stop-opacity=".03"/><stop offset="1" stop-color="var(--tint)" stop-opacity=".25"/></linearGradient>
-<linearGradient id="glass-edge" x1="0" y1="0" x2=".8" y2="1"><stop stop-color="var(--edge)" stop-opacity=".98"/><stop offset=".24" stop-color="var(--edge)" stop-opacity=".5"/><stop offset=".48" stop-color="var(--edge)" stop-opacity=".06"/><stop offset=".76" stop-color="var(--edge)" stop-opacity=".18"/><stop offset="1" stop-color="var(--edge)" stop-opacity=".85"/></linearGradient>
-<linearGradient id="glass-tile" x1="0" y1="0" x2=".25" y2="1"><stop stop-color="var(--tint)" stop-opacity="var(--tile-top)"/><stop offset=".09" stop-color="var(--tint)" stop-opacity="var(--tile-mid)"/><stop offset=".55" stop-color="var(--tint)" stop-opacity=".10"/><stop offset=".92" stop-color="var(--tint)" stop-opacity=".18"/><stop offset="1" stop-color="var(--tint)" stop-opacity="var(--tile-end)"/></linearGradient>
-<radialGradient id="glass-aqua"><stop stop-color="var(--aqua)" stop-opacity=".9"/><stop offset="1" stop-color="var(--aqua)" stop-opacity="0"/></radialGradient>
-<radialGradient id="glass-blue"><stop stop-color="var(--blue)" stop-opacity=".8"/><stop offset="1" stop-color="var(--blue)" stop-opacity="0"/></radialGradient>
-<radialGradient id="glass-warm"><stop stop-color="var(--warm)" stop-opacity=".8"/><stop offset="1" stop-color="var(--warm)" stop-opacity="0"/></radialGradient>
-<linearGradient id="glass-ribbon" x1="0" y1="0" x2=".3" y2="1"><stop stop-color="var(--edge)" stop-opacity="0"/><stop offset=".48" stop-color="var(--edge)" stop-opacity=".04"/><stop offset=".51" stop-color="var(--edge)" stop-opacity=".28"/><stop offset=".62" stop-color="var(--edge)" stop-opacity=".03"/><stop offset="1" stop-color="var(--edge)" stop-opacity="0"/></linearGradient>
-<radialGradient id="glass-day-0" cx=".32" cy=".22" r=".85"><stop stop-color="var(--edge)" stop-opacity=".7"/><stop offset=".42" stop-color="var(--empty)"/><stop offset="1" stop-color="var(--empty)" stop-opacity=".65"/></radialGradient>
-<radialGradient id="glass-day-1" cx=".32" cy=".22" r=".85"><stop stop-color="#c3e8d7"/><stop offset=".42" stop-color="var(--low)"/><stop offset="1" stop-color="#24654f"/></radialGradient>
-<radialGradient id="glass-day-2" cx=".32" cy=".22" r=".85"><stop stop-color="#c9f5cc"/><stop offset=".42" stop-color="#35a36c"/><stop offset="1" stop-color="#197b58"/></radialGradient>
-<radialGradient id="glass-day-3" cx=".32" cy=".22" r=".85"><stop stop-color="#e0ffd4"/><stop offset=".42" stop-color="#65c57d"/><stop offset="1" stop-color="#289263"/></radialGradient>
-<radialGradient id="glass-day-4" cx=".32" cy=".22" r=".85"><stop stop-color="#f4ffda"/><stop offset=".42" stop-color="#a2e77e"/><stop offset="1" stop-color="#4cb975"/></radialGradient>
-<linearGradient id="glass-bar" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#72ceb0"/><stop offset=".45" stop-color="#2c9c83"/><stop offset="1" stop-color="#187565"/></linearGradient>
-<linearGradient id="glass-bar-peak" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#bceca2"/><stop offset=".5" stop-color="#75ca8c"/><stop offset="1" stop-color="#339b78"/></linearGradient>
-<filter id="glass-depth" x="-15%" y="-30%" width="130%" height="170%" color-interpolation-filters="sRGB">
-<feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="var(--shadow)" flood-opacity=".13" result="depth"/>
-<feGaussianBlur in="SourceAlpha" stdDeviation=".7" result="soft-alpha"/>
-<feOffset in="soft-alpha" dy="1.5" result="offset-alpha"/>
-<feComposite in="SourceAlpha" in2="offset-alpha" operator="out" result="rim"/>
-<feFlood flood-color="var(--edge)" flood-opacity=".8"/>
-<feComposite in2="rim" operator="in" result="light"/>
-<feMerge><feMergeNode in="depth"/><feMergeNode in="light"/></feMerge>
-</filter>
-<clipPath id="glass-clip"><rect x="1" y="1" width="838" height="878" rx="40"/></clipPath>
-</defs>
-<!-- shortcut: SVG images cannot sample GitHub's backdrop; use WebGL only in a standalone web version. -->
-<g clip-path="url(#glass-clip)">
-<rect width="840" height="880" fill="var(--base)"/>
-<ellipse cx="781.2" cy="237.60000000000002" rx="579.5999999999999" ry="598.4000000000001" fill="url(#glass-aqua)"/>
-<ellipse cx="67.2" cy="774.4" rx="562.8000000000001" ry="572.0" fill="url(#glass-blue)"/>
-<ellipse cx="84.0" cy="0" rx="546.0" ry="369.59999999999997" fill="url(#glass-warm)"/>
-<rect width="840" height="880" fill="url(#glass-surface)"/>
-<path d="M-168.0 633.6Q235.20000000000002 35.2 965.9999999999999 334.4L965.9999999999999 721.5999999999999Q294.0 316.8 -168.0 950.4000000000001Z" fill="url(#glass-ribbon)"/>
-<rect x="4" y="4" width="832" height="872" rx="37" fill="none" stroke="var(--shadow)" stroke-opacity=".1" stroke-width="6"/>
-<rect x="7" y="7" width="826" height="866" rx="34" fill="none" stroke="url(#glass-edge)" stroke-opacity=".55" stroke-width="1.5"/>
-<path d="M16 44H824" class="glass-rule"/>
-</g>
-<rect x="1.5" y="1.5" width="837" height="877" rx="40" fill="none" stroke="url(#glass-edge)" stroke-width="3"/>
-<path d="M3 64V40Q3 3 40 3H386.40000000000003M837 816V840Q837 877 800 877H571.2" fill="none" stroke="var(--edge)" stroke-opacity=".7" stroke-width="2" stroke-linecap="round"/>
-<rect x="305.0" y="7" width="230" height="31" rx="15.5" class="glass-tile"/>
-<g stroke="var(--edge)" stroke-opacity=".7" stroke-width="1">
-<circle cx="27" cy="23" r="5" fill="#eaa79c"/>
-<circle cx="45" cy="23" r="5" fill="#e7cb8e"/>
-<circle cx="63" cy="23" r="5" fill="#8bc9b4"/>
-</g>
+<rect x=".5" y=".5" width="839" height="879" rx="30" class="plate plate-edge"/>
+<path d="M6 19Q12 1 32 1H310.8" fill="none" stroke="white" stroke-opacity=".12"/>
+<path d="M22 44H818" class="glass-rule"/>
 <path d="M36 344h768M36 606h768M36 834h768" class="glass-rule"/>
 <text x="420" y="28" font-size="24" fill="#94a3b6" font-weight="400" text-anchor="middle" >Experience</text>
 <g class="enter">

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Offline checks: correct account, shared contribution values and key fallback."""
-import math
+from datetime import date, timedelta
 import json
 import os
 import re
@@ -59,35 +59,42 @@ for svg in (graph, stats):
     assert f'{contrib["total_contributions"]:,}' in " ".join(svg.itertext())
 assert (ROOT / "avi-ascii.svg").read_text() == profile.render(aggregate)
 for svg in (graph, stats, card):
-    assert svg.find("s:defs/s:linearGradient[@id='glass-surface']", NS) is not None
+    assert "prefers-color-scheme:light" in " ".join(s.text or "" for s in svg.findall("s:style", NS))
     assert not svg.findall(".//s:script", NS)
     assert not svg.findall(".//s:foreignObject", NS)
     ids = {element.get("id") for element in svg.iter() if element.get("id")}
     assert all(ref in ids for ref in re.findall(r"url\(#([^)]*)\)", ET.tostring(svg, encoding="unicode")))
 assert 'width="97%"' in readme and readme.count('width="48%"') == 2
 assert card.attrib["viewBox"] == stats.attrib["viewBox"] == "0 0 840 880"
-cells = graph.findall("s:circle[@class='day']", NS)
-assert len(cells) == len(contrib["days"])
-palette = ["#161b22", "#0e4429", "#006d32", "#26a641", "#39d353"]
-radii = []
-for cell, day in zip(cells, contrib["days"]):
-    x, y, r = (float(cell.attrib[key]) for key in ("cx", "cy", "r"))
-    assert r <= x <= 1680-r and r <= y <= 950-r
-    radii.append(math.hypot(x-840, y-446))
-    assert cell.attrib["fill"] == palette[day["level"]]
-    assert cell.find("s:title", NS).text == f'{day["date"]}: {day["count"]} contributions'
-assert all(a < b for a, b in zip(radii, radii[1:])), "Time must grow outward."
-assert radii[-1] < 360
-# Reveal follows chronological order, finishes once, and supports reduced motion.
-delays = [float(c.get("style").split(":")[1].removesuffix("s")) for c in cells]
-assert delays[0] == 0 and delays[-1] == 2.1
-assert all(a < b for a, b in zip(delays, delays[1:]))
+def verify_calendar(graph, days):
+    cells = [g for g in graph.findall("s:g", NS) if "day" in g.get("class", "").split()]
+    assert len(cells) == len(days)
+    first = date.fromisoformat(days[0]["date"])
+    sunday = first - timedelta(days=(first.weekday() + 1) % 7)
+    peak = max(day["count"] for day in days)
+    heights = {}
+    width, height = map(int, graph.get("viewBox").split()[2:])
+    for cell, day in zip(cells, days):
+        week, weekday = divmod((date.fromisoformat(day["date"]) - sunday).days, 7)
+        x, y = 15 + 18*week, 15 + 18*weekday
+        assert 7 <= x <= width-7 and 7 <= y <= height-7
+        assert cell.get("transform") == f"translate({x} {y})"
+        assert cell.find("s:title", NS).text == f'{day["date"]}: {day["count"]} contributions'
+        assert cell.find("s:path[@class='horizon']", NS) is not None
+        sun = cell.find("s:g/s:circle", NS)
+        assert (sun is not None) == (day["count"] > 0)
+        if sun is not None:
+            assert ("peak" in sun.get("class").split()) == (day["count"] == peak)
+            heights[day["count"]] = float(sun.get("cy"))
+    centers = [heights[count] for count in sorted(heights)]
+    assert all(a > b for a, b in zip(centers, centers[1:]))
+
+
+verify_calendar(graph, contrib["days"])
 animation_css = " ".join(s.text or "" for s in graph.findall("s:style", NS))
-assert "sunflower-reveal 0.4s ease-out both" in animation_css and "infinite" not in animation_css
-assert "prefers-reduced-motion:reduce" in animation_css and "animation:none; opacity:1; transform:none" in animation_css
-assert [t.text for t in graph.findall("s:text", NS)] == [
-    "Contributions", "Past at center · Recent at edge", "Less", "More"]
-assert [c.attrib["fill"] for c in graph.findall("s:g[@id='legend']/s:circle", NS)] == palette
+assert "prefers-reduced-motion:no-preference" in animation_css
+assert "@keyframes sunrise" in animation_css and "infinite" not in animation_css
+assert not graph.findall(".//s:text", NS)
 
 with tempfile.TemporaryDirectory() as temporary:
     tmp = Path(temporary)
@@ -103,7 +110,7 @@ with tempfile.TemporaryDirectory() as temporary:
     assert result.returncode != 0 and "different account" in result.stderr
     assert output.read_text() == "existing card"
 
-    # Short calendars still preserve each day and chronological radial order.
+    # Partial weeks retain their true weekday positions.
     (tmp / "scripts").mkdir()
     (tmp / "data").mkdir()
     shutil.copy2(ROOT / "scripts/generate_streak_svg.py", tmp / "scripts")
@@ -116,9 +123,7 @@ with tempfile.TemporaryDirectory() as temporary:
     result = subprocess.run([sys.executable, str(tmp / "scripts/generate_streak_svg.py"), USER, str(output)],
                             capture_output=True, text=True)
     assert result.returncode == 0, result.stderr
-    short = ET.parse(output).getroot().findall("s:circle[@class='day']", NS)
-    assert len(short) == 2
-    assert math.hypot(float(short[0].get("cx"))-840, float(short[0].get("cy"))-446) < math.hypot(float(short[1].get("cx"))-840, float(short[1].get("cy"))-446)
+    verify_calendar(ET.parse(output).getroot(), days)
     for invalid_days in ([], list(reversed(days)), [dict(days[0], level=-1)], [dict(days[0], level=5)]):
         (tmp / "data/contributions.json").write_text(json.dumps({
             "username": USER, "days": invalid_days, "total_contributions": 1,
@@ -145,4 +150,4 @@ with tempfile.TemporaryDirectory() as temporary:
     assert json.loads(snapshot.read_text())["username"] == "another-account"
 
 print(f"Integration check passed: {USER}, {contrib['total_contributions']:,} contributions, "
-      f"{aggregate['repository_count']} repositories; SVGs, sunflower chronology and stale-data guards agree.")
+      f"{aggregate['repository_count']} repositories; SVGs, skyline calendar and stale-data guards agree.")

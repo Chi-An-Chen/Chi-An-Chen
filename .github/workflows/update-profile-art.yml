@@ -40,7 +40,7 @@ jobs:
       - name: Scrape real contribution data (no auth needed)
         run: python scripts/fetch_contributions.py
 
-      - name: Render sunflower contribution graph SVG
+      - name: Render skyline contribution calendar SVG
         run: python scripts/generate_streak_svg.py "$GH_PROFILE_USER" contrib-heatmap.svg
 
       - name: Render streak / numbers card

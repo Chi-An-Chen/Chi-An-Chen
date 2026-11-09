@@ -1,71 +1,79 @@
 #!/usr/bin/env python3
-"""Generate a sunflower contribution SVG (oldest at center, newest at edge).
-Run fetch_contributions.py first; designed to run in a GitHub Action daily.
-Usage: python generate_streak_svg.py [username] [output.svg]
-"""
-import sys, json, os, datetime, html, math
-from glass_svg import surface
+"""Render each day of the contribution snapshot as a sunrise above its horizon."""
+from datetime import date, timedelta
+from html import escape
+import json
+from math import sqrt
+import os
+from pathlib import Path
+import sys
 
-USER = sys.argv[1] if len(sys.argv) > 1 else os.environ.get("GH_PROFILE_USER", "Chi-An-Chen")
-OUT  = sys.argv[2] if len(sys.argv) > 2 else os.path.join(os.path.dirname(__file__), "..", "contrib-heatmap.svg")
+from glass_svg import themed_css
 
-def get_data(user):
-    # Use the same account-checked snapshot as stats.svg; never fall back to another user's data.
-    snap = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "data", "contributions.json")
-    with open(snap) as f:
-        d = json.load(f)
-    if d.get("username", "").lower() != user.lower():
+ROOT = Path(__file__).resolve().parent.parent
+STEP = 18
+MARGIN = 15
+
+
+def render(snapshot, user):
+    if snapshot.get("username", "").lower() != user.lower():
         raise ValueError("Contribution snapshot belongs to a different account; run fetch_contributions.py first.")
-    if not d["days"] or not all("level" in x for x in d["days"]):
-        raise ValueError("Invalid contribution snapshot; run fetch_contributions.py first.")
-    return {"contributions": d["days"], "total": {"lastYear": d["total_contributions"]}}
+    days = snapshot["days"]
+    if not days:
+        raise ValueError("Empty contribution snapshot.")
+    first = date.fromisoformat(days[0]["date"])
+    sunday = first - timedelta(days=(first.weekday() + 1) % 7)
+    previous = None
+    for day in days:
+        current = date.fromisoformat(day["date"])
+        if previous is not None and current <= previous:
+            raise ValueError("Invalid contribution order.")
+        if type(day.get("level")) is not int or not 0 <= day["level"] <= 4:
+            raise ValueError("Invalid contribution level.")
+        if type(day.get("count")) is not int or day["count"] < 0:
+            raise ValueError("Invalid contribution count.")
+        previous = current
 
-data = get_data(USER)
-contribs = data["contributions"]
-total = data["total"]["lastYear"]
-
-# Golden-angle placement keeps chronological days evenly spread across the disk.
-W, H, CX, CY, RADIUS = 1680, 950, 840, 446, 360
-COLORS = ["#161b22", "#0e4429", "#006d32", "#26a641", "#39d353"]
-n = len(contribs)
-REVEAL, FADE = 2.1, 0.4
-points = []
-previous_date = None
-for i, day in enumerate(contribs):
-    date = datetime.date.fromisoformat(day["date"])
-    level = day["level"]
-    if (previous_date is not None and date <= previous_date) or type(level) is not int or not 0 <= level < len(COLORS):
-        raise ValueError("Invalid contribution order or level; run fetch_contributions.py first.")
-    previous_date = date
-    angle = i * math.pi * (3 - math.sqrt(5))
-    radius = RADIUS * math.sqrt((i + 0.5) / n)
-    x, y = CX + radius * math.cos(angle), CY + radius * math.sin(angle)
-    points.append(
-        f'<circle class="day" cx="{x:.3f}" cy="{y:.3f}" r="10.08" fill="{COLORS[level]}" style="animation-delay:{i / max(n - 1, 1) * REVEAL:.4f}s">'
-        f'<title>{date.isoformat()}: {day["count"]} contributions</title></circle>'
-    )
-legend = ''.join(f'<circle cx="{788+i*26}" cy="898" r="8" fill="{color}"/>'
-                 for i, color in enumerate(COLORS))
-last_checked = datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=8))).isoformat(timespec="microseconds")
-svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img" aria-labelledby="title description" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif">
-<metadata id="last-checked">Last checked: {last_checked}</metadata>
-<title id="title">{html.escape(USER)} — GitHub contributions</title>
-<desc id="description">{total:,} contributions from {contribs[0]["date"]} to {contribs[-1]["date"]}, from this account's public GitHub contribution calendar. One point per day, oldest at center and newest at edge. Brighter green indicates a higher contribution level.</desc>
-{surface(W, H)}
-<style>
-.day {{ animation:sunflower-reveal {FADE}s ease-out both; transform-box:fill-box; transform-origin:center; }}
-@keyframes sunflower-reveal {{ from {{ opacity:.08; transform:scale(.6); }} to {{ opacity:1; transform:scale(1); }} }}
-@media(prefers-reduced-motion:reduce) {{ .day {{ animation:none; opacity:1; transform:none; }} }}
+    peak = max(day["count"] for day in days)
+    cols = (previous - sunday).days // 7 + 1
+    width, height = (cols - 1) * STEP + 2*MARGIN, 6*STEP + 2*MARGIN
+    rules = [('.sky', 'fill', 'base'), ('.horizon', 'stroke', 'quiet'),
+             ('.active .horizon,.reflection', 'stroke', 'line'),
+             ('.sun', 'fill', 'sun'), ('.peak', 'fill', 'peak')]
+    parts = [f'''<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}" role="img" aria-labelledby="title description">
+<title id="title">{escape(user)} — contribution skyline</title>
+<desc id="description">{snapshot['total_contributions']:,} contributions from {first} to {previous}. Weeks run left to right, Sunday first. Higher suns mean more contributions. Gold marks the highest daily count.</desc>
+<style>{themed_css(rules)}
+.horizon,.reflection{{fill:none;stroke-linecap:round}}
+@media(prefers-reduced-motion:no-preference){{.sun{{animation:sunrise .85s cubic-bezier(.2,.65,.3,1) backwards}}}}
+@keyframes sunrise{{from{{transform:translateY(12px)}}to{{transform:translateY(0)}}}}
 </style>
-<text class="glass-label" x="840" y="28" text-anchor="middle" font-size="26">Contributions</text>
-<circle cx="{CX}" cy="{CY}" r="{RADIUS + 26}" class="glass-tile"/>
-{''.join(points)}
-<text class="glass-label" font-size="24" x="840" y="854" text-anchor="middle">Past at center · Recent at edge</text>
-<text class="glass-label" font-size="24" x="762" y="906" text-anchor="end">Less</text>
-<g id="legend">{legend}</g>
-<text class="glass-label" font-size="24" x="918" y="906">More</text>
-</svg>'''
+<defs><clipPath id="skyline"><rect x="-8" y="-10" width="16" height="13.6"/></clipPath></defs>
+<rect class="sky" width="{width}" height="{height}" rx="12"/>''']
+    for day in days:
+        offset = (date.fromisoformat(day["date"]) - sunday).days
+        week, weekday = divmod(offset, 7)
+        n = day["count"]
+        state = 'day active' if n else 'day'
+        parts.append(f'<g class="{state}" transform="translate({MARGIN+week*STEP} {MARGIN+weekday*STEP})">'
+                     f'<title>{day["date"]}: {n} contributions</title>')
+        if n:
+            fraction = sqrt(n / peak)
+            cy = 6.8 - 8.0*fraction
+            sun_class = 'sun peak' if n == peak else 'sun'
+            delay = .22 + .7 * week / max(cols - 1, 1)
+            parts.append(f'<g clip-path="url(#skyline)"><circle class="{sun_class}" cy="{cy:.3f}" r="4.8" '
+                         f'style="animation-delay:{delay:.3f}s"/></g>')
+            half = 1 + 2*fraction
+            parts.append(f'<path class="reflection" d="M{-half:.2f} 6h{2*half:.2f}" stroke-width=".72"/>')
+        parts.append('<path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>')
+    parts.append('</svg>')
+    return '\n'.join(parts) + '\n'
 
-with open(OUT, "w") as f:
-    f.write(svg)
-print(f"Wrote {OUT}: {n} days, {total:,} contributions, {len(svg)//1024} KB")
+
+if __name__ == "__main__":
+    user = sys.argv[1] if len(sys.argv) > 1 else os.environ.get("GH_PROFILE_USER", "Chi-An-Chen")
+    output = Path(sys.argv[2]) if len(sys.argv) > 2 else ROOT / "contrib-heatmap.svg"
+    snapshot = json.loads((ROOT / "data/contributions.json").read_text())
+    output.write_text(render(snapshot, user))
+    print(f"Wrote {output}: {len(snapshot['days'])} days")

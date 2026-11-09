@@ -59,9 +59,9 @@ GH_TOKEN="$(gh auth token)" python3 scripts/render_profile_svg.py --snapshot dat
 
 ## 貢獻圖呈現
 
-`contrib-heatmap.svg` 使用向日葵星盤：每日一點，以黃金角排列，時間由中心往外；顏色維持 GitHub 的 0–4 貢獻級距，以綠色玻璃珠呈現。可見文字僅保留 `Contributions`、`Past at center · Recent at edge` 和 `Less / More`。星盤圖卡寬度為 README 的 97%，對齊下方兩張各 48% 圖卡；三張圖共用 `scripts/glass_svg.py` 的深淺色材質、高光與半透明面板。星盤保留總量與日期於無障礙描述，載入時由中心向外逐點亮起，2.5 秒內完成一次後保留完整圖；`prefers-reduced-motion: reduce` 時直接顯示完整圖。每日更新仍使用 `scripts/generate_streak_svg.py`；`render_heatmap_svg.py` 是未被 workflow 呼叫的舊工具。
+每日工作流程使用 `scripts/generate_streak_svg.py` 產生無字天際線圖。每欄一週，週日到週六由上而下；零貢獻只畫水平線，活動日依實際筆數的平方根調整太陽高度，並以暖金標示期間內所有並列最高日。日期、數量與期間總量保存在 SVG 的 title / desc。進場日出只播放一次；減少動態效果時直接顯示資料。`render_heatmap_svg.py` 是未被工作流程呼叫的舊工具。
 
-設計參考：[dashersw/liquid-glass-js](https://github.com/dashersw/liquid-glass-js)。新版使用柔化青綠／冰藍色場、雙層折射亮邊、膠囊標題、帶陰影的玻璃面板與圓形星盤鏡片；深淺色分別調整玻璃透明度以維持文字對比。既有 CSS／SMIL 動畫的進場方式、延遲、時長與數值計數全部保留。此處為原創 SVG 的玻璃風格光影，不含對方程式碼或套件，也不宣稱能即時折射 GitHub 頁面背景。SVG 圖片的限制參考 [MDN SVG as an image](https://developer.mozilla.org/en-US/docs/Web/SVG/Guides/SVG_as_an_image)。
+三張圖的深淺色配色在 `scripts/glass_svg.py` 以 OKLCH 定義，輸出為相容的 sRGB 色碼。天際線使用平面色，資料卡只有外框保留一道低對比方向光；內層面板改用霧面色階。設計參考 [garden-skills](https://github.com/ConardLi/garden-skills/tree/main/skills/web-design-engineer)。
 
 ## 資料意義
 
