@@ -17,26 +17,42 @@
 </defs>
 <title id="title">Chi-An Chen — development profile</title>
 <desc id="description">57 owned repositories, 16 public, 41 private. Language percentages use GitHub code bytes across owned public and private repositories. Python 43.53%, HTML 33.10%, Jupyter Notebook 15.53%, JavaScript 6.33%, CSS 0.33%, Other 1.18%</desc>
-<style>.plate{fill:#10191c}
-.glass-tile{fill:#1a2325}
-.glass-rule,.plate-edge{stroke:#405151}
+<style>.plate{fill:#131a24}
+.glass-tile{fill:#202833}
+.glass-rule{stroke:#7c8f9d}
+.rim-tone{stop-color:#7c8f9d}
+.rim-base{stop-color:#131a24}
 text[fill="#e6edf3"]{fill:#e6ede8}
 text[fill="#7d8590"],text[fill="#94a3b6"],text[fill="#a1adbd"],text[fill="#c1ccd9"],text[fill="#97a6b8"],text[fill="#a2b0c2"],text[fill="#b8c5d5"],tspan[fill="#a2b0c2"]{fill:#a9b8b3}
-text[fill="#5fe3bb"],text[fill="#39d353"],.b{fill:#a0d5c0}
-use[stroke="#5fe3bb"]{stroke:#a0d5c0}
-text[fill="#f6ad55"],.b[fill="#39d353"]{fill:#e8c180}
-@media(prefers-color-scheme:light){.plate{fill:#eff6f2}
-.glass-tile{fill:#e4ede9}
-.glass-rule,.plate-edge{stroke:#a7b9b4}
-text[fill="#e6edf3"]{fill:#132527}
-text[fill="#7d8590"],text[fill="#94a3b6"],text[fill="#a1adbd"],text[fill="#c1ccd9"],text[fill="#97a6b8"],text[fill="#a2b0c2"],text[fill="#b8c5d5"],tspan[fill="#a2b0c2"]{fill:#3e5554}
-text[fill="#5fe3bb"],text[fill="#39d353"],.b{fill:#2c6b56}
-use[stroke="#5fe3bb"]{stroke:#2c6b56}
-text[fill="#f6ad55"],.b[fill="#39d353"]{fill:#805721}}
-.glass-rule{stroke-opacity:.55}.plate-edge{stroke-opacity:.65}
+text[fill="#5fe3bb"],text[fill="#39d353"]{fill:#f1c58b}
+.b{fill:#b2886c}
+use[stroke="#5fe3bb"]{stroke:#f1c58b}
+text[fill="#f6ad55"],.b[fill="#39d353"]{fill:#ffeaaf}
+@media(prefers-color-scheme:light){.plate{fill:#f0f5fa}
+.glass-tile{fill:#e3eaf3}
+.glass-rule{stroke:#7a8c9b}
+.rim-tone{stop-color:#7a8c9b}
+.rim-base{stop-color:#f0f5fa}
+text[fill="#e6edf3"]{fill:#18232c}
+text[fill="#7d8590"],text[fill="#94a3b6"],text[fill="#a1adbd"],text[fill="#c1ccd9"],text[fill="#97a6b8"],text[fill="#a2b0c2"],text[fill="#b8c5d5"],tspan[fill="#a2b0c2"]{fill:#43525e}
+text[fill="#5fe3bb"],text[fill="#39d353"]{fill:#6c471f}
+.b{fill:#926749}
+use[stroke="#5fe3bb"]{stroke:#6c471f}
+text[fill="#f6ad55"],.b[fill="#39d353"]{fill:#52370a}}
+.glass-rule{stroke-opacity:.55}
 </style>
-<rect x=".5" y=".5" width="839" height="879" rx="30" class="plate plate-edge"/>
-<path d="M6 19Q12 1 32 1H310.8" fill="none" stroke="white" stroke-opacity=".12"/>
+<defs>
+<linearGradient id="rim" x2="95%" y2="75%">
+<stop stop-color="#cfdae1" stop-opacity=".44"/><stop offset=".29" class="rim-tone" stop-opacity=".31"/>
+<stop offset=".65" class="rim-base" stop-opacity=".16"/><stop offset="1" class="rim-tone" stop-opacity=".27"/>
+</linearGradient>
+<linearGradient id="wash" x2="95%" y2="75%">
+<stop class="rim-tone" stop-opacity=".105"/><stop offset=".3" class="rim-tone" stop-opacity=".025"/>
+<stop offset=".72" class="rim-base" stop-opacity="0"/>
+</linearGradient>
+</defs>
+<rect x="1" y="1" width="838" height="878" rx="30" class="plate" stroke="url(#rim)" stroke-width="1.7"/>
+<rect x="1" y="1" width="838" height="878" rx="30" fill="url(#wash)"/>
 <path d="M22 44H818" class="glass-rule"/>
 <path d="M36 344h768M36 606h768M36 834h768" class="glass-rule"/>
 <text x="420" y="28" font-size="24" fill="#94a3b6" font-weight="400" text-anchor="middle" >Experience</text>
@@ -82,26 +98,26 @@ text[fill="#f6ad55"],.b[fill="#39d353"]{fill:#805721}}
 <text x="36" y="663" font-size="20" fill="#a2b0c2" font-weight="400" text-anchor="start" >Code share · public + private</text>
 <rect x="36" y="676" width="768" height="20" rx="10" fill="#283341"/>
 <g clip-path="url(#bar)"><g class="scan">
-<rect x="36.0000" y="676" width="334.2742" height="20" fill="#58a6ff"/>
-<rect x="370.2742" y="676" width="254.2442" height="20" fill="#f77655"/>
-<rect x="624.5185" y="676" width="119.2674" height="20" fill="#f6ad55"/>
-<rect x="743.7859" y="676" width="48.5936" height="20" fill="#f1e05a"/>
-<rect x="792.3795" y="676" width="2.5306" height="20" fill="#ab7df8"/>
+<rect x="36.0000" y="676" width="334.2742" height="20" fill="#80a2bf"/>
+<rect x="370.2742" y="676" width="254.2442" height="20" fill="#c0987c"/>
+<rect x="624.5185" y="676" width="119.2674" height="20" fill="#acbda5"/>
+<rect x="743.7859" y="676" width="48.5936" height="20" fill="#c5b981"/>
+<rect x="792.3795" y="676" width="2.5306" height="20" fill="#a499b4"/>
 <rect x="794.9100" y="676" width="9.0900" height="20" fill="#7c8798"/>
 </g></g>
-<circle cx="43" cy="724" r="7" fill="#58a6ff"/>
+<circle cx="43" cy="724" r="7" fill="#80a2bf"/>
 <text x="60" y="731" font-size="23" fill="#e6edf3" font-weight="550" text-anchor="start" >Python</text>
 <text x="402" y="731" font-size="23" fill="#a2b0c2" font-weight="400" text-anchor="end" >43.53%</text>
-<circle cx="435" cy="724" r="7" fill="#f77655"/>
+<circle cx="435" cy="724" r="7" fill="#c0987c"/>
 <text x="452" y="731" font-size="23" fill="#e6edf3" font-weight="550" text-anchor="start" >HTML</text>
 <text x="794" y="731" font-size="23" fill="#a2b0c2" font-weight="400" text-anchor="end" >33.10%</text>
-<circle cx="43" cy="763" r="7" fill="#f6ad55"/>
+<circle cx="43" cy="763" r="7" fill="#acbda5"/>
 <text x="60" y="770" font-size="23" fill="#e6edf3" font-weight="550" text-anchor="start" >Jupyter Notebook</text>
 <text x="402" y="770" font-size="23" fill="#a2b0c2" font-weight="400" text-anchor="end" >15.53%</text>
-<circle cx="435" cy="763" r="7" fill="#f1e05a"/>
+<circle cx="435" cy="763" r="7" fill="#c5b981"/>
 <text x="452" y="770" font-size="23" fill="#e6edf3" font-weight="550" text-anchor="start" >JavaScript</text>
 <text x="794" y="770" font-size="23" fill="#a2b0c2" font-weight="400" text-anchor="end" >6.33%</text>
-<circle cx="43" cy="802" r="7" fill="#ab7df8"/>
+<circle cx="43" cy="802" r="7" fill="#a499b4"/>
 <text x="60" y="809" font-size="23" fill="#e6edf3" font-weight="550" text-anchor="start" >CSS</text>
 <text x="402" y="809" font-size="23" fill="#a2b0c2" font-weight="400" text-anchor="end" >0.33%</text>
 <circle cx="435" cy="802" r="7" fill="#7c8798"/>

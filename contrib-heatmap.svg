@@ -1,16 +1,68 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="966" height="138" viewBox="0 0 966 138" role="img" aria-labelledby="title description">
 <title id="title">Chi-An-Chen — contribution skyline</title>
-<desc id="description">1,756 contributions from 2025-11-09 to 2026-11-09. Weeks run left to right, Sunday first. Higher suns mean more contributions. Gold marks the highest daily count.</desc>
-<style>.sky{fill:#10191c}
-.horizon{stroke:#51615f}
-.active .horizon,.reflection{stroke:#779b90}
-.sun{fill:#a0d5c0}
-.peak{fill:#e8c180}
-@media(prefers-color-scheme:light){.sky{fill:#eff6f2}
-.horizon{stroke:#839792}
-.active .horizon,.reflection{stroke:#43695f}
-.sun{fill:#2c6b56}
-.peak{fill:#805721}}
+<desc id="description">1,756 contributions from 2025-11-09 to 2026-11-09. Weeks run left to right, Sunday first. Higher suns mean more contributions. Sun shading also follows the count. Gold marks peak days. Bottom ticks mark the first week of each month.</desc>
+<style>.sky{fill:#131a24}
+.horizon{stroke:#3d4953}
+.active .horizon,.reflection,.month{stroke:#607180}
+.sun{fill:#f1c58b}
+.peak{fill:#ffeaaf}
+.sun-1{fill:#b98f70}
+.sun-2{fill:#bd9171}
+.sun-3{fill:#bf9472}
+.sun-4{fill:#c19673}
+.sun-5{fill:#c39774}
+.sun-6{fill:#c59975}
+.sun-7{fill:#c69a76}
+.sun-8{fill:#c89c76}
+.sun-9{fill:#c99d77}
+.sun-10{fill:#cb9e78}
+.sun-11{fill:#cc9f78}
+.sun-12{fill:#cda079}
+.sun-13{fill:#cea279}
+.sun-14{fill:#cfa37a}
+.sun-15{fill:#d0a47a}
+.sun-16{fill:#d1a57b}
+.sun-17{fill:#d2a57b}
+.sun-19{fill:#d4a77c}
+.sun-20{fill:#d5a87d}
+.sun-21{fill:#d6a97d}
+.sun-24{fill:#d8ac7e}
+.sun-25{fill:#d9ac7f}
+.sun-26{fill:#daad7f}
+.sun-31{fill:#deb181}
+.sun-32{fill:#dfb281}
+.sun-48{fill:#e9bc86}
+@media(prefers-color-scheme:light){.sky{fill:#f0f5fa}
+.horizon{stroke:#7d8b97}
+.active .horizon,.reflection,.month{stroke:#516372}
+.sun{fill:#6c471f}
+.peak{fill:#52370a}
+.sun-1{fill:#8d6345}
+.sun-2{fill:#8b6142}
+.sun-3{fill:#8a6041}
+.sun-4{fill:#895f40}
+.sun-5{fill:#885e3e}
+.sun-6{fill:#875d3d}
+.sun-7{fill:#865c3c}
+.sun-8{fill:#855c3b}
+.sun-9{fill:#845b3a}
+.sun-10{fill:#835a3a}
+.sun-11{fill:#825a39}
+.sun-12{fill:#825938}
+.sun-13{fill:#815837}
+.sun-14{fill:#805837}
+.sun-15{fill:#805736}
+.sun-16{fill:#7f5735}
+.sun-17{fill:#7f5635}
+.sun-19{fill:#7d5533}
+.sun-20{fill:#7d5533}
+.sun-21{fill:#7c5532}
+.sun-24{fill:#7b5331}
+.sun-25{fill:#7a5330}
+.sun-26{fill:#7a5230}
+.sun-31{fill:#78512d}
+.sun-32{fill:#77502d}
+.sun-48{fill:#714b26}}
 .horizon,.reflection{fill:none;stroke-linecap:round}
 @media(prefers-reduced-motion:no-preference){.sun{animation:sunrise .85s cubic-bezier(.2,.65,.3,1) backwards}}
 @keyframes sunrise{from{transform:translateY(12px)}to{transform:translateY(0)}}
@@ -18,263 +70,265 @@
 <defs><clipPath id="skyline"><rect x="-8" y="-10" width="16" height="13.6"/></clipPath></defs>
 <rect class="sky" width="966" height="138" rx="12"/>
 <g class="day" transform="translate(15 15)"><title>2025-11-09: 0 contributions</title>
-<path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
+<path class="horizon" d="M-2.5 4h5" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(15 33)"><title>2025-11-10: 6 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="4.369" r="4.8" style="animation-delay:0.220s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-6" cy="4.369" r="4.8" style="animation-delay:0.220s"/></g>
 <path class="reflection" d="M-1.61 6h3.22" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day" transform="translate(15 51)"><title>2025-11-11: 0 contributions</title>
-<path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
+<path class="horizon" d="M-2.5 4h5" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(15 69)"><title>2025-11-12: 1 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="5.808" r="4.8" style="animation-delay:0.220s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-1" cy="5.808" r="4.8" style="animation-delay:0.220s"/></g>
 <path class="reflection" d="M-1.25 6h2.50" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day" transform="translate(15 87)"><title>2025-11-13: 0 contributions</title>
-<path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
+<path class="horizon" d="M-2.5 4h5" stroke-width="1.2"/></g>
 <g class="day" transform="translate(15 105)"><title>2025-11-14: 0 contributions</title>
-<path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
+<path class="horizon" d="M-2.5 4h5" stroke-width="1.2"/></g>
 <g class="day" transform="translate(15 123)"><title>2025-11-15: 0 contributions</title>
-<path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
+<path class="horizon" d="M-2.5 4h5" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(33 15)"><title>2025-11-16: 1 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="5.808" r="4.8" style="animation-delay:0.233s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-1" cy="5.808" r="4.8" style="animation-delay:0.233s"/></g>
 <path class="reflection" d="M-1.25 6h2.50" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day" transform="translate(33 33)"><title>2025-11-17: 0 contributions</title>
-<path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
+<path class="horizon" d="M-2.5 4h5" stroke-width="1.2"/></g>
 <g class="day" transform="translate(33 51)"><title>2025-11-18: 0 contributions</title>
-<path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
+<path class="horizon" d="M-2.5 4h5" stroke-width="1.2"/></g>
 <g class="day" transform="translate(33 69)"><title>2025-11-19: 0 contributions</title>
-<path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
+<path class="horizon" d="M-2.5 4h5" stroke-width="1.2"/></g>
 <g class="day" transform="translate(33 87)"><title>2025-11-20: 0 contributions</title>
-<path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
+<path class="horizon" d="M-2.5 4h5" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(33 105)"><title>2025-11-21: 7 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="4.175" r="4.8" style="animation-delay:0.233s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-7" cy="4.175" r="4.8" style="animation-delay:0.233s"/></g>
 <path class="reflection" d="M-1.66 6h3.31" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day" transform="translate(33 123)"><title>2025-11-22: 0 contributions</title>
-<path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
+<path class="horizon" d="M-2.5 4h5" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(51 15)"><title>2025-11-23: 1 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="5.808" r="4.8" style="animation-delay:0.247s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-1" cy="5.808" r="4.8" style="animation-delay:0.247s"/></g>
 <path class="reflection" d="M-1.25 6h2.50" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(51 33)"><title>2025-11-24: 1 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="5.808" r="4.8" style="animation-delay:0.247s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-1" cy="5.808" r="4.8" style="animation-delay:0.247s"/></g>
 <path class="reflection" d="M-1.25 6h2.50" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day" transform="translate(51 51)"><title>2025-11-25: 0 contributions</title>
-<path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
+<path class="horizon" d="M-2.5 4h5" stroke-width="1.2"/></g>
 <g class="day" transform="translate(51 69)"><title>2025-11-26: 0 contributions</title>
-<path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
+<path class="horizon" d="M-2.5 4h5" stroke-width="1.2"/></g>
 <g class="day" transform="translate(51 87)"><title>2025-11-27: 0 contributions</title>
-<path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
+<path class="horizon" d="M-2.5 4h5" stroke-width="1.2"/></g>
 <g class="day" transform="translate(51 105)"><title>2025-11-28: 0 contributions</title>
-<path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
+<path class="horizon" d="M-2.5 4h5" stroke-width="1.2"/></g>
 <g class="day" transform="translate(51 123)"><title>2025-11-29: 0 contributions</title>
-<path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
+<path class="horizon" d="M-2.5 4h5" stroke-width="1.2"/></g>
 <g class="day" transform="translate(69 15)"><title>2025-11-30: 0 contributions</title>
-<path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
+<path class="horizon" d="M-2.5 4h5" stroke-width="1.2"/></g>
 <g class="day" transform="translate(69 33)"><title>2025-12-01: 0 contributions</title>
-<path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
+<path class="horizon" d="M-2.5 4h5" stroke-width="1.2"/></g>
+<path class="month" d="M69 135v-3"/>
 <g class="day active" transform="translate(69 51)"><title>2025-12-02: 1 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="5.808" r="4.8" style="animation-delay:0.260s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-1" cy="5.808" r="4.8" style="animation-delay:0.260s"/></g>
 <path class="reflection" d="M-1.25 6h2.50" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day" transform="translate(69 69)"><title>2025-12-03: 0 contributions</title>
-<path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
+<path class="horizon" d="M-2.5 4h5" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(69 87)"><title>2025-12-04: 8 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="3.993" r="4.8" style="animation-delay:0.260s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-8" cy="3.993" r="4.8" style="animation-delay:0.260s"/></g>
 <path class="reflection" d="M-1.70 6h3.40" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(69 105)"><title>2025-12-05: 3 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="5.081" r="4.8" style="animation-delay:0.260s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-3" cy="5.081" r="4.8" style="animation-delay:0.260s"/></g>
 <path class="reflection" d="M-1.43 6h2.86" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(69 123)"><title>2025-12-06: 4 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="4.815" r="4.8" style="animation-delay:0.260s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-4" cy="4.815" r="4.8" style="animation-delay:0.260s"/></g>
 <path class="reflection" d="M-1.50 6h2.99" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day" transform="translate(87 15)"><title>2025-12-07: 0 contributions</title>
-<path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
+<path class="horizon" d="M-2.5 4h5" stroke-width="1.2"/></g>
 <g class="day" transform="translate(87 33)"><title>2025-12-08: 0 contributions</title>
-<path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
+<path class="horizon" d="M-2.5 4h5" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(87 51)"><title>2025-12-09: 11 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="3.509" r="4.8" style="animation-delay:0.274s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-11" cy="3.509" r="4.8" style="animation-delay:0.274s"/></g>
 <path class="reflection" d="M-1.82 6h3.65" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(87 69)"><title>2025-12-10: 5 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="4.581" r="4.8" style="animation-delay:0.274s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-5" cy="4.581" r="4.8" style="animation-delay:0.274s"/></g>
 <path class="reflection" d="M-1.55 6h3.11" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(87 87)"><title>2025-12-11: 7 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="4.175" r="4.8" style="animation-delay:0.274s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-7" cy="4.175" r="4.8" style="animation-delay:0.274s"/></g>
 <path class="reflection" d="M-1.66 6h3.31" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(87 105)"><title>2025-12-12: 4 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="4.815" r="4.8" style="animation-delay:0.274s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-4" cy="4.815" r="4.8" style="animation-delay:0.274s"/></g>
 <path class="reflection" d="M-1.50 6h2.99" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(87 123)"><title>2025-12-13: 5 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="4.581" r="4.8" style="animation-delay:0.274s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-5" cy="4.581" r="4.8" style="animation-delay:0.274s"/></g>
 <path class="reflection" d="M-1.55 6h3.11" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day" transform="translate(105 15)"><title>2025-12-14: 0 contributions</title>
-<path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
+<path class="horizon" d="M-2.5 4h5" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(105 33)"><title>2025-12-15: 1 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="5.808" r="4.8" style="animation-delay:0.287s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-1" cy="5.808" r="4.8" style="animation-delay:0.287s"/></g>
 <path class="reflection" d="M-1.25 6h2.50" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(105 51)"><title>2025-12-16: 1 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="5.808" r="4.8" style="animation-delay:0.287s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-1" cy="5.808" r="4.8" style="animation-delay:0.287s"/></g>
 <path class="reflection" d="M-1.25 6h2.50" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(105 69)"><title>2025-12-17: 1 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="5.808" r="4.8" style="animation-delay:0.287s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-1" cy="5.808" r="4.8" style="animation-delay:0.287s"/></g>
 <path class="reflection" d="M-1.25 6h2.50" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day" transform="translate(105 87)"><title>2025-12-18: 0 contributions</title>
-<path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
+<path class="horizon" d="M-2.5 4h5" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(105 105)"><title>2025-12-19: 3 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="5.081" r="4.8" style="animation-delay:0.287s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-3" cy="5.081" r="4.8" style="animation-delay:0.287s"/></g>
 <path class="reflection" d="M-1.43 6h2.86" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day" transform="translate(105 123)"><title>2025-12-20: 0 contributions</title>
-<path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
+<path class="horizon" d="M-2.5 4h5" stroke-width="1.2"/></g>
 <g class="day" transform="translate(123 15)"><title>2025-12-21: 0 contributions</title>
-<path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
+<path class="horizon" d="M-2.5 4h5" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(123 33)"><title>2025-12-22: 2 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="5.397" r="4.8" style="animation-delay:0.301s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-2" cy="5.397" r="4.8" style="animation-delay:0.301s"/></g>
 <path class="reflection" d="M-1.35 6h2.70" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(123 51)"><title>2025-12-23: 10 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="3.662" r="4.8" style="animation-delay:0.301s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-10" cy="3.662" r="4.8" style="animation-delay:0.301s"/></g>
 <path class="reflection" d="M-1.78 6h3.57" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(123 69)"><title>2025-12-24: 8 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="3.993" r="4.8" style="animation-delay:0.301s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-8" cy="3.993" r="4.8" style="animation-delay:0.301s"/></g>
 <path class="reflection" d="M-1.70 6h3.40" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(123 87)"><title>2025-12-25: 5 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="4.581" r="4.8" style="animation-delay:0.301s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-5" cy="4.581" r="4.8" style="animation-delay:0.301s"/></g>
 <path class="reflection" d="M-1.55 6h3.11" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(123 105)"><title>2025-12-26: 3 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="5.081" r="4.8" style="animation-delay:0.301s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-3" cy="5.081" r="4.8" style="animation-delay:0.301s"/></g>
 <path class="reflection" d="M-1.43 6h2.86" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(123 123)"><title>2025-12-27: 6 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="4.369" r="4.8" style="animation-delay:0.301s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-6" cy="4.369" r="4.8" style="animation-delay:0.301s"/></g>
 <path class="reflection" d="M-1.61 6h3.22" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(141 15)"><title>2025-12-28: 8 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="3.993" r="4.8" style="animation-delay:0.314s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-8" cy="3.993" r="4.8" style="animation-delay:0.314s"/></g>
 <path class="reflection" d="M-1.70 6h3.40" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(141 33)"><title>2025-12-29: 3 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="5.081" r="4.8" style="animation-delay:0.314s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-3" cy="5.081" r="4.8" style="animation-delay:0.314s"/></g>
 <path class="reflection" d="M-1.43 6h2.86" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(141 51)"><title>2025-12-30: 9 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="3.823" r="4.8" style="animation-delay:0.314s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-9" cy="3.823" r="4.8" style="animation-delay:0.314s"/></g>
 <path class="reflection" d="M-1.74 6h3.49" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(141 69)"><title>2025-12-31: 8 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="3.993" r="4.8" style="animation-delay:0.314s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-8" cy="3.993" r="4.8" style="animation-delay:0.314s"/></g>
 <path class="reflection" d="M-1.70 6h3.40" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(141 87)"><title>2026-01-01: 2 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="5.397" r="4.8" style="animation-delay:0.314s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-2" cy="5.397" r="4.8" style="animation-delay:0.314s"/></g>
 <path class="reflection" d="M-1.35 6h2.70" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
+<path class="month" d="M141 135v-3"/>
 <g class="day active" transform="translate(141 105)"><title>2026-01-02: 10 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="3.662" r="4.8" style="animation-delay:0.314s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-10" cy="3.662" r="4.8" style="animation-delay:0.314s"/></g>
 <path class="reflection" d="M-1.78 6h3.57" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(141 123)"><title>2026-01-03: 2 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="5.397" r="4.8" style="animation-delay:0.314s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-2" cy="5.397" r="4.8" style="animation-delay:0.314s"/></g>
 <path class="reflection" d="M-1.35 6h2.70" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(159 15)"><title>2026-01-04: 2 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="5.397" r="4.8" style="animation-delay:0.328s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-2" cy="5.397" r="4.8" style="animation-delay:0.328s"/></g>
 <path class="reflection" d="M-1.35 6h2.70" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(159 33)"><title>2026-01-05: 7 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="4.175" r="4.8" style="animation-delay:0.328s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-7" cy="4.175" r="4.8" style="animation-delay:0.328s"/></g>
 <path class="reflection" d="M-1.66 6h3.31" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(159 51)"><title>2026-01-06: 6 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="4.369" r="4.8" style="animation-delay:0.328s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-6" cy="4.369" r="4.8" style="animation-delay:0.328s"/></g>
 <path class="reflection" d="M-1.61 6h3.22" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(159 69)"><title>2026-01-07: 6 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="4.369" r="4.8" style="animation-delay:0.328s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-6" cy="4.369" r="4.8" style="animation-delay:0.328s"/></g>
 <path class="reflection" d="M-1.61 6h3.22" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(159 87)"><title>2026-01-08: 5 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="4.581" r="4.8" style="animation-delay:0.328s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-5" cy="4.581" r="4.8" style="animation-delay:0.328s"/></g>
 <path class="reflection" d="M-1.55 6h3.11" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(159 105)"><title>2026-01-09: 2 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="5.397" r="4.8" style="animation-delay:0.328s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-2" cy="5.397" r="4.8" style="animation-delay:0.328s"/></g>
 <path class="reflection" d="M-1.35 6h2.70" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(159 123)"><title>2026-01-10: 2 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="5.397" r="4.8" style="animation-delay:0.328s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-2" cy="5.397" r="4.8" style="animation-delay:0.328s"/></g>
 <path class="reflection" d="M-1.35 6h2.70" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(177 15)"><title>2026-01-11: 5 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="4.581" r="4.8" style="animation-delay:0.341s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-5" cy="4.581" r="4.8" style="animation-delay:0.341s"/></g>
 <path class="reflection" d="M-1.55 6h3.11" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(177 33)"><title>2026-01-12: 4 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="4.815" r="4.8" style="animation-delay:0.341s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-4" cy="4.815" r="4.8" style="animation-delay:0.341s"/></g>
 <path class="reflection" d="M-1.50 6h2.99" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(177 51)"><title>2026-01-13: 4 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="4.815" r="4.8" style="animation-delay:0.341s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-4" cy="4.815" r="4.8" style="animation-delay:0.341s"/></g>
 <path class="reflection" d="M-1.50 6h2.99" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(177 69)"><title>2026-01-14: 2 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="5.397" r="4.8" style="animation-delay:0.341s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-2" cy="5.397" r="4.8" style="animation-delay:0.341s"/></g>
 <path class="reflection" d="M-1.35 6h2.70" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day" transform="translate(177 87)"><title>2026-01-15: 0 contributions</title>
-<path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
+<path class="horizon" d="M-2.5 4h5" stroke-width="1.2"/></g>
 <g class="day" transform="translate(177 105)"><title>2026-01-16: 0 contributions</title>
-<path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
+<path class="horizon" d="M-2.5 4h5" stroke-width="1.2"/></g>
 <g class="day" transform="translate(177 123)"><title>2026-01-17: 0 contributions</title>
-<path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
+<path class="horizon" d="M-2.5 4h5" stroke-width="1.2"/></g>
 <g class="day" transform="translate(195 15)"><title>2026-01-18: 0 contributions</title>
-<path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
+<path class="horizon" d="M-2.5 4h5" stroke-width="1.2"/></g>
 <g class="day" transform="translate(195 33)"><title>2026-01-19: 0 contributions</title>
-<path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
+<path class="horizon" d="M-2.5 4h5" stroke-width="1.2"/></g>
 <g class="day" transform="translate(195 51)"><title>2026-01-20: 0 contributions</title>
-<path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
+<path class="horizon" d="M-2.5 4h5" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(195 69)"><title>2026-01-21: 12 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="3.363" r="4.8" style="animation-delay:0.355s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-12" cy="3.363" r="4.8" style="animation-delay:0.355s"/></g>
 <path class="reflection" d="M-1.86 6h3.72" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(195 87)"><title>2026-01-22: 6 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="4.369" r="4.8" style="animation-delay:0.355s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-6" cy="4.369" r="4.8" style="animation-delay:0.355s"/></g>
 <path class="reflection" d="M-1.61 6h3.22" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(195 105)"><title>2026-01-23: 4 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="4.815" r="4.8" style="animation-delay:0.355s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-4" cy="4.815" r="4.8" style="animation-delay:0.355s"/></g>
 <path class="reflection" d="M-1.50 6h2.99" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(195 123)"><title>2026-01-24: 12 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="3.363" r="4.8" style="animation-delay:0.355s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-12" cy="3.363" r="4.8" style="animation-delay:0.355s"/></g>
 <path class="reflection" d="M-1.86 6h3.72" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(213 15)"><title>2026-01-25: 6 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="4.369" r="4.8" style="animation-delay:0.368s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-6" cy="4.369" r="4.8" style="animation-delay:0.368s"/></g>
 <path class="reflection" d="M-1.61 6h3.22" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(213 33)"><title>2026-01-26: 6 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="4.369" r="4.8" style="animation-delay:0.368s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-6" cy="4.369" r="4.8" style="animation-delay:0.368s"/></g>
 <path class="reflection" d="M-1.61 6h3.22" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(213 51)"><title>2026-01-27: 5 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="4.581" r="4.8" style="animation-delay:0.368s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-5" cy="4.581" r="4.8" style="animation-delay:0.368s"/></g>
 <path class="reflection" d="M-1.55 6h3.11" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(213 69)"><title>2026-01-28: 65 contributions</title>
@@ -282,943 +336,953 @@
 <path class="reflection" d="M-3.00 6h6.00" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(213 87)"><title>2026-01-29: 15 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="2.957" r="4.8" style="animation-delay:0.368s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-15" cy="2.957" r="4.8" style="animation-delay:0.368s"/></g>
 <path class="reflection" d="M-1.96 6h3.92" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(213 105)"><title>2026-01-30: 15 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="2.957" r="4.8" style="animation-delay:0.368s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-15" cy="2.957" r="4.8" style="animation-delay:0.368s"/></g>
 <path class="reflection" d="M-1.96 6h3.92" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(213 123)"><title>2026-01-31: 3 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="5.081" r="4.8" style="animation-delay:0.368s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-3" cy="5.081" r="4.8" style="animation-delay:0.368s"/></g>
 <path class="reflection" d="M-1.43 6h2.86" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(231 15)"><title>2026-02-01: 1 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="5.808" r="4.8" style="animation-delay:0.382s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-1" cy="5.808" r="4.8" style="animation-delay:0.382s"/></g>
 <path class="reflection" d="M-1.25 6h2.50" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
+<path class="month" d="M231 135v-3"/>
 <g class="day active" transform="translate(231 33)"><title>2026-02-02: 5 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="4.581" r="4.8" style="animation-delay:0.382s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-5" cy="4.581" r="4.8" style="animation-delay:0.382s"/></g>
 <path class="reflection" d="M-1.55 6h3.11" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(231 51)"><title>2026-02-03: 10 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="3.662" r="4.8" style="animation-delay:0.382s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-10" cy="3.662" r="4.8" style="animation-delay:0.382s"/></g>
 <path class="reflection" d="M-1.78 6h3.57" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(231 69)"><title>2026-02-04: 15 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="2.957" r="4.8" style="animation-delay:0.382s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-15" cy="2.957" r="4.8" style="animation-delay:0.382s"/></g>
 <path class="reflection" d="M-1.96 6h3.92" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(231 87)"><title>2026-02-05: 2 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="5.397" r="4.8" style="animation-delay:0.382s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-2" cy="5.397" r="4.8" style="animation-delay:0.382s"/></g>
 <path class="reflection" d="M-1.35 6h2.70" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day" transform="translate(231 105)"><title>2026-02-06: 0 contributions</title>
-<path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
+<path class="horizon" d="M-2.5 4h5" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(231 123)"><title>2026-02-07: 13 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="3.222" r="4.8" style="animation-delay:0.382s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-13" cy="3.222" r="4.8" style="animation-delay:0.382s"/></g>
 <path class="reflection" d="M-1.89 6h3.79" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(249 15)"><title>2026-02-08: 1 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="5.808" r="4.8" style="animation-delay:0.395s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-1" cy="5.808" r="4.8" style="animation-delay:0.395s"/></g>
 <path class="reflection" d="M-1.25 6h2.50" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(249 33)"><title>2026-02-09: 4 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="4.815" r="4.8" style="animation-delay:0.395s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-4" cy="4.815" r="4.8" style="animation-delay:0.395s"/></g>
 <path class="reflection" d="M-1.50 6h2.99" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(249 51)"><title>2026-02-10: 5 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="4.581" r="4.8" style="animation-delay:0.395s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-5" cy="4.581" r="4.8" style="animation-delay:0.395s"/></g>
 <path class="reflection" d="M-1.55 6h3.11" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(249 69)"><title>2026-02-11: 1 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="5.808" r="4.8" style="animation-delay:0.395s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-1" cy="5.808" r="4.8" style="animation-delay:0.395s"/></g>
 <path class="reflection" d="M-1.25 6h2.50" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(249 87)"><title>2026-02-12: 4 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="4.815" r="4.8" style="animation-delay:0.395s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-4" cy="4.815" r="4.8" style="animation-delay:0.395s"/></g>
 <path class="reflection" d="M-1.50 6h2.99" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(249 105)"><title>2026-02-13: 5 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="4.581" r="4.8" style="animation-delay:0.395s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-5" cy="4.581" r="4.8" style="animation-delay:0.395s"/></g>
 <path class="reflection" d="M-1.55 6h3.11" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(249 123)"><title>2026-02-14: 1 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="5.808" r="4.8" style="animation-delay:0.395s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-1" cy="5.808" r="4.8" style="animation-delay:0.395s"/></g>
 <path class="reflection" d="M-1.25 6h2.50" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(267 15)"><title>2026-02-15: 1 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="5.808" r="4.8" style="animation-delay:0.408s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-1" cy="5.808" r="4.8" style="animation-delay:0.408s"/></g>
 <path class="reflection" d="M-1.25 6h2.50" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(267 33)"><title>2026-02-16: 1 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="5.808" r="4.8" style="animation-delay:0.408s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-1" cy="5.808" r="4.8" style="animation-delay:0.408s"/></g>
 <path class="reflection" d="M-1.25 6h2.50" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(267 51)"><title>2026-02-17: 2 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="5.397" r="4.8" style="animation-delay:0.408s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-2" cy="5.397" r="4.8" style="animation-delay:0.408s"/></g>
 <path class="reflection" d="M-1.35 6h2.70" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day" transform="translate(267 69)"><title>2026-02-18: 0 contributions</title>
-<path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
+<path class="horizon" d="M-2.5 4h5" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(267 87)"><title>2026-02-19: 1 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="5.808" r="4.8" style="animation-delay:0.408s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-1" cy="5.808" r="4.8" style="animation-delay:0.408s"/></g>
 <path class="reflection" d="M-1.25 6h2.50" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(267 105)"><title>2026-02-20: 2 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="5.397" r="4.8" style="animation-delay:0.408s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-2" cy="5.397" r="4.8" style="animation-delay:0.408s"/></g>
 <path class="reflection" d="M-1.35 6h2.70" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(267 123)"><title>2026-02-21: 3 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="5.081" r="4.8" style="animation-delay:0.408s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-3" cy="5.081" r="4.8" style="animation-delay:0.408s"/></g>
 <path class="reflection" d="M-1.43 6h2.86" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(285 15)"><title>2026-02-22: 9 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="3.823" r="4.8" style="animation-delay:0.422s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-9" cy="3.823" r="4.8" style="animation-delay:0.422s"/></g>
 <path class="reflection" d="M-1.74 6h3.49" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(285 33)"><title>2026-02-23: 7 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="4.175" r="4.8" style="animation-delay:0.422s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-7" cy="4.175" r="4.8" style="animation-delay:0.422s"/></g>
 <path class="reflection" d="M-1.66 6h3.31" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day" transform="translate(285 51)"><title>2026-02-24: 0 contributions</title>
-<path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
+<path class="horizon" d="M-2.5 4h5" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(285 69)"><title>2026-02-25: 3 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="5.081" r="4.8" style="animation-delay:0.422s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-3" cy="5.081" r="4.8" style="animation-delay:0.422s"/></g>
 <path class="reflection" d="M-1.43 6h2.86" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(285 87)"><title>2026-02-26: 3 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="5.081" r="4.8" style="animation-delay:0.422s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-3" cy="5.081" r="4.8" style="animation-delay:0.422s"/></g>
 <path class="reflection" d="M-1.43 6h2.86" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(285 105)"><title>2026-02-27: 3 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="5.081" r="4.8" style="animation-delay:0.422s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-3" cy="5.081" r="4.8" style="animation-delay:0.422s"/></g>
 <path class="reflection" d="M-1.43 6h2.86" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(285 123)"><title>2026-02-28: 3 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="5.081" r="4.8" style="animation-delay:0.422s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-3" cy="5.081" r="4.8" style="animation-delay:0.422s"/></g>
 <path class="reflection" d="M-1.43 6h2.86" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(303 15)"><title>2026-03-01: 1 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="5.808" r="4.8" style="animation-delay:0.435s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-1" cy="5.808" r="4.8" style="animation-delay:0.435s"/></g>
 <path class="reflection" d="M-1.25 6h2.50" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
+<path class="month" d="M303 135v-3"/>
 <g class="day active" transform="translate(303 33)"><title>2026-03-02: 7 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="4.175" r="4.8" style="animation-delay:0.435s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-7" cy="4.175" r="4.8" style="animation-delay:0.435s"/></g>
 <path class="reflection" d="M-1.66 6h3.31" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(303 51)"><title>2026-03-03: 5 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="4.581" r="4.8" style="animation-delay:0.435s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-5" cy="4.581" r="4.8" style="animation-delay:0.435s"/></g>
 <path class="reflection" d="M-1.55 6h3.11" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(303 69)"><title>2026-03-04: 8 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="3.993" r="4.8" style="animation-delay:0.435s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-8" cy="3.993" r="4.8" style="animation-delay:0.435s"/></g>
 <path class="reflection" d="M-1.70 6h3.40" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day" transform="translate(303 87)"><title>2026-03-05: 0 contributions</title>
-<path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
+<path class="horizon" d="M-2.5 4h5" stroke-width="1.2"/></g>
 <g class="day" transform="translate(303 105)"><title>2026-03-06: 0 contributions</title>
-<path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
+<path class="horizon" d="M-2.5 4h5" stroke-width="1.2"/></g>
 <g class="day" transform="translate(303 123)"><title>2026-03-07: 0 contributions</title>
-<path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
+<path class="horizon" d="M-2.5 4h5" stroke-width="1.2"/></g>
 <g class="day" transform="translate(321 15)"><title>2026-03-08: 0 contributions</title>
-<path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
+<path class="horizon" d="M-2.5 4h5" stroke-width="1.2"/></g>
 <g class="day" transform="translate(321 33)"><title>2026-03-09: 0 contributions</title>
-<path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
+<path class="horizon" d="M-2.5 4h5" stroke-width="1.2"/></g>
 <g class="day" transform="translate(321 51)"><title>2026-03-10: 0 contributions</title>
-<path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
+<path class="horizon" d="M-2.5 4h5" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(321 69)"><title>2026-03-11: 2 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="5.397" r="4.8" style="animation-delay:0.449s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-2" cy="5.397" r="4.8" style="animation-delay:0.449s"/></g>
 <path class="reflection" d="M-1.35 6h2.70" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(321 87)"><title>2026-03-12: 7 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="4.175" r="4.8" style="animation-delay:0.449s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-7" cy="4.175" r="4.8" style="animation-delay:0.449s"/></g>
 <path class="reflection" d="M-1.66 6h3.31" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day" transform="translate(321 105)"><title>2026-03-13: 0 contributions</title>
-<path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
+<path class="horizon" d="M-2.5 4h5" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(321 123)"><title>2026-03-14: 1 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="5.808" r="4.8" style="animation-delay:0.449s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-1" cy="5.808" r="4.8" style="animation-delay:0.449s"/></g>
 <path class="reflection" d="M-1.25 6h2.50" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day" transform="translate(339 15)"><title>2026-03-15: 0 contributions</title>
-<path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
+<path class="horizon" d="M-2.5 4h5" stroke-width="1.2"/></g>
 <g class="day" transform="translate(339 33)"><title>2026-03-16: 0 contributions</title>
-<path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
+<path class="horizon" d="M-2.5 4h5" stroke-width="1.2"/></g>
 <g class="day" transform="translate(339 51)"><title>2026-03-17: 0 contributions</title>
-<path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
+<path class="horizon" d="M-2.5 4h5" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(339 69)"><title>2026-03-18: 6 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="4.369" r="4.8" style="animation-delay:0.462s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-6" cy="4.369" r="4.8" style="animation-delay:0.462s"/></g>
 <path class="reflection" d="M-1.61 6h3.22" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(339 87)"><title>2026-03-19: 17 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="2.709" r="4.8" style="animation-delay:0.462s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-17" cy="2.709" r="4.8" style="animation-delay:0.462s"/></g>
 <path class="reflection" d="M-2.02 6h4.05" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(339 105)"><title>2026-03-20: 15 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="2.957" r="4.8" style="animation-delay:0.462s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-15" cy="2.957" r="4.8" style="animation-delay:0.462s"/></g>
 <path class="reflection" d="M-1.96 6h3.92" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(339 123)"><title>2026-03-21: 1 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="5.808" r="4.8" style="animation-delay:0.462s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-1" cy="5.808" r="4.8" style="animation-delay:0.462s"/></g>
 <path class="reflection" d="M-1.25 6h2.50" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(357 15)"><title>2026-03-22: 9 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="3.823" r="4.8" style="animation-delay:0.476s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-9" cy="3.823" r="4.8" style="animation-delay:0.476s"/></g>
 <path class="reflection" d="M-1.74 6h3.49" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(357 33)"><title>2026-03-23: 2 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="5.397" r="4.8" style="animation-delay:0.476s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-2" cy="5.397" r="4.8" style="animation-delay:0.476s"/></g>
 <path class="reflection" d="M-1.35 6h2.70" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(357 51)"><title>2026-03-24: 1 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="5.808" r="4.8" style="animation-delay:0.476s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-1" cy="5.808" r="4.8" style="animation-delay:0.476s"/></g>
 <path class="reflection" d="M-1.25 6h2.50" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(357 69)"><title>2026-03-25: 1 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="5.808" r="4.8" style="animation-delay:0.476s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-1" cy="5.808" r="4.8" style="animation-delay:0.476s"/></g>
 <path class="reflection" d="M-1.25 6h2.50" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day" transform="translate(357 87)"><title>2026-03-26: 0 contributions</title>
-<path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
+<path class="horizon" d="M-2.5 4h5" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(357 105)"><title>2026-03-27: 1 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="5.808" r="4.8" style="animation-delay:0.476s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-1" cy="5.808" r="4.8" style="animation-delay:0.476s"/></g>
 <path class="reflection" d="M-1.25 6h2.50" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(357 123)"><title>2026-03-28: 3 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="5.081" r="4.8" style="animation-delay:0.476s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-3" cy="5.081" r="4.8" style="animation-delay:0.476s"/></g>
 <path class="reflection" d="M-1.43 6h2.86" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(375 15)"><title>2026-03-29: 3 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="5.081" r="4.8" style="animation-delay:0.489s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-3" cy="5.081" r="4.8" style="animation-delay:0.489s"/></g>
 <path class="reflection" d="M-1.43 6h2.86" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(375 33)"><title>2026-03-30: 6 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="4.369" r="4.8" style="animation-delay:0.489s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-6" cy="4.369" r="4.8" style="animation-delay:0.489s"/></g>
 <path class="reflection" d="M-1.61 6h3.22" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(375 51)"><title>2026-03-31: 3 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="5.081" r="4.8" style="animation-delay:0.489s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-3" cy="5.081" r="4.8" style="animation-delay:0.489s"/></g>
 <path class="reflection" d="M-1.43 6h2.86" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(375 69)"><title>2026-04-01: 24 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="1.939" r="4.8" style="animation-delay:0.489s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-24" cy="1.939" r="4.8" style="animation-delay:0.489s"/></g>
 <path class="reflection" d="M-2.22 6h4.43" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
+<path class="month" d="M375 135v-3"/>
 <g class="day active" transform="translate(375 87)"><title>2026-04-02: 9 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="3.823" r="4.8" style="animation-delay:0.489s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-9" cy="3.823" r="4.8" style="animation-delay:0.489s"/></g>
 <path class="reflection" d="M-1.74 6h3.49" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(375 105)"><title>2026-04-03: 31 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="1.275" r="4.8" style="animation-delay:0.489s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-31" cy="1.275" r="4.8" style="animation-delay:0.489s"/></g>
 <path class="reflection" d="M-2.38 6h4.76" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(375 123)"><title>2026-04-04: 32 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="1.187" r="4.8" style="animation-delay:0.489s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-32" cy="1.187" r="4.8" style="animation-delay:0.489s"/></g>
 <path class="reflection" d="M-2.40 6h4.81" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(393 15)"><title>2026-04-05: 11 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="3.509" r="4.8" style="animation-delay:0.503s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-11" cy="3.509" r="4.8" style="animation-delay:0.503s"/></g>
 <path class="reflection" d="M-1.82 6h3.65" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day" transform="translate(393 33)"><title>2026-04-06: 0 contributions</title>
-<path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
+<path class="horizon" d="M-2.5 4h5" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(393 51)"><title>2026-04-07: 6 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="4.369" r="4.8" style="animation-delay:0.503s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-6" cy="4.369" r="4.8" style="animation-delay:0.503s"/></g>
 <path class="reflection" d="M-1.61 6h3.22" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(393 69)"><title>2026-04-08: 1 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="5.808" r="4.8" style="animation-delay:0.503s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-1" cy="5.808" r="4.8" style="animation-delay:0.503s"/></g>
 <path class="reflection" d="M-1.25 6h2.50" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(393 87)"><title>2026-04-09: 8 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="3.993" r="4.8" style="animation-delay:0.503s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-8" cy="3.993" r="4.8" style="animation-delay:0.503s"/></g>
 <path class="reflection" d="M-1.70 6h3.40" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day" transform="translate(393 105)"><title>2026-04-10: 0 contributions</title>
-<path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
+<path class="horizon" d="M-2.5 4h5" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(393 123)"><title>2026-04-11: 16 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="2.831" r="4.8" style="animation-delay:0.503s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-16" cy="2.831" r="4.8" style="animation-delay:0.503s"/></g>
 <path class="reflection" d="M-1.99 6h3.98" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(411 15)"><title>2026-04-12: 24 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="1.939" r="4.8" style="animation-delay:0.516s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-24" cy="1.939" r="4.8" style="animation-delay:0.516s"/></g>
 <path class="reflection" d="M-2.22 6h4.43" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(411 33)"><title>2026-04-13: 48 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="-0.075" r="4.8" style="animation-delay:0.516s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-48" cy="-0.075" r="4.8" style="animation-delay:0.516s"/></g>
 <path class="reflection" d="M-2.72 6h5.44" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(411 51)"><title>2026-04-14: 25 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="1.839" r="4.8" style="animation-delay:0.516s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-25" cy="1.839" r="4.8" style="animation-delay:0.516s"/></g>
 <path class="reflection" d="M-2.24 6h4.48" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(411 69)"><title>2026-04-15: 21 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="2.253" r="4.8" style="animation-delay:0.516s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-21" cy="2.253" r="4.8" style="animation-delay:0.516s"/></g>
 <path class="reflection" d="M-2.14 6h4.27" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(411 87)"><title>2026-04-16: 19 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="2.475" r="4.8" style="animation-delay:0.516s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-19" cy="2.475" r="4.8" style="animation-delay:0.516s"/></g>
 <path class="reflection" d="M-2.08 6h4.16" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(411 105)"><title>2026-04-17: 10 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="3.662" r="4.8" style="animation-delay:0.516s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-10" cy="3.662" r="4.8" style="animation-delay:0.516s"/></g>
 <path class="reflection" d="M-1.78 6h3.57" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(411 123)"><title>2026-04-18: 12 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="3.363" r="4.8" style="animation-delay:0.516s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-12" cy="3.363" r="4.8" style="animation-delay:0.516s"/></g>
 <path class="reflection" d="M-1.86 6h3.72" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(429 15)"><title>2026-04-19: 2 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="5.397" r="4.8" style="animation-delay:0.530s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-2" cy="5.397" r="4.8" style="animation-delay:0.530s"/></g>
 <path class="reflection" d="M-1.35 6h2.70" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(429 33)"><title>2026-04-20: 3 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="5.081" r="4.8" style="animation-delay:0.530s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-3" cy="5.081" r="4.8" style="animation-delay:0.530s"/></g>
 <path class="reflection" d="M-1.43 6h2.86" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day" transform="translate(429 51)"><title>2026-04-21: 0 contributions</title>
-<path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
+<path class="horizon" d="M-2.5 4h5" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(429 69)"><title>2026-04-22: 12 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="3.363" r="4.8" style="animation-delay:0.530s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-12" cy="3.363" r="4.8" style="animation-delay:0.530s"/></g>
 <path class="reflection" d="M-1.86 6h3.72" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(429 87)"><title>2026-04-23: 17 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="2.709" r="4.8" style="animation-delay:0.530s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-17" cy="2.709" r="4.8" style="animation-delay:0.530s"/></g>
 <path class="reflection" d="M-2.02 6h4.05" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(429 105)"><title>2026-04-24: 31 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="1.275" r="4.8" style="animation-delay:0.530s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-31" cy="1.275" r="4.8" style="animation-delay:0.530s"/></g>
 <path class="reflection" d="M-2.38 6h4.76" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(429 123)"><title>2026-04-25: 10 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="3.662" r="4.8" style="animation-delay:0.530s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-10" cy="3.662" r="4.8" style="animation-delay:0.530s"/></g>
 <path class="reflection" d="M-1.78 6h3.57" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day" transform="translate(447 15)"><title>2026-04-26: 0 contributions</title>
-<path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
+<path class="horizon" d="M-2.5 4h5" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(447 33)"><title>2026-04-27: 10 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="3.662" r="4.8" style="animation-delay:0.543s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-10" cy="3.662" r="4.8" style="animation-delay:0.543s"/></g>
 <path class="reflection" d="M-1.78 6h3.57" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(447 51)"><title>2026-04-28: 8 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="3.993" r="4.8" style="animation-delay:0.543s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-8" cy="3.993" r="4.8" style="animation-delay:0.543s"/></g>
 <path class="reflection" d="M-1.70 6h3.40" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day" transform="translate(447 69)"><title>2026-04-29: 0 contributions</title>
-<path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
+<path class="horizon" d="M-2.5 4h5" stroke-width="1.2"/></g>
 <g class="day" transform="translate(447 87)"><title>2026-04-30: 0 contributions</title>
-<path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
+<path class="horizon" d="M-2.5 4h5" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(447 105)"><title>2026-05-01: 2 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="5.397" r="4.8" style="animation-delay:0.543s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-2" cy="5.397" r="4.8" style="animation-delay:0.543s"/></g>
 <path class="reflection" d="M-1.35 6h2.70" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
+<path class="month" d="M447 135v-3"/>
 <g class="day" transform="translate(447 123)"><title>2026-05-02: 0 contributions</title>
-<path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
+<path class="horizon" d="M-2.5 4h5" stroke-width="1.2"/></g>
 <g class="day" transform="translate(465 15)"><title>2026-05-03: 0 contributions</title>
-<path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
+<path class="horizon" d="M-2.5 4h5" stroke-width="1.2"/></g>
 <g class="day" transform="translate(465 33)"><title>2026-05-04: 0 contributions</title>
-<path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
+<path class="horizon" d="M-2.5 4h5" stroke-width="1.2"/></g>
 <g class="day" transform="translate(465 51)"><title>2026-05-05: 0 contributions</title>
-<path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
+<path class="horizon" d="M-2.5 4h5" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(465 69)"><title>2026-05-06: 1 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="5.808" r="4.8" style="animation-delay:0.557s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-1" cy="5.808" r="4.8" style="animation-delay:0.557s"/></g>
 <path class="reflection" d="M-1.25 6h2.50" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(465 87)"><title>2026-05-07: 8 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="3.993" r="4.8" style="animation-delay:0.557s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-8" cy="3.993" r="4.8" style="animation-delay:0.557s"/></g>
 <path class="reflection" d="M-1.70 6h3.40" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(465 105)"><title>2026-05-08: 3 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="5.081" r="4.8" style="animation-delay:0.557s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-3" cy="5.081" r="4.8" style="animation-delay:0.557s"/></g>
 <path class="reflection" d="M-1.43 6h2.86" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day" transform="translate(465 123)"><title>2026-05-09: 0 contributions</title>
-<path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
+<path class="horizon" d="M-2.5 4h5" stroke-width="1.2"/></g>
 <g class="day" transform="translate(483 15)"><title>2026-05-10: 0 contributions</title>
-<path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
+<path class="horizon" d="M-2.5 4h5" stroke-width="1.2"/></g>
 <g class="day" transform="translate(483 33)"><title>2026-05-11: 0 contributions</title>
-<path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
+<path class="horizon" d="M-2.5 4h5" stroke-width="1.2"/></g>
 <g class="day" transform="translate(483 51)"><title>2026-05-12: 0 contributions</title>
-<path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
+<path class="horizon" d="M-2.5 4h5" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(483 69)"><title>2026-05-13: 14 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="3.087" r="4.8" style="animation-delay:0.570s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-14" cy="3.087" r="4.8" style="animation-delay:0.570s"/></g>
 <path class="reflection" d="M-1.93 6h3.86" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(483 87)"><title>2026-05-14: 25 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="1.839" r="4.8" style="animation-delay:0.570s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-25" cy="1.839" r="4.8" style="animation-delay:0.570s"/></g>
 <path class="reflection" d="M-2.24 6h4.48" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(483 105)"><title>2026-05-15: 26 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="1.740" r="4.8" style="animation-delay:0.570s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-26" cy="1.740" r="4.8" style="animation-delay:0.570s"/></g>
 <path class="reflection" d="M-2.26 6h4.53" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(483 123)"><title>2026-05-16: 12 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="3.363" r="4.8" style="animation-delay:0.570s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-12" cy="3.363" r="4.8" style="animation-delay:0.570s"/></g>
 <path class="reflection" d="M-1.86 6h3.72" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day" transform="translate(501 15)"><title>2026-05-17: 0 contributions</title>
-<path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
+<path class="horizon" d="M-2.5 4h5" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(501 33)"><title>2026-05-18: 4 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="4.815" r="4.8" style="animation-delay:0.583s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-4" cy="4.815" r="4.8" style="animation-delay:0.583s"/></g>
 <path class="reflection" d="M-1.50 6h2.99" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(501 51)"><title>2026-05-19: 1 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="5.808" r="4.8" style="animation-delay:0.583s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-1" cy="5.808" r="4.8" style="animation-delay:0.583s"/></g>
 <path class="reflection" d="M-1.25 6h2.50" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(501 69)"><title>2026-05-20: 14 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="3.087" r="4.8" style="animation-delay:0.583s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-14" cy="3.087" r="4.8" style="animation-delay:0.583s"/></g>
 <path class="reflection" d="M-1.93 6h3.86" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(501 87)"><title>2026-05-21: 6 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="4.369" r="4.8" style="animation-delay:0.583s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-6" cy="4.369" r="4.8" style="animation-delay:0.583s"/></g>
 <path class="reflection" d="M-1.61 6h3.22" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(501 105)"><title>2026-05-22: 4 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="4.815" r="4.8" style="animation-delay:0.583s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-4" cy="4.815" r="4.8" style="animation-delay:0.583s"/></g>
 <path class="reflection" d="M-1.50 6h2.99" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(501 123)"><title>2026-05-23: 1 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="5.808" r="4.8" style="animation-delay:0.583s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-1" cy="5.808" r="4.8" style="animation-delay:0.583s"/></g>
 <path class="reflection" d="M-1.25 6h2.50" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(519 15)"><title>2026-05-24: 1 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="5.808" r="4.8" style="animation-delay:0.597s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-1" cy="5.808" r="4.8" style="animation-delay:0.597s"/></g>
 <path class="reflection" d="M-1.25 6h2.50" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(519 33)"><title>2026-05-25: 2 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="5.397" r="4.8" style="animation-delay:0.597s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-2" cy="5.397" r="4.8" style="animation-delay:0.597s"/></g>
 <path class="reflection" d="M-1.35 6h2.70" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(519 51)"><title>2026-05-26: 7 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="4.175" r="4.8" style="animation-delay:0.597s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-7" cy="4.175" r="4.8" style="animation-delay:0.597s"/></g>
 <path class="reflection" d="M-1.66 6h3.31" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(519 69)"><title>2026-05-27: 9 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="3.823" r="4.8" style="animation-delay:0.597s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-9" cy="3.823" r="4.8" style="animation-delay:0.597s"/></g>
 <path class="reflection" d="M-1.74 6h3.49" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(519 87)"><title>2026-05-28: 9 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="3.823" r="4.8" style="animation-delay:0.597s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-9" cy="3.823" r="4.8" style="animation-delay:0.597s"/></g>
 <path class="reflection" d="M-1.74 6h3.49" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(519 105)"><title>2026-05-29: 16 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="2.831" r="4.8" style="animation-delay:0.597s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-16" cy="2.831" r="4.8" style="animation-delay:0.597s"/></g>
 <path class="reflection" d="M-1.99 6h3.98" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(519 123)"><title>2026-05-30: 2 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="5.397" r="4.8" style="animation-delay:0.597s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-2" cy="5.397" r="4.8" style="animation-delay:0.597s"/></g>
 <path class="reflection" d="M-1.35 6h2.70" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(537 15)"><title>2026-05-31: 11 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="3.509" r="4.8" style="animation-delay:0.610s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-11" cy="3.509" r="4.8" style="animation-delay:0.610s"/></g>
 <path class="reflection" d="M-1.82 6h3.65" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(537 33)"><title>2026-06-01: 9 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="3.823" r="4.8" style="animation-delay:0.610s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-9" cy="3.823" r="4.8" style="animation-delay:0.610s"/></g>
 <path class="reflection" d="M-1.74 6h3.49" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
+<path class="month" d="M537 135v-3"/>
 <g class="day active" transform="translate(537 51)"><title>2026-06-02: 6 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="4.369" r="4.8" style="animation-delay:0.610s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-6" cy="4.369" r="4.8" style="animation-delay:0.610s"/></g>
 <path class="reflection" d="M-1.61 6h3.22" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(537 69)"><title>2026-06-03: 8 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="3.993" r="4.8" style="animation-delay:0.610s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-8" cy="3.993" r="4.8" style="animation-delay:0.610s"/></g>
 <path class="reflection" d="M-1.70 6h3.40" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(537 87)"><title>2026-06-04: 15 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="2.957" r="4.8" style="animation-delay:0.610s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-15" cy="2.957" r="4.8" style="animation-delay:0.610s"/></g>
 <path class="reflection" d="M-1.96 6h3.92" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(537 105)"><title>2026-06-05: 6 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="4.369" r="4.8" style="animation-delay:0.610s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-6" cy="4.369" r="4.8" style="animation-delay:0.610s"/></g>
 <path class="reflection" d="M-1.61 6h3.22" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(537 123)"><title>2026-06-06: 12 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="3.363" r="4.8" style="animation-delay:0.610s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-12" cy="3.363" r="4.8" style="animation-delay:0.610s"/></g>
 <path class="reflection" d="M-1.86 6h3.72" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(555 15)"><title>2026-06-07: 10 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="3.662" r="4.8" style="animation-delay:0.624s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-10" cy="3.662" r="4.8" style="animation-delay:0.624s"/></g>
 <path class="reflection" d="M-1.78 6h3.57" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(555 33)"><title>2026-06-08: 3 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="5.081" r="4.8" style="animation-delay:0.624s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-3" cy="5.081" r="4.8" style="animation-delay:0.624s"/></g>
 <path class="reflection" d="M-1.43 6h2.86" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(555 51)"><title>2026-06-09: 4 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="4.815" r="4.8" style="animation-delay:0.624s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-4" cy="4.815" r="4.8" style="animation-delay:0.624s"/></g>
 <path class="reflection" d="M-1.50 6h2.99" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(555 69)"><title>2026-06-10: 9 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="3.823" r="4.8" style="animation-delay:0.624s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-9" cy="3.823" r="4.8" style="animation-delay:0.624s"/></g>
 <path class="reflection" d="M-1.74 6h3.49" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(555 87)"><title>2026-06-11: 14 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="3.087" r="4.8" style="animation-delay:0.624s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-14" cy="3.087" r="4.8" style="animation-delay:0.624s"/></g>
 <path class="reflection" d="M-1.93 6h3.86" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(555 105)"><title>2026-06-12: 8 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="3.993" r="4.8" style="animation-delay:0.624s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-8" cy="3.993" r="4.8" style="animation-delay:0.624s"/></g>
 <path class="reflection" d="M-1.70 6h3.40" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(555 123)"><title>2026-06-13: 2 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="5.397" r="4.8" style="animation-delay:0.624s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-2" cy="5.397" r="4.8" style="animation-delay:0.624s"/></g>
 <path class="reflection" d="M-1.35 6h2.70" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(573 15)"><title>2026-06-14: 5 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="4.581" r="4.8" style="animation-delay:0.637s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-5" cy="4.581" r="4.8" style="animation-delay:0.637s"/></g>
 <path class="reflection" d="M-1.55 6h3.11" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(573 33)"><title>2026-06-15: 1 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="5.808" r="4.8" style="animation-delay:0.637s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-1" cy="5.808" r="4.8" style="animation-delay:0.637s"/></g>
 <path class="reflection" d="M-1.25 6h2.50" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day" transform="translate(573 51)"><title>2026-06-16: 0 contributions</title>
-<path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
+<path class="horizon" d="M-2.5 4h5" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(573 69)"><title>2026-06-17: 12 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="3.363" r="4.8" style="animation-delay:0.637s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-12" cy="3.363" r="4.8" style="animation-delay:0.637s"/></g>
 <path class="reflection" d="M-1.86 6h3.72" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(573 87)"><title>2026-06-18: 6 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="4.369" r="4.8" style="animation-delay:0.637s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-6" cy="4.369" r="4.8" style="animation-delay:0.637s"/></g>
 <path class="reflection" d="M-1.61 6h3.22" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(573 105)"><title>2026-06-19: 7 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="4.175" r="4.8" style="animation-delay:0.637s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-7" cy="4.175" r="4.8" style="animation-delay:0.637s"/></g>
 <path class="reflection" d="M-1.66 6h3.31" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day" transform="translate(573 123)"><title>2026-06-20: 0 contributions</title>
-<path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
+<path class="horizon" d="M-2.5 4h5" stroke-width="1.2"/></g>
 <g class="day" transform="translate(591 15)"><title>2026-06-21: 0 contributions</title>
-<path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
+<path class="horizon" d="M-2.5 4h5" stroke-width="1.2"/></g>
 <g class="day" transform="translate(591 33)"><title>2026-06-22: 0 contributions</title>
-<path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
+<path class="horizon" d="M-2.5 4h5" stroke-width="1.2"/></g>
 <g class="day" transform="translate(591 51)"><title>2026-06-23: 0 contributions</title>
-<path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
+<path class="horizon" d="M-2.5 4h5" stroke-width="1.2"/></g>
 <g class="day" transform="translate(591 69)"><title>2026-06-24: 0 contributions</title>
-<path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
+<path class="horizon" d="M-2.5 4h5" stroke-width="1.2"/></g>
 <g class="day" transform="translate(591 87)"><title>2026-06-25: 0 contributions</title>
-<path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
+<path class="horizon" d="M-2.5 4h5" stroke-width="1.2"/></g>
 <g class="day" transform="translate(591 105)"><title>2026-06-26: 0 contributions</title>
-<path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
+<path class="horizon" d="M-2.5 4h5" stroke-width="1.2"/></g>
 <g class="day" transform="translate(591 123)"><title>2026-06-27: 0 contributions</title>
-<path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
+<path class="horizon" d="M-2.5 4h5" stroke-width="1.2"/></g>
 <g class="day" transform="translate(609 15)"><title>2026-06-28: 0 contributions</title>
-<path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
+<path class="horizon" d="M-2.5 4h5" stroke-width="1.2"/></g>
 <g class="day" transform="translate(609 33)"><title>2026-06-29: 0 contributions</title>
-<path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
+<path class="horizon" d="M-2.5 4h5" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(609 51)"><title>2026-06-30: 5 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="4.581" r="4.8" style="animation-delay:0.664s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-5" cy="4.581" r="4.8" style="animation-delay:0.664s"/></g>
 <path class="reflection" d="M-1.55 6h3.11" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day" transform="translate(609 69)"><title>2026-07-01: 0 contributions</title>
-<path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
+<path class="horizon" d="M-2.5 4h5" stroke-width="1.2"/></g>
+<path class="month" d="M609 135v-3"/>
 <g class="day" transform="translate(609 87)"><title>2026-07-02: 0 contributions</title>
-<path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
+<path class="horizon" d="M-2.5 4h5" stroke-width="1.2"/></g>
 <g class="day" transform="translate(609 105)"><title>2026-07-03: 0 contributions</title>
-<path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
+<path class="horizon" d="M-2.5 4h5" stroke-width="1.2"/></g>
 <g class="day" transform="translate(609 123)"><title>2026-07-04: 0 contributions</title>
-<path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
+<path class="horizon" d="M-2.5 4h5" stroke-width="1.2"/></g>
 <g class="day" transform="translate(627 15)"><title>2026-07-05: 0 contributions</title>
-<path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
+<path class="horizon" d="M-2.5 4h5" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(627 33)"><title>2026-07-06: 6 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="4.369" r="4.8" style="animation-delay:0.678s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-6" cy="4.369" r="4.8" style="animation-delay:0.678s"/></g>
 <path class="reflection" d="M-1.61 6h3.22" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day" transform="translate(627 51)"><title>2026-07-07: 0 contributions</title>
-<path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
+<path class="horizon" d="M-2.5 4h5" stroke-width="1.2"/></g>
 <g class="day" transform="translate(627 69)"><title>2026-07-08: 0 contributions</title>
-<path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
+<path class="horizon" d="M-2.5 4h5" stroke-width="1.2"/></g>
 <g class="day" transform="translate(627 87)"><title>2026-07-09: 0 contributions</title>
-<path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
+<path class="horizon" d="M-2.5 4h5" stroke-width="1.2"/></g>
 <g class="day" transform="translate(627 105)"><title>2026-07-10: 0 contributions</title>
-<path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
+<path class="horizon" d="M-2.5 4h5" stroke-width="1.2"/></g>
 <g class="day" transform="translate(627 123)"><title>2026-07-11: 0 contributions</title>
-<path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
+<path class="horizon" d="M-2.5 4h5" stroke-width="1.2"/></g>
 <g class="day" transform="translate(645 15)"><title>2026-07-12: 0 contributions</title>
-<path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
+<path class="horizon" d="M-2.5 4h5" stroke-width="1.2"/></g>
 <g class="day" transform="translate(645 33)"><title>2026-07-13: 0 contributions</title>
-<path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
+<path class="horizon" d="M-2.5 4h5" stroke-width="1.2"/></g>
 <g class="day" transform="translate(645 51)"><title>2026-07-14: 0 contributions</title>
-<path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
+<path class="horizon" d="M-2.5 4h5" stroke-width="1.2"/></g>
 <g class="day" transform="translate(645 69)"><title>2026-07-15: 0 contributions</title>
-<path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
+<path class="horizon" d="M-2.5 4h5" stroke-width="1.2"/></g>
 <g class="day" transform="translate(645 87)"><title>2026-07-16: 0 contributions</title>
-<path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
+<path class="horizon" d="M-2.5 4h5" stroke-width="1.2"/></g>
 <g class="day" transform="translate(645 105)"><title>2026-07-17: 0 contributions</title>
-<path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
+<path class="horizon" d="M-2.5 4h5" stroke-width="1.2"/></g>
 <g class="day" transform="translate(645 123)"><title>2026-07-18: 0 contributions</title>
-<path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
+<path class="horizon" d="M-2.5 4h5" stroke-width="1.2"/></g>
 <g class="day" transform="translate(663 15)"><title>2026-07-19: 0 contributions</title>
-<path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
+<path class="horizon" d="M-2.5 4h5" stroke-width="1.2"/></g>
 <g class="day" transform="translate(663 33)"><title>2026-07-20: 0 contributions</title>
-<path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
+<path class="horizon" d="M-2.5 4h5" stroke-width="1.2"/></g>
 <g class="day" transform="translate(663 51)"><title>2026-07-21: 0 contributions</title>
-<path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
+<path class="horizon" d="M-2.5 4h5" stroke-width="1.2"/></g>
 <g class="day" transform="translate(663 69)"><title>2026-07-22: 0 contributions</title>
-<path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
+<path class="horizon" d="M-2.5 4h5" stroke-width="1.2"/></g>
 <g class="day" transform="translate(663 87)"><title>2026-07-23: 0 contributions</title>
-<path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
+<path class="horizon" d="M-2.5 4h5" stroke-width="1.2"/></g>
 <g class="day" transform="translate(663 105)"><title>2026-07-24: 0 contributions</title>
-<path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
+<path class="horizon" d="M-2.5 4h5" stroke-width="1.2"/></g>
 <g class="day" transform="translate(663 123)"><title>2026-07-25: 0 contributions</title>
-<path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
+<path class="horizon" d="M-2.5 4h5" stroke-width="1.2"/></g>
 <g class="day" transform="translate(681 15)"><title>2026-07-26: 0 contributions</title>
-<path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
+<path class="horizon" d="M-2.5 4h5" stroke-width="1.2"/></g>
 <g class="day" transform="translate(681 33)"><title>2026-07-27: 0 contributions</title>
-<path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
+<path class="horizon" d="M-2.5 4h5" stroke-width="1.2"/></g>
 <g class="day" transform="translate(681 51)"><title>2026-07-28: 0 contributions</title>
-<path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
+<path class="horizon" d="M-2.5 4h5" stroke-width="1.2"/></g>
 <g class="day" transform="translate(681 69)"><title>2026-07-29: 0 contributions</title>
-<path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
+<path class="horizon" d="M-2.5 4h5" stroke-width="1.2"/></g>
 <g class="day" transform="translate(681 87)"><title>2026-07-30: 0 contributions</title>
-<path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
+<path class="horizon" d="M-2.5 4h5" stroke-width="1.2"/></g>
 <g class="day" transform="translate(681 105)"><title>2026-07-31: 0 contributions</title>
-<path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
+<path class="horizon" d="M-2.5 4h5" stroke-width="1.2"/></g>
 <g class="day" transform="translate(681 123)"><title>2026-08-01: 0 contributions</title>
-<path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
+<path class="horizon" d="M-2.5 4h5" stroke-width="1.2"/></g>
+<path class="month" d="M681 135v-3"/>
 <g class="day" transform="translate(699 15)"><title>2026-08-02: 0 contributions</title>
-<path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
+<path class="horizon" d="M-2.5 4h5" stroke-width="1.2"/></g>
 <g class="day" transform="translate(699 33)"><title>2026-08-03: 0 contributions</title>
-<path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
+<path class="horizon" d="M-2.5 4h5" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(699 51)"><title>2026-08-04: 3 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="5.081" r="4.8" style="animation-delay:0.732s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-3" cy="5.081" r="4.8" style="animation-delay:0.732s"/></g>
 <path class="reflection" d="M-1.43 6h2.86" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day" transform="translate(699 69)"><title>2026-08-05: 0 contributions</title>
-<path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
+<path class="horizon" d="M-2.5 4h5" stroke-width="1.2"/></g>
 <g class="day" transform="translate(699 87)"><title>2026-08-06: 0 contributions</title>
-<path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
+<path class="horizon" d="M-2.5 4h5" stroke-width="1.2"/></g>
 <g class="day" transform="translate(699 105)"><title>2026-08-07: 0 contributions</title>
-<path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
+<path class="horizon" d="M-2.5 4h5" stroke-width="1.2"/></g>
 <g class="day" transform="translate(699 123)"><title>2026-08-08: 0 contributions</title>
-<path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
+<path class="horizon" d="M-2.5 4h5" stroke-width="1.2"/></g>
 <g class="day" transform="translate(717 15)"><title>2026-08-09: 0 contributions</title>
-<path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
+<path class="horizon" d="M-2.5 4h5" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(717 33)"><title>2026-08-10: 4 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="4.815" r="4.8" style="animation-delay:0.745s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-4" cy="4.815" r="4.8" style="animation-delay:0.745s"/></g>
 <path class="reflection" d="M-1.50 6h2.99" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day" transform="translate(717 51)"><title>2026-08-11: 0 contributions</title>
-<path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
+<path class="horizon" d="M-2.5 4h5" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(717 69)"><title>2026-08-12: 5 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="4.581" r="4.8" style="animation-delay:0.745s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-5" cy="4.581" r="4.8" style="animation-delay:0.745s"/></g>
 <path class="reflection" d="M-1.55 6h3.11" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(717 87)"><title>2026-08-13: 4 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="4.815" r="4.8" style="animation-delay:0.745s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-4" cy="4.815" r="4.8" style="animation-delay:0.745s"/></g>
 <path class="reflection" d="M-1.50 6h2.99" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(717 105)"><title>2026-08-14: 3 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="5.081" r="4.8" style="animation-delay:0.745s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-3" cy="5.081" r="4.8" style="animation-delay:0.745s"/></g>
 <path class="reflection" d="M-1.43 6h2.86" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(717 123)"><title>2026-08-15: 2 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="5.397" r="4.8" style="animation-delay:0.745s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-2" cy="5.397" r="4.8" style="animation-delay:0.745s"/></g>
 <path class="reflection" d="M-1.35 6h2.70" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day" transform="translate(735 15)"><title>2026-08-16: 0 contributions</title>
-<path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
+<path class="horizon" d="M-2.5 4h5" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(735 33)"><title>2026-08-17: 4 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="4.815" r="4.8" style="animation-delay:0.758s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-4" cy="4.815" r="4.8" style="animation-delay:0.758s"/></g>
 <path class="reflection" d="M-1.50 6h2.99" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(735 51)"><title>2026-08-18: 4 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="4.815" r="4.8" style="animation-delay:0.758s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-4" cy="4.815" r="4.8" style="animation-delay:0.758s"/></g>
 <path class="reflection" d="M-1.50 6h2.99" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(735 69)"><title>2026-08-19: 8 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="3.993" r="4.8" style="animation-delay:0.758s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-8" cy="3.993" r="4.8" style="animation-delay:0.758s"/></g>
 <path class="reflection" d="M-1.70 6h3.40" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(735 87)"><title>2026-08-20: 2 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="5.397" r="4.8" style="animation-delay:0.758s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-2" cy="5.397" r="4.8" style="animation-delay:0.758s"/></g>
 <path class="reflection" d="M-1.35 6h2.70" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(735 105)"><title>2026-08-21: 3 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="5.081" r="4.8" style="animation-delay:0.758s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-3" cy="5.081" r="4.8" style="animation-delay:0.758s"/></g>
 <path class="reflection" d="M-1.43 6h2.86" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day" transform="translate(735 123)"><title>2026-08-22: 0 contributions</title>
-<path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
+<path class="horizon" d="M-2.5 4h5" stroke-width="1.2"/></g>
 <g class="day" transform="translate(753 15)"><title>2026-08-23: 0 contributions</title>
-<path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
+<path class="horizon" d="M-2.5 4h5" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(753 33)"><title>2026-08-24: 2 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="5.397" r="4.8" style="animation-delay:0.772s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-2" cy="5.397" r="4.8" style="animation-delay:0.772s"/></g>
 <path class="reflection" d="M-1.35 6h2.70" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(753 51)"><title>2026-08-25: 4 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="4.815" r="4.8" style="animation-delay:0.772s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-4" cy="4.815" r="4.8" style="animation-delay:0.772s"/></g>
 <path class="reflection" d="M-1.50 6h2.99" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(753 69)"><title>2026-08-26: 1 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="5.808" r="4.8" style="animation-delay:0.772s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-1" cy="5.808" r="4.8" style="animation-delay:0.772s"/></g>
 <path class="reflection" d="M-1.25 6h2.50" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(753 87)"><title>2026-08-27: 1 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="5.808" r="4.8" style="animation-delay:0.772s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-1" cy="5.808" r="4.8" style="animation-delay:0.772s"/></g>
 <path class="reflection" d="M-1.25 6h2.50" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(753 105)"><title>2026-08-28: 5 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="4.581" r="4.8" style="animation-delay:0.772s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-5" cy="4.581" r="4.8" style="animation-delay:0.772s"/></g>
 <path class="reflection" d="M-1.55 6h3.11" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day" transform="translate(753 123)"><title>2026-08-29: 0 contributions</title>
-<path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
+<path class="horizon" d="M-2.5 4h5" stroke-width="1.2"/></g>
 <g class="day" transform="translate(771 15)"><title>2026-08-30: 0 contributions</title>
-<path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
+<path class="horizon" d="M-2.5 4h5" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(771 33)"><title>2026-08-31: 3 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="5.081" r="4.8" style="animation-delay:0.785s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-3" cy="5.081" r="4.8" style="animation-delay:0.785s"/></g>
 <path class="reflection" d="M-1.43 6h2.86" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(771 51)"><title>2026-09-01: 2 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="5.397" r="4.8" style="animation-delay:0.785s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-2" cy="5.397" r="4.8" style="animation-delay:0.785s"/></g>
 <path class="reflection" d="M-1.35 6h2.70" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
+<path class="month" d="M771 135v-3"/>
 <g class="day active" transform="translate(771 69)"><title>2026-09-02: 4 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="4.815" r="4.8" style="animation-delay:0.785s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-4" cy="4.815" r="4.8" style="animation-delay:0.785s"/></g>
 <path class="reflection" d="M-1.50 6h2.99" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(771 87)"><title>2026-09-03: 14 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="3.087" r="4.8" style="animation-delay:0.785s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-14" cy="3.087" r="4.8" style="animation-delay:0.785s"/></g>
 <path class="reflection" d="M-1.93 6h3.86" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(771 105)"><title>2026-09-04: 4 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="4.815" r="4.8" style="animation-delay:0.785s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-4" cy="4.815" r="4.8" style="animation-delay:0.785s"/></g>
 <path class="reflection" d="M-1.50 6h2.99" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day" transform="translate(771 123)"><title>2026-09-05: 0 contributions</title>
-<path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
+<path class="horizon" d="M-2.5 4h5" stroke-width="1.2"/></g>
 <g class="day" transform="translate(789 15)"><title>2026-09-06: 0 contributions</title>
-<path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
+<path class="horizon" d="M-2.5 4h5" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(789 33)"><title>2026-09-07: 9 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="3.823" r="4.8" style="animation-delay:0.799s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-9" cy="3.823" r="4.8" style="animation-delay:0.799s"/></g>
 <path class="reflection" d="M-1.74 6h3.49" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(789 51)"><title>2026-09-08: 15 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="2.957" r="4.8" style="animation-delay:0.799s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-15" cy="2.957" r="4.8" style="animation-delay:0.799s"/></g>
 <path class="reflection" d="M-1.96 6h3.92" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(789 69)"><title>2026-09-09: 8 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="3.993" r="4.8" style="animation-delay:0.799s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-8" cy="3.993" r="4.8" style="animation-delay:0.799s"/></g>
 <path class="reflection" d="M-1.70 6h3.40" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(789 87)"><title>2026-09-10: 10 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="3.662" r="4.8" style="animation-delay:0.799s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-10" cy="3.662" r="4.8" style="animation-delay:0.799s"/></g>
 <path class="reflection" d="M-1.78 6h3.57" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(789 105)"><title>2026-09-11: 1 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="5.808" r="4.8" style="animation-delay:0.799s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-1" cy="5.808" r="4.8" style="animation-delay:0.799s"/></g>
 <path class="reflection" d="M-1.25 6h2.50" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(789 123)"><title>2026-09-12: 3 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="5.081" r="4.8" style="animation-delay:0.799s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-3" cy="5.081" r="4.8" style="animation-delay:0.799s"/></g>
 <path class="reflection" d="M-1.43 6h2.86" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(807 15)"><title>2026-09-13: 3 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="5.081" r="4.8" style="animation-delay:0.812s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-3" cy="5.081" r="4.8" style="animation-delay:0.812s"/></g>
 <path class="reflection" d="M-1.43 6h2.86" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(807 33)"><title>2026-09-14: 12 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="3.363" r="4.8" style="animation-delay:0.812s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-12" cy="3.363" r="4.8" style="animation-delay:0.812s"/></g>
 <path class="reflection" d="M-1.86 6h3.72" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(807 51)"><title>2026-09-15: 14 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="3.087" r="4.8" style="animation-delay:0.812s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-14" cy="3.087" r="4.8" style="animation-delay:0.812s"/></g>
 <path class="reflection" d="M-1.93 6h3.86" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(807 69)"><title>2026-09-16: 13 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="3.222" r="4.8" style="animation-delay:0.812s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-13" cy="3.222" r="4.8" style="animation-delay:0.812s"/></g>
 <path class="reflection" d="M-1.89 6h3.79" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(807 87)"><title>2026-09-17: 14 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="3.087" r="4.8" style="animation-delay:0.812s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-14" cy="3.087" r="4.8" style="animation-delay:0.812s"/></g>
 <path class="reflection" d="M-1.93 6h3.86" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(807 105)"><title>2026-09-18: 11 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="3.509" r="4.8" style="animation-delay:0.812s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-11" cy="3.509" r="4.8" style="animation-delay:0.812s"/></g>
 <path class="reflection" d="M-1.82 6h3.65" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day" transform="translate(807 123)"><title>2026-09-19: 0 contributions</title>
-<path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
+<path class="horizon" d="M-2.5 4h5" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(825 15)"><title>2026-09-20: 3 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="5.081" r="4.8" style="animation-delay:0.826s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-3" cy="5.081" r="4.8" style="animation-delay:0.826s"/></g>
 <path class="reflection" d="M-1.43 6h2.86" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(825 33)"><title>2026-09-21: 7 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="4.175" r="4.8" style="animation-delay:0.826s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-7" cy="4.175" r="4.8" style="animation-delay:0.826s"/></g>
 <path class="reflection" d="M-1.66 6h3.31" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(825 51)"><title>2026-09-22: 9 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="3.823" r="4.8" style="animation-delay:0.826s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-9" cy="3.823" r="4.8" style="animation-delay:0.826s"/></g>
 <path class="reflection" d="M-1.74 6h3.49" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(825 69)"><title>2026-09-23: 16 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="2.831" r="4.8" style="animation-delay:0.826s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-16" cy="2.831" r="4.8" style="animation-delay:0.826s"/></g>
 <path class="reflection" d="M-1.99 6h3.98" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(825 87)"><title>2026-09-24: 8 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="3.993" r="4.8" style="animation-delay:0.826s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-8" cy="3.993" r="4.8" style="animation-delay:0.826s"/></g>
 <path class="reflection" d="M-1.70 6h3.40" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day" transform="translate(825 105)"><title>2026-09-25: 0 contributions</title>
-<path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
+<path class="horizon" d="M-2.5 4h5" stroke-width="1.2"/></g>
 <g class="day" transform="translate(825 123)"><title>2026-09-26: 0 contributions</title>
-<path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
+<path class="horizon" d="M-2.5 4h5" stroke-width="1.2"/></g>
 <g class="day" transform="translate(843 15)"><title>2026-09-27: 0 contributions</title>
-<path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
+<path class="horizon" d="M-2.5 4h5" stroke-width="1.2"/></g>
 <g class="day" transform="translate(843 33)"><title>2026-09-28: 0 contributions</title>
-<path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
+<path class="horizon" d="M-2.5 4h5" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(843 51)"><title>2026-09-29: 6 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="4.369" r="4.8" style="animation-delay:0.839s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-6" cy="4.369" r="4.8" style="animation-delay:0.839s"/></g>
 <path class="reflection" d="M-1.61 6h3.22" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(843 69)"><title>2026-09-30: 10 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="3.662" r="4.8" style="animation-delay:0.839s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-10" cy="3.662" r="4.8" style="animation-delay:0.839s"/></g>
 <path class="reflection" d="M-1.78 6h3.57" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(843 87)"><title>2026-10-01: 9 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="3.823" r="4.8" style="animation-delay:0.839s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-9" cy="3.823" r="4.8" style="animation-delay:0.839s"/></g>
 <path class="reflection" d="M-1.74 6h3.49" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
+<path class="month" d="M843 135v-3"/>
 <g class="day active" transform="translate(843 105)"><title>2026-10-02: 2 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="5.397" r="4.8" style="animation-delay:0.839s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-2" cy="5.397" r="4.8" style="animation-delay:0.839s"/></g>
 <path class="reflection" d="M-1.35 6h2.70" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(843 123)"><title>2026-10-03: 2 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="5.397" r="4.8" style="animation-delay:0.839s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-2" cy="5.397" r="4.8" style="animation-delay:0.839s"/></g>
 <path class="reflection" d="M-1.35 6h2.70" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day" transform="translate(861 15)"><title>2026-10-04: 0 contributions</title>
-<path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
+<path class="horizon" d="M-2.5 4h5" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(861 33)"><title>2026-10-05: 6 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="4.369" r="4.8" style="animation-delay:0.853s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-6" cy="4.369" r="4.8" style="animation-delay:0.853s"/></g>
 <path class="reflection" d="M-1.61 6h3.22" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(861 51)"><title>2026-10-06: 11 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="3.509" r="4.8" style="animation-delay:0.853s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-11" cy="3.509" r="4.8" style="animation-delay:0.853s"/></g>
 <path class="reflection" d="M-1.82 6h3.65" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(861 69)"><title>2026-10-07: 7 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="4.175" r="4.8" style="animation-delay:0.853s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-7" cy="4.175" r="4.8" style="animation-delay:0.853s"/></g>
 <path class="reflection" d="M-1.66 6h3.31" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(861 87)"><title>2026-10-08: 17 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="2.709" r="4.8" style="animation-delay:0.853s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-17" cy="2.709" r="4.8" style="animation-delay:0.853s"/></g>
 <path class="reflection" d="M-2.02 6h4.05" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day" transform="translate(861 105)"><title>2026-10-09: 0 contributions</title>
-<path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
+<path class="horizon" d="M-2.5 4h5" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(861 123)"><title>2026-10-10: 1 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="5.808" r="4.8" style="animation-delay:0.853s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-1" cy="5.808" r="4.8" style="animation-delay:0.853s"/></g>
 <path class="reflection" d="M-1.25 6h2.50" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day" transform="translate(879 15)"><title>2026-10-11: 0 contributions</title>
-<path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
+<path class="horizon" d="M-2.5 4h5" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(879 33)"><title>2026-10-12: 5 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="4.581" r="4.8" style="animation-delay:0.866s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-5" cy="4.581" r="4.8" style="animation-delay:0.866s"/></g>
 <path class="reflection" d="M-1.55 6h3.11" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(879 51)"><title>2026-10-13: 12 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="3.363" r="4.8" style="animation-delay:0.866s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-12" cy="3.363" r="4.8" style="animation-delay:0.866s"/></g>
 <path class="reflection" d="M-1.86 6h3.72" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(879 69)"><title>2026-10-14: 13 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="3.222" r="4.8" style="animation-delay:0.866s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-13" cy="3.222" r="4.8" style="animation-delay:0.866s"/></g>
 <path class="reflection" d="M-1.89 6h3.79" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(879 87)"><title>2026-10-15: 11 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="3.509" r="4.8" style="animation-delay:0.866s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-11" cy="3.509" r="4.8" style="animation-delay:0.866s"/></g>
 <path class="reflection" d="M-1.82 6h3.65" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(879 105)"><title>2026-10-16: 5 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="4.581" r="4.8" style="animation-delay:0.866s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-5" cy="4.581" r="4.8" style="animation-delay:0.866s"/></g>
 <path class="reflection" d="M-1.55 6h3.11" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(879 123)"><title>2026-10-17: 3 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="5.081" r="4.8" style="animation-delay:0.866s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-3" cy="5.081" r="4.8" style="animation-delay:0.866s"/></g>
 <path class="reflection" d="M-1.43 6h2.86" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(897 15)"><title>2026-10-18: 4 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="4.815" r="4.8" style="animation-delay:0.880s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-4" cy="4.815" r="4.8" style="animation-delay:0.880s"/></g>
 <path class="reflection" d="M-1.50 6h2.99" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(897 33)"><title>2026-10-19: 6 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="4.369" r="4.8" style="animation-delay:0.880s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-6" cy="4.369" r="4.8" style="animation-delay:0.880s"/></g>
 <path class="reflection" d="M-1.61 6h3.22" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(897 51)"><title>2026-10-20: 12 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="3.363" r="4.8" style="animation-delay:0.880s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-12" cy="3.363" r="4.8" style="animation-delay:0.880s"/></g>
 <path class="reflection" d="M-1.86 6h3.72" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(897 69)"><title>2026-10-21: 13 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="3.222" r="4.8" style="animation-delay:0.880s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-13" cy="3.222" r="4.8" style="animation-delay:0.880s"/></g>
 <path class="reflection" d="M-1.89 6h3.79" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(897 87)"><title>2026-10-22: 17 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="2.709" r="4.8" style="animation-delay:0.880s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-17" cy="2.709" r="4.8" style="animation-delay:0.880s"/></g>
 <path class="reflection" d="M-2.02 6h4.05" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(897 105)"><title>2026-10-23: 2 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="5.397" r="4.8" style="animation-delay:0.880s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-2" cy="5.397" r="4.8" style="animation-delay:0.880s"/></g>
 <path class="reflection" d="M-1.35 6h2.70" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day" transform="translate(897 123)"><title>2026-10-24: 0 contributions</title>
-<path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
+<path class="horizon" d="M-2.5 4h5" stroke-width="1.2"/></g>
 <g class="day" transform="translate(915 15)"><title>2026-10-25: 0 contributions</title>
-<path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
+<path class="horizon" d="M-2.5 4h5" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(915 33)"><title>2026-10-26: 1 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="5.808" r="4.8" style="animation-delay:0.893s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-1" cy="5.808" r="4.8" style="animation-delay:0.893s"/></g>
 <path class="reflection" d="M-1.25 6h2.50" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(915 51)"><title>2026-10-27: 4 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="4.815" r="4.8" style="animation-delay:0.893s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-4" cy="4.815" r="4.8" style="animation-delay:0.893s"/></g>
 <path class="reflection" d="M-1.50 6h2.99" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(915 69)"><title>2026-10-28: 20 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="2.362" r="4.8" style="animation-delay:0.893s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-20" cy="2.362" r="4.8" style="animation-delay:0.893s"/></g>
 <path class="reflection" d="M-2.11 6h4.22" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(915 87)"><title>2026-10-29: 9 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="3.823" r="4.8" style="animation-delay:0.893s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-9" cy="3.823" r="4.8" style="animation-delay:0.893s"/></g>
 <path class="reflection" d="M-1.74 6h3.49" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(915 105)"><title>2026-10-30: 7 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="4.175" r="4.8" style="animation-delay:0.893s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-7" cy="4.175" r="4.8" style="animation-delay:0.893s"/></g>
 <path class="reflection" d="M-1.66 6h3.31" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day" transform="translate(915 123)"><title>2026-10-31: 0 contributions</title>
-<path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
+<path class="horizon" d="M-2.5 4h5" stroke-width="1.2"/></g>
 <g class="day" transform="translate(933 15)"><title>2026-11-01: 0 contributions</title>
-<path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
+<path class="horizon" d="M-2.5 4h5" stroke-width="1.2"/></g>
+<path class="month" d="M933 135v-3"/>
 <g class="day active" transform="translate(933 33)"><title>2026-11-02: 8 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="3.993" r="4.8" style="animation-delay:0.907s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-8" cy="3.993" r="4.8" style="animation-delay:0.907s"/></g>
 <path class="reflection" d="M-1.70 6h3.40" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(933 51)"><title>2026-11-03: 8 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="3.993" r="4.8" style="animation-delay:0.907s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-8" cy="3.993" r="4.8" style="animation-delay:0.907s"/></g>
 <path class="reflection" d="M-1.70 6h3.40" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(933 69)"><title>2026-11-04: 13 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="3.222" r="4.8" style="animation-delay:0.907s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-13" cy="3.222" r="4.8" style="animation-delay:0.907s"/></g>
 <path class="reflection" d="M-1.89 6h3.79" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(933 87)"><title>2026-11-05: 2 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="5.397" r="4.8" style="animation-delay:0.907s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-2" cy="5.397" r="4.8" style="animation-delay:0.907s"/></g>
 <path class="reflection" d="M-1.35 6h2.70" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(933 105)"><title>2026-11-06: 8 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="3.993" r="4.8" style="animation-delay:0.907s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-8" cy="3.993" r="4.8" style="animation-delay:0.907s"/></g>
 <path class="reflection" d="M-1.70 6h3.40" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 <g class="day" transform="translate(933 123)"><title>2026-11-07: 0 contributions</title>
-<path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
+<path class="horizon" d="M-2.5 4h5" stroke-width="1.2"/></g>
 <g class="day" transform="translate(951 15)"><title>2026-11-08: 0 contributions</title>
-<path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
+<path class="horizon" d="M-2.5 4h5" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(951 33)"><title>2026-11-09: 3 contributions</title>
-<g clip-path="url(#skyline)"><circle class="sun" cy="5.081" r="4.8" style="animation-delay:0.920s"/></g>
+<g clip-path="url(#skyline)"><circle class="sun sun-3" cy="5.081" r="4.8" style="animation-delay:0.920s"/></g>
 <path class="reflection" d="M-1.43 6h2.86" stroke-width=".72"/>
 <path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>
 </svg>

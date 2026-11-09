@@ -5,7 +5,7 @@
 
 <h3><code>Chi-An-Chen @ github ~ $./contributions.sh</code></h3>
 
-<img src="https://raw.githubusercontent.com/Chi-An-Chen/Chi-An-Chen/main/contrib-heatmap.svg?v=skyline-v1" width="97%" alt="Chi-An Chen's daily contributions: higher suns mark busier days, gold marks the peak" />
+<img src="https://raw.githubusercontent.com/Chi-An-Chen/Chi-An-Chen/main/contrib-heatmap.svg?v=dusk-skyline-v2" width="97%" alt="Chi-An Chen's daily contributions: higher suns mark busier days, gold marks the peak" />
 
 <br>
 <br>
@@ -18,8 +18,8 @@
 <h3><code>Chi-An-Chen @ github ~ $work_record</code></h3>
 
 <p align="center">
-<img src="https://raw.githubusercontent.com/Chi-An-Chen/Chi-An-Chen/main/avi-ascii.svg?v=skyline-v1" width="48%" align="middle" alt="Chi-An Chen — project experience and repository language proportions" />
-<img src="https://raw.githubusercontent.com/Chi-An-Chen/Chi-An-Chen/main/stats.svg?v=skyline-v1" width="48%" align="middle" alt="Chi-An Chen's GitHub streak and contribution stats — auto-refreshed daily" />
+<img src="https://raw.githubusercontent.com/Chi-An-Chen/Chi-An-Chen/main/avi-ascii.svg?v=dusk-skyline-v2" width="48%" align="middle" alt="Chi-An Chen — project experience and repository language proportions" />
+<img src="https://raw.githubusercontent.com/Chi-An-Chen/Chi-An-Chen/main/stats.svg?v=dusk-skyline-v2" width="48%" align="middle" alt="Chi-An Chen's GitHub streak and contribution stats — auto-refreshed daily" />
 </p>
 
 </div>

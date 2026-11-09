@@ -25,9 +25,9 @@ EXPERIENCES = [
     ("Edge & Backend", "Go / Python services", "ONNX / TensorRT / Jetson", "chip"),
 ]
 COLORS = {
-    "Python": "#58a6ff", "HTML": "#f77655", "Jupyter Notebook": "#f6ad55",
-    "JavaScript": "#f1e05a", "TeX": "#7ccf8a", "Go": "#00add8",
-    "TypeScript": "#3178c6", "CSS": "#ab7df8", "Other": "#7c8798",
+    "Python": "#80a2bf", "HTML": "#c0987c", "Jupyter Notebook": "#acbda5",
+    "JavaScript": "#c5b981", "TeX": "#7ccf8a", "Go": "#00add8",
+    "TypeScript": "#3178c6", "CSS": "#a499b4", "Other": "#7c8798",
 }
 
 

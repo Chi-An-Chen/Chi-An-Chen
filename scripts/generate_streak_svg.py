@@ -8,7 +8,7 @@ import os
 from pathlib import Path
 import sys
 
-from glass_svg import themed_css
+from glass_svg import SWATCHES, themed_css
 
 ROOT = Path(__file__).resolve().parent.parent
 STEP = 18
@@ -38,12 +38,19 @@ def render(snapshot, user):
     cols = (previous - sunday).days // 7 + 1
     width, height = (cols - 1) * STEP + 2*MARGIN, 6*STEP + 2*MARGIN
     rules = [('.sky', 'fill', 'base'), ('.horizon', 'stroke', 'quiet'),
-             ('.active .horizon,.reflection', 'stroke', 'line'),
+             ('.active .horizon,.reflection,.month', 'stroke', 'line'),
              ('.sun', 'fill', 'sun'), ('.peak', 'fill', 'peak')]
+    swatches = SWATCHES.copy()
+    for count in sorted({day["count"] for day in days if 0 < day["count"] < peak}):
+        u = (count / peak) ** .52
+        role = f"sun-{count}"
+        swatches[role] = [tuple(a + (b-a)*u for a, b in zip(low, high))
+                          for low, high in zip(SWATCHES["dawn"], SWATCHES["sun"])]
+        rules.append((f".{role}", "fill", role))
     parts = [f'''<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}" role="img" aria-labelledby="title description">
 <title id="title">{escape(user)} — contribution skyline</title>
-<desc id="description">{snapshot['total_contributions']:,} contributions from {first} to {previous}. Weeks run left to right, Sunday first. Higher suns mean more contributions. Gold marks the highest daily count.</desc>
-<style>{themed_css(rules)}
+<desc id="description">{snapshot['total_contributions']:,} contributions from {first} to {previous}. Weeks run left to right, Sunday first. Higher suns mean more contributions. Sun shading also follows the count. Gold marks peak days. Bottom ticks mark the first week of each month.</desc>
+<style>{themed_css(rules, swatches)}
 .horizon,.reflection{{fill:none;stroke-linecap:round}}
 @media(prefers-reduced-motion:no-preference){{.sun{{animation:sunrise .85s cubic-bezier(.2,.65,.3,1) backwards}}}}
 @keyframes sunrise{{from{{transform:translateY(12px)}}to{{transform:translateY(0)}}}}
@@ -60,13 +67,16 @@ def render(snapshot, user):
         if n:
             fraction = sqrt(n / peak)
             cy = 6.8 - 8.0*fraction
-            sun_class = 'sun peak' if n == peak else 'sun'
+            sun_class = 'sun peak' if n == peak else f'sun sun-{n}'
             delay = .22 + .7 * week / max(cols - 1, 1)
             parts.append(f'<g clip-path="url(#skyline)"><circle class="{sun_class}" cy="{cy:.3f}" r="4.8" '
                          f'style="animation-delay:{delay:.3f}s"/></g>')
             half = 1 + 2*fraction
             parts.append(f'<path class="reflection" d="M{-half:.2f} 6h{2*half:.2f}" stroke-width=".72"/>')
-        parts.append('<path class="horizon" d="M-6.4 4h12.8" stroke-width="1.2"/></g>')
+        horizon = "M-6.4 4h12.8" if n else "M-2.5 4h5"
+        parts.append(f'<path class="horizon" d="{horizon}" stroke-width="1.2"/></g>')
+        if day["date"].endswith("-01"):
+            parts.append(f'<path class="month" d="M{MARGIN+week*STEP} {height-3}v-3"/>')
     parts.append('</svg>')
     return '\n'.join(parts) + '\n'
 

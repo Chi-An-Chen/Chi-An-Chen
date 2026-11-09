@@ -59,9 +59,9 @@ GH_TOKEN="$(gh auth token)" python3 scripts/render_profile_svg.py --snapshot dat
 
 ## 貢獻圖呈現
 
-每日工作流程使用 `scripts/generate_streak_svg.py` 產生無字天際線圖。每欄一週，週日到週六由上而下；零貢獻只畫水平線，活動日依實際筆數的平方根調整太陽高度，並以暖金標示期間內所有並列最高日。日期、數量與期間總量保存在 SVG 的 title / desc。進場日出只播放一次；減少動態效果時直接顯示資料。`render_heatmap_svg.py` 是未被工作流程呼叫的舊工具。
+每日工作流程使用 `scripts/generate_streak_svg.py` 產生無字天際線圖。每欄一週，週日到週六由上而下；每月第一天所在的週在底部有細刻度。零貢獻只畫短橫線，活動日依實際筆數的平方根調整太陽高度，並以 OKLCH 在銅杏和淡金之間依筆數插色，並以暖金標示期間內所有並列最高日。日期、數量與期間總量保存在 SVG 的 title / desc。進場日出只播放一次；減少動態效果時直接顯示資料。`render_heatmap_svg.py` 是未被工作流程呼叫的舊工具。
 
-三張圖的深淺色配色在 `scripts/glass_svg.py` 以 OKLCH 定義，輸出為相容的 sRGB 色碼。天際線使用平面色，資料卡只有外框保留一道低對比方向光；內層面板改用霧面色階。設計參考 [garden-skills](https://github.com/ConardLi/garden-skills/tree/main/skills/web-design-engineer)。
+三張圖的深淺色配色在 `scripts/glass_svg.py` 以 OKLCH 定義，輸出為相容的 sRGB 色碼。天際線使用暮藍與日光配色，淺色模式改用霧藍底與琥珀色。太陽使用平面色，資料卡只有外框保留一道低對比方向光；內層面板改用霧面色階。設計參考 [garden-skills](https://github.com/ConardLi/garden-skills/tree/main/skills/web-design-engineer)。
 
 ## 資料意義
 
