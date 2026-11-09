@@ -16,7 +16,7 @@
 <symbol id="chip" viewBox="0 0 32 32"><rect x="8" y="8" width="16" height="16" rx="3"/><path d="M12 3v5M20 3v5M12 24v5M20 24v5M3 12h5M3 20h5M24 12h5M24 20h5"/><rect x="12" y="12" width="8" height="8" rx="1"/></symbol>
 </defs>
 <title id="title">Chi-An Chen — development profile</title>
-<desc id="description">57 owned repositories, 16 public, 41 private. Language percentages use GitHub code bytes across owned public and private repositories. Python 43.53%, HTML 33.10%, Jupyter Notebook 15.53%, JavaScript 6.33%, CSS 0.33%, Other 1.18%</desc>
+<desc id="description">58 owned repositories, 16 public, 42 private. Language percentages use GitHub code bytes across owned public and private repositories. Python 43.56%, HTML 33.03%, Jupyter Notebook 15.49%, JavaScript 6.38%, CSS 0.35%, Other 1.18%</desc>
 <style>.plate{fill:#131a24}
 .glass-tile{fill:#202833}
 .glass-rule{stroke:#7c8f9d}
@@ -63,13 +63,13 @@ text[fill="#f6ad55"],.b[fill="#39d353"]{fill:#52370a}}
 <text x="36" y="223" font-size="23" fill="#c1ccd9" font-weight="400" text-anchor="start" >Computer vision · Generative AI · Edge systems</text>
 </g><g class="enter stagger">
 <rect x="36" y="246" width="236" height="77" rx="22" class="glass-tile"/>
-<text x="54" y="286" font-size="40" fill="#e6edf3" font-weight="650" text-anchor="start" >57</text>
+<text x="54" y="286" font-size="40" fill="#e6edf3" font-weight="650" text-anchor="start" >58</text>
 <text x="54" y="317" font-size="15" fill="#97a6b8" font-weight="600" text-anchor="start" letter-spacing="1">REPOSITORIES</text>
 <rect x="302" y="246" width="236" height="77" rx="22" class="glass-tile"/>
 <text x="320" y="286" font-size="40" fill="#e6edf3" font-weight="650" text-anchor="start" >16</text>
 <text x="320" y="317" font-size="15" fill="#97a6b8" font-weight="600" text-anchor="start" letter-spacing="1">PUBLIC</text>
 <rect x="568" y="246" width="236" height="77" rx="22" class="glass-tile"/>
-<text x="586" y="286" font-size="40" fill="#e6edf3" font-weight="650" text-anchor="start" >41</text>
+<text x="586" y="286" font-size="40" fill="#e6edf3" font-weight="650" text-anchor="start" >42</text>
 <text x="586" y="317" font-size="15" fill="#97a6b8" font-weight="600" text-anchor="start" letter-spacing="1">PRIVATE</text>
 <text x="36" y="373" font-size="18" fill="#a2b0c2" font-weight="600" text-anchor="start" letter-spacing="1.5">PROJECT EXPERIENCE</text>
 <rect x="36" y="390" width="376" height="96" rx="22" class="glass-tile"/>
@@ -98,32 +98,32 @@ text[fill="#f6ad55"],.b[fill="#39d353"]{fill:#52370a}}
 <text x="36" y="663" font-size="20" fill="#a2b0c2" font-weight="400" text-anchor="start" >Code share · public + private</text>
 <rect x="36" y="676" width="768" height="20" rx="10" fill="#283341"/>
 <g clip-path="url(#bar)"><g class="scan">
-<rect x="36.0000" y="676" width="334.2742" height="20" fill="#80a2bf"/>
-<rect x="370.2742" y="676" width="254.2442" height="20" fill="#c0987c"/>
-<rect x="624.5185" y="676" width="119.2674" height="20" fill="#acbda5"/>
-<rect x="743.7859" y="676" width="48.5936" height="20" fill="#c5b981"/>
-<rect x="792.3795" y="676" width="2.5306" height="20" fill="#a499b4"/>
-<rect x="794.9100" y="676" width="9.0900" height="20" fill="#7c8798"/>
+<rect x="36.0000" y="676" width="334.5605" height="20" fill="#80a2bf"/>
+<rect x="370.5605" y="676" width="253.6860" height="20" fill="#c0987c"/>
+<rect x="624.2466" y="676" width="118.9394" height="20" fill="#acbda5"/>
+<rect x="743.1860" y="676" width="49.0280" height="20" fill="#c5b981"/>
+<rect x="792.2140" y="676" width="2.7210" height="20" fill="#a499b4"/>
+<rect x="794.9350" y="676" width="9.0650" height="20" fill="#7c8798"/>
 </g></g>
 <circle cx="43" cy="724" r="7" fill="#80a2bf"/>
 <text x="60" y="731" font-size="23" fill="#e6edf3" font-weight="550" text-anchor="start" >Python</text>
-<text x="402" y="731" font-size="23" fill="#a2b0c2" font-weight="400" text-anchor="end" >43.53%</text>
+<text x="402" y="731" font-size="23" fill="#a2b0c2" font-weight="400" text-anchor="end" >43.56%</text>
 <circle cx="435" cy="724" r="7" fill="#c0987c"/>
 <text x="452" y="731" font-size="23" fill="#e6edf3" font-weight="550" text-anchor="start" >HTML</text>
-<text x="794" y="731" font-size="23" fill="#a2b0c2" font-weight="400" text-anchor="end" >33.10%</text>
+<text x="794" y="731" font-size="23" fill="#a2b0c2" font-weight="400" text-anchor="end" >33.03%</text>
 <circle cx="43" cy="763" r="7" fill="#acbda5"/>
 <text x="60" y="770" font-size="23" fill="#e6edf3" font-weight="550" text-anchor="start" >Jupyter Notebook</text>
-<text x="402" y="770" font-size="23" fill="#a2b0c2" font-weight="400" text-anchor="end" >15.53%</text>
+<text x="402" y="770" font-size="23" fill="#a2b0c2" font-weight="400" text-anchor="end" >15.49%</text>
 <circle cx="435" cy="763" r="7" fill="#c5b981"/>
 <text x="452" y="770" font-size="23" fill="#e6edf3" font-weight="550" text-anchor="start" >JavaScript</text>
-<text x="794" y="770" font-size="23" fill="#a2b0c2" font-weight="400" text-anchor="end" >6.33%</text>
+<text x="794" y="770" font-size="23" fill="#a2b0c2" font-weight="400" text-anchor="end" >6.38%</text>
 <circle cx="43" cy="802" r="7" fill="#a499b4"/>
 <text x="60" y="809" font-size="23" fill="#e6edf3" font-weight="550" text-anchor="start" >CSS</text>
-<text x="402" y="809" font-size="23" fill="#a2b0c2" font-weight="400" text-anchor="end" >0.33%</text>
+<text x="402" y="809" font-size="23" fill="#a2b0c2" font-weight="400" text-anchor="end" >0.35%</text>
 <circle cx="435" cy="802" r="7" fill="#7c8798"/>
 <text x="452" y="809" font-size="23" fill="#e6edf3" font-weight="550" text-anchor="start" >Other (26)</text>
 <text x="794" y="809" font-size="23" fill="#a2b0c2" font-weight="400" text-anchor="end" >1.18%</text>
 </g>
-<text x="36" y="859" font-size="17" fill="#a2b0c2" font-weight="400" text-anchor="start" >GitHub code bytes · 53/57 repos with code</text>
-<text x="804" y="859" font-size="17" fill="#a2b0c2" font-weight="400" text-anchor="end" >2026-11-09 15:00 UTC+8</text>
+<text x="36" y="859" font-size="17" fill="#a2b0c2" font-weight="400" text-anchor="start" >GitHub code bytes · 54/58 repos with code</text>
+<text x="804" y="859" font-size="17" fill="#a2b0c2" font-weight="400" text-anchor="end" >2026-11-09 16:19 UTC+8</text>
 </svg>
