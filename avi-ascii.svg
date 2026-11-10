@@ -16,7 +16,7 @@
 <symbol id="chip" viewBox="0 0 32 32"><rect x="8" y="8" width="16" height="16" rx="3"/><path d="M12 3v5M20 3v5M12 24v5M20 24v5M3 12h5M3 20h5M24 12h5M24 20h5"/><rect x="12" y="12" width="8" height="8" rx="1"/></symbol>
 </defs>
 <title id="title">Chi-An Chen — development profile</title>
-<desc id="description">58 owned repositories, 16 public, 42 private. Language percentages use GitHub code bytes across owned public and private repositories. Python 43.56%, HTML 33.03%, Jupyter Notebook 15.49%, JavaScript 6.38%, CSS 0.35%, Other 1.18%</desc>
+<desc id="description">58 owned repositories, 16 public, 42 private. Language percentages use GitHub code bytes across owned public and private repositories. Python 43.58%, HTML 33.02%, Jupyter Notebook 15.48%, JavaScript 6.38%, CSS 0.35%, Other 1.18%</desc>
 <style>.plate{fill:#131a24}
 .glass-tile{fill:#202833}
 .glass-rule{stroke:#7c8f9d}
@@ -98,22 +98,22 @@ text[fill="#f6ad55"],.b[fill="#39d353"]{fill:#52370a}}
 <text x="36" y="663" font-size="20" fill="#a2b0c2" font-weight="400" text-anchor="start" >Code share · public + private</text>
 <rect x="36" y="676" width="768" height="20" rx="10" fill="#283341"/>
 <g clip-path="url(#bar)"><g class="scan">
-<rect x="36.0000" y="676" width="334.5623" height="20" fill="#80a2bf"/>
-<rect x="370.5623" y="676" width="253.6850" height="20" fill="#c0987c"/>
-<rect x="624.2473" y="676" width="118.9389" height="20" fill="#acbda5"/>
-<rect x="743.1862" y="676" width="49.0278" height="20" fill="#c5b981"/>
-<rect x="792.2141" y="676" width="2.7210" height="20" fill="#a499b4"/>
-<rect x="794.9350" y="676" width="9.0650" height="20" fill="#7c8798"/>
+<rect x="36.0000" y="676" width="334.6912" height="20" fill="#80a2bf"/>
+<rect x="370.6912" y="676" width="253.6094" height="20" fill="#c0987c"/>
+<rect x="624.3006" y="676" width="118.8973" height="20" fill="#acbda5"/>
+<rect x="743.1979" y="676" width="49.0203" height="20" fill="#c5b981"/>
+<rect x="792.2182" y="676" width="2.7200" height="20" fill="#a499b4"/>
+<rect x="794.9382" y="676" width="9.0618" height="20" fill="#7c8798"/>
 </g></g>
 <circle cx="43" cy="724" r="7" fill="#80a2bf"/>
 <text x="60" y="731" font-size="23" fill="#e6edf3" font-weight="550" text-anchor="start" >Python</text>
-<text x="402" y="731" font-size="23" fill="#a2b0c2" font-weight="400" text-anchor="end" >43.56%</text>
+<text x="402" y="731" font-size="23" fill="#a2b0c2" font-weight="400" text-anchor="end" >43.58%</text>
 <circle cx="435" cy="724" r="7" fill="#c0987c"/>
 <text x="452" y="731" font-size="23" fill="#e6edf3" font-weight="550" text-anchor="start" >HTML</text>
-<text x="794" y="731" font-size="23" fill="#a2b0c2" font-weight="400" text-anchor="end" >33.03%</text>
+<text x="794" y="731" font-size="23" fill="#a2b0c2" font-weight="400" text-anchor="end" >33.02%</text>
 <circle cx="43" cy="763" r="7" fill="#acbda5"/>
 <text x="60" y="770" font-size="23" fill="#e6edf3" font-weight="550" text-anchor="start" >Jupyter Notebook</text>
-<text x="402" y="770" font-size="23" fill="#a2b0c2" font-weight="400" text-anchor="end" >15.49%</text>
+<text x="402" y="770" font-size="23" fill="#a2b0c2" font-weight="400" text-anchor="end" >15.48%</text>
 <circle cx="435" cy="763" r="7" fill="#c5b981"/>
 <text x="452" y="770" font-size="23" fill="#e6edf3" font-weight="550" text-anchor="start" >JavaScript</text>
 <text x="794" y="770" font-size="23" fill="#a2b0c2" font-weight="400" text-anchor="end" >6.38%</text>
@@ -125,5 +125,5 @@ text[fill="#f6ad55"],.b[fill="#39d353"]{fill:#52370a}}
 <text x="794" y="809" font-size="23" fill="#a2b0c2" font-weight="400" text-anchor="end" >1.18%</text>
 </g>
 <text x="36" y="859" font-size="17" fill="#a2b0c2" font-weight="400" text-anchor="start" >GitHub code bytes · 54/58 repos with code</text>
-<text x="804" y="859" font-size="17" fill="#a2b0c2" font-weight="400" text-anchor="end" >2026-11-09 16:23 UTC+8</text>
+<text x="804" y="859" font-size="17" fill="#a2b0c2" font-weight="400" text-anchor="end" >2026-11-10 08:02 UTC+8</text>
 </svg>
