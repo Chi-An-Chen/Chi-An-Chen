@@ -1,7 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="498" height="388" viewBox="0 0 498 388" role="img" aria-labelledby="title description">
 <title id="title">Chi-An-Chen — contribution skyline</title>
 <desc id="description">1,761 contributions from 2025-11-09 to 2026-11-09. Weeks run left to right in each band, Sunday first. Higher suns mean more contributions. Sun shading also follows the count. Gold marks peak days. Bottom ticks mark the first week of each month.</desc>
-<style>.sky{fill:#131a24}
+<style>.rim-tone{stop-color:#7c8f9d}
+.rim-base{stop-color:#131a24}
+.plate{fill:#131a24}
 .horizon{stroke:#3d4953}
 .active .horizon,.reflection,.month{stroke:#607180}
 .sun{fill:#f1c58b}
@@ -32,7 +34,9 @@
 .sun-31{fill:#deb181}
 .sun-32{fill:#dfb281}
 .sun-48{fill:#e9bc86}
-@media(prefers-color-scheme:light){.sky{fill:#f0f5fa}
+@media(prefers-color-scheme:light){.rim-tone{stop-color:#7a8c9b}
+.rim-base{stop-color:#f0f5fa}
+.plate{fill:#f0f5fa}
 .horizon{stroke:#7d8b97}
 .active .horizon,.reflection,.month{stroke:#516372}
 .sun{fill:#6c471f}
@@ -68,7 +72,18 @@
 @keyframes sunrise{from{transform:translateY(18px)}to{transform:translateY(0)}}
 </style>
 <defs><clipPath id="skyline"><rect x="-8" y="-12" width="16" height="17"/></clipPath></defs>
-<rect class="sky" width="498" height="388" rx="12"/>
+<defs>
+<linearGradient id="rim" x2="95%" y2="75%">
+<stop stop-color="#cfdae1" stop-opacity=".44"/><stop offset=".29" class="rim-tone" stop-opacity=".31"/>
+<stop offset=".65" class="rim-base" stop-opacity=".16"/><stop offset="1" class="rim-tone" stop-opacity=".27"/>
+</linearGradient>
+<linearGradient id="wash" x2="95%" y2="75%">
+<stop class="rim-tone" stop-opacity=".105"/><stop offset=".3" class="rim-tone" stop-opacity=".025"/>
+<stop offset=".72" class="rim-base" stop-opacity="0"/>
+</linearGradient>
+</defs>
+<rect x="1" y="1" width="496" height="386" rx="17" class="plate" stroke="url(#rim)" stroke-width="1.7"/>
+<rect x="1" y="1" width="496" height="386" rx="17" fill="url(#wash)"/>
 <g class="day" transform="translate(15 17)"><title>2025-11-09: 0 contributions</title>
 <path class="horizon" d="M-2.5 5.6h5" stroke-width="1.2"/></g>
 <g class="day active" transform="translate(15 43)"><title>2025-11-10: 6 contributions</title>

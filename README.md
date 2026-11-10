@@ -6,8 +6,8 @@
 <h3><code>Chi-An-Chen @ github ~ $./contributions.sh</code></h3>
 
 <picture>
-  <source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/Chi-An-Chen/Chi-An-Chen/main/contrib-heatmap-mobile.svg?v=dusk-skyline-v3">
-  <img src="https://raw.githubusercontent.com/Chi-An-Chen/Chi-An-Chen/main/contrib-heatmap.svg?v=dusk-skyline-v3" width="97%" alt="Chi-An Chen's daily contributions: higher suns mark busier days, gold marks the peak" />
+  <source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/Chi-An-Chen/Chi-An-Chen/main/contrib-heatmap-mobile.svg?v=dusk-skyline-v4">
+  <img src="https://raw.githubusercontent.com/Chi-An-Chen/Chi-An-Chen/main/contrib-heatmap.svg?v=dusk-skyline-v4" width="97%" alt="Chi-An Chen's daily contributions: higher suns mark busier days, gold marks the peak" />
 </picture>
 
 <br>

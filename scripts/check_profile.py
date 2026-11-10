@@ -61,6 +61,8 @@ for svg in (graph, mobile, stats):
 assert (ROOT / "avi-ascii.svg").read_text() == profile.render(aggregate)
 for svg in (graph, mobile, stats, card):
     assert "prefers-color-scheme:light" in " ".join(s.text or "" for s in svg.findall("s:style", NS))
+    assert svg.find("s:rect[@stroke='url(#rim)']", NS) is not None
+    assert svg.find("s:rect[@fill='url(#wash)']", NS) is not None
     assert not svg.findall(".//s:script", NS)
     assert not svg.findall(".//s:foreignObject", NS)
     ids = {element.get("id") for element in svg.iter() if element.get("id")}

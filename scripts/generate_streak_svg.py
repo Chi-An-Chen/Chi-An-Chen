@@ -8,7 +8,7 @@ import os
 from pathlib import Path
 import sys
 
-from glass_svg import SWATCHES, themed_css
+from glass_svg import RIM_RULES, SWATCHES, glass_plate, themed_css
 
 ROOT = Path(__file__).resolve().parent.parent
 COLUMN_STEP = 18
@@ -44,7 +44,7 @@ def render(snapshot, user, *, compact=False):
     bands = (cols + cols_per_band - 1) // cols_per_band
     width = (cols_per_band - 1) * COLUMN_STEP + 2 * MARGIN_X
     height = bands * BAND_HEIGHT + (bands - 1) * BAND_GAP
-    rules = [('.sky', 'fill', 'base'), ('.horizon', 'stroke', 'quiet'),
+    rules = [*RIM_RULES, ('.plate', 'fill', 'base'), ('.horizon', 'stroke', 'quiet'),
              ('.active .horizon,.reflection,.month', 'stroke', 'line'),
              ('.sun', 'fill', 'sun'), ('.peak', 'fill', 'peak')]
     swatches = SWATCHES.copy()
@@ -63,7 +63,7 @@ def render(snapshot, user, *, compact=False):
 @keyframes sunrise{{from{{transform:translateY(18px)}}to{{transform:translateY(0)}}}}
 </style>
 <defs><clipPath id="skyline"><rect x="-8" y="-12" width="16" height="17"/></clipPath></defs>
-<rect class="sky" width="{width}" height="{height}" rx="12"/>''']
+{glass_plate(width, height, radius=17)}''']
     for day in days:
         offset = (date.fromisoformat(day["date"]) - sunday).days
         week, weekday = divmod(offset, 7)

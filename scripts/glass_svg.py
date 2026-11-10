@@ -43,13 +43,32 @@ def themed_css(rules, swatches=SWATCHES):
     return themes[0] + '\n@media(prefers-color-scheme:light){' + themes[1] + '}'
 
 
+RIM_RULES = [('.rim-tone', 'stop-color', 'rule'), ('.rim-base', 'stop-color', 'base')]
+
+
+def glass_plate(width, height, *, radius):
+    """Draw the common directional rim and the light fading in from that edge."""
+    return f'''<defs>
+<linearGradient id="rim" x2="95%" y2="75%">
+<stop stop-color="#cfdae1" stop-opacity=".44"/><stop offset=".29" class="rim-tone" stop-opacity=".31"/>
+<stop offset=".65" class="rim-base" stop-opacity=".16"/><stop offset="1" class="rim-tone" stop-opacity=".27"/>
+</linearGradient>
+<linearGradient id="wash" x2="95%" y2="75%">
+<stop class="rim-tone" stop-opacity=".105"/><stop offset=".3" class="rim-tone" stop-opacity=".025"/>
+<stop offset=".72" class="rim-base" stop-opacity="0"/>
+</linearGradient>
+</defs>
+<rect x="1" y="1" width="{width-2}" height="{height-2}" rx="{radius}" class="plate" stroke="url(#rim)" stroke-width="1.7"/>
+<rect x="1" y="1" width="{width-2}" height="{height-2}" rx="{radius}" fill="url(#wash)"/>'''
+
+
 def surface(width, height):
     """Use one quiet edge light on the outer plate; keep the inner tiles matte."""
     labels = ['#7d8590', '#94a3b6', '#a1adbd', '#c1ccd9', '#97a6b8', '#a2b0c2', '#b8c5d5']
     rules = [
         ('.plate', 'fill', 'base'), ('.glass-tile', 'fill', 'tile'),
         ('.glass-rule', 'stroke', 'rule'),
-        ('.rim-tone', 'stop-color', 'rule'), ('.rim-base', 'stop-color', 'base'),
+        *RIM_RULES,
         ('text[fill="#e6edf3"]', 'fill', 'ink'),
         (','.join(f'text[fill="{c}"]' for c in labels) + ',tspan[fill="#a2b0c2"]', 'fill', 'muted'),
         ('text[fill="#5fe3bb"],text[fill="#39d353"]', 'fill', 'sun'),
@@ -60,16 +79,5 @@ def surface(width, height):
     return f'''<style>{themed_css(rules)}
 .glass-rule{{stroke-opacity:.55}}
 </style>
-<defs>
-<linearGradient id="rim" x2="95%" y2="75%">
-<stop stop-color="#cfdae1" stop-opacity=".44"/><stop offset=".29" class="rim-tone" stop-opacity=".31"/>
-<stop offset=".65" class="rim-base" stop-opacity=".16"/><stop offset="1" class="rim-tone" stop-opacity=".27"/>
-</linearGradient>
-<linearGradient id="wash" x2="95%" y2="75%">
-<stop class="rim-tone" stop-opacity=".105"/><stop offset=".3" class="rim-tone" stop-opacity=".025"/>
-<stop offset=".72" class="rim-base" stop-opacity="0"/>
-</linearGradient>
-</defs>
-<rect x="1" y="1" width="{width-2}" height="{height-2}" rx="30" class="plate" stroke="url(#rim)" stroke-width="1.7"/>
-<rect x="1" y="1" width="{width-2}" height="{height-2}" rx="30" fill="url(#wash)"/>
+{glass_plate(width, height, radius=30)}
 <path d="M22 44H{width-22}" class="glass-rule"/>'''
