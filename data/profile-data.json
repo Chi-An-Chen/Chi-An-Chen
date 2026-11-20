@@ -1,7 +1,7 @@
 {
   "username": "Chi-An-Chen",
   "display_name": "Chi-An Chen",
-  "generated_at": "2026-11-18T23:54:12+00:00",
+  "generated_at": "2026-11-20T00:19:32+00:00",
   "repository_count": 59,
   "public_count": 16,
   "private_count": 43,
@@ -9,16 +9,16 @@
   "archived_count": 0,
   "repositories_with_code": 55,
   "includes_private": true,
-  "total_bytes": 266626852,
+  "total_bytes": 267459925,
   "languages": [
     {
       "name": "Python",
-      "bytes": 117834744,
+      "bytes": 118564874,
       "repositories": 53
     },
     {
       "name": "HTML",
-      "bytes": 83539815,
+      "bytes": 83556144,
       "repositories": 13
     },
     {
@@ -28,7 +28,7 @@
     },
     {
       "name": "JavaScript",
-      "bytes": 16813496,
+      "bytes": 16887478,
       "repositories": 8
     },
     {
@@ -43,7 +43,7 @@
     },
     {
       "name": "CSS",
-      "bytes": 1012503,
+      "bytes": 1023732,
       "repositories": 8
     },
     {
@@ -73,8 +73,8 @@
     },
     {
       "name": "Shell",
-      "bytes": 155948,
-      "repositories": 21
+      "bytes": 157351,
+      "repositories": 22
     },
     {
       "name": "Swift",
