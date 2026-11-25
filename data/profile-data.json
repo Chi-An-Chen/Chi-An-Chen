@@ -1,7 +1,7 @@
 {
   "username": "Chi-An-Chen",
   "display_name": "Chi-An Chen",
-  "generated_at": "2026-11-24T06:30:42+00:00",
+  "generated_at": "2026-11-25T01:55:27+00:00",
   "repository_count": 60,
   "public_count": 16,
   "private_count": 44,
@@ -9,16 +9,16 @@
   "archived_count": 0,
   "repositories_with_code": 56,
   "includes_private": true,
-  "total_bytes": 267816430,
+  "total_bytes": 267849857,
   "languages": [
     {
       "name": "Python",
-      "bytes": 118809345,
+      "bytes": 118836054,
       "repositories": 54
     },
     {
       "name": "HTML",
-      "bytes": 83564739,
+      "bytes": 83564627,
       "repositories": 14
     },
     {
@@ -28,7 +28,7 @@
     },
     {
       "name": "JavaScript",
-      "bytes": 16973156,
+      "bytes": 16979703,
       "repositories": 9
     },
     {
@@ -43,7 +43,7 @@
     },
     {
       "name": "CSS",
-      "bytes": 1040405,
+      "bytes": 1040714,
       "repositories": 9
     },
     {
@@ -73,7 +73,7 @@
     },
     {
       "name": "Shell",
-      "bytes": 158439,
+      "bytes": 158413,
       "repositories": 23
     },
     {
